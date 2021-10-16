@@ -1,0 +1,23 @@
+{
+  "name": "marketplace",
+  "version": "1.0.0",
+  "description": "visit [raidshift.com](http://raidshift.com)",
+  "main": "web/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raidshift/marketplace-contract.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raidshift/marketplace-contract/issues"
+  },
+  "homepage": "https://github.com/raidshift/marketplace-contract#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

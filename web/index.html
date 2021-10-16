@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha512-6KY5s6UI5J7SVYuZB4S/CZMyPylqyyNZco376NM2Z8Sb8OxEdp02e1jkKk/wZxIEmjQ6DRCEBhni+gpr9c4tvA==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" integrity="sha512-xnP2tOaCJnzp2d2IqKFcxuOiVCbuessxM6wuiolT9eeEJCyy0Vhcwa4zQvdrZNVqlqaxXhHqsSV1Ww7T2jSCUQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <title>RAIDSHIFT marketplace</title>
+</head>
+<style>
+    input[type="text"],
+    input[type="radio"] {
+        outline: none;
+        box-shadow: none !important;
+        border: none !important;
+    }
+
+    button {
+        outline: none;
+        box-shadow: none !important;
+    }
+
+    .spinner-border-xs {
+        width: 0.7rem;
+        height: 0.7rem;
+        border-width: .2em;
+    }
+
+    input[type="text"]:disabled {
+        color: #212529 !important;
+    }
+
+    .accordion-item {
+        background-color: #212529;
+        border: 0px;
+    }
+
+    .accordion-button {
+        background-color: #212529;
+        color: #6c757d !important;
+
+    }
+
+    .accordion-button:not(.collapsed) {
+        background-color: #212529;
+        color: #6c757d !important;
+    }
+
+    .accordion-button:not(.collapsed)::after {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%236c757d'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    }
+
+    .accordion-button.collapsed::after {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%236c757d'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    }
+
+    @-webkit-keyframes flash {
+        from {
+            color: #ffc107;
+        }
+
+        to {
+            color: inherit;
+        }
+    }
+
+    @-moz-keyframes flash {
+        from {
+            color: #ffc107;
+        }
+
+        to {
+            color: inherit;
+        }
+    }
+
+    @-o-keyframes flash {
+        from {
+            color: #ffc107;
+        }
+
+        to {
+            color: inherit;
+        }
+    }
+
+    @keyframes flash {
+        from {
+            color: #ffc107;
+        }
+
+        to {
+            color: inherit;
+        }
+    }
+
+    .flash {
+        -webkit-animation: flash 2s;
+        /* Safari 4+ */
+        -moz-animation: flash 2s;
+        /* Fx 5+ */
+        -o-animation: flash 2s;
+        /* Opera 12+ */
+        animation: flash 2s;
+        /* IE 10+ */
+    }
+</style>
+
+<body class="bg-dark">
+    <div class="container-fluid bg-dark main" hidden>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid p-0">
+                <div style="font-size: 1.25rem;display: flex;align-items:center;">
+                    <img src="raidshift.png" height="24px" width="24px" alt="">
+                    &nbsp;<span class="fw-bold text-light">RAIDSHIFT</span>&nbsp;<span class="text-secondary">marketplace</span>
+                </div>
+                <div class="text-secondary" style="font-size: x-small;"><span class="account"></span> | <span class="balanceToken"></span> <span class="tokenName"></span> | <span class="balanceStable"></span> <span class="stableName"></span></div>
+            </div>
+        </nav>
+        <div class="container-fluid p-0 mt-1">
+            <div class="row g-3">
+                <div class="col-12 mb-0">
+                    <a href target="_blank" style="text-decoration: none;" onClick="window.location.reload();">
+                        <span id="conn_badge" class="badge rounded-pill bg-success text-dark"></span>
+                    </a>
+                    <a href data-bs-toggle="modal" data-bs-target="#CreateOfferModal" id="createOfferLink" style="text-decoration: none;" hidden>
+                        <span class="badge rounded-pill bg-success text-dark">Create Offer <i class="bi bi-caret-right-fill"></i></span>
+                    </a>
+                </div>
+                <div class="col-12 mb-0 mt-0 text-warning connect-msg" style="font-size: x-small;">
+                    Connecting to TronLink ...
+                </div>
+                <div class="col-12 small">
+                    <div class="text-secondary fw-bold"><i class="bi bi-list"></i> Your Offers <span class="myoffersCount"></span>
+                        <div class="text-secondary float-end">
+                            <span class="priceToken">
+                                <div class="spinner-border spinner-border-xs text-secondary" role="status">
+                                    <span class="visually-hidden">Connecting to TronLink...</span>
+                                </div>
+                            </span> <span class="stableName"></span>/<span class="tokenName"></span>
+                        </div>
+                    </div>
+
+                    <div class="border border-secondary bg-dark rounded text-secondary overflow-auto px-2" style="min-height: 10vh;max-height: 30vh;font-size: small;">
+                        <table class="table table-dark table-hover table-sm align-middle">
+                            <thead class="text-secondary">
+                                <td>#</td>
+                                <td></td>
+                                <td>Amount (<span class="tokenName"></span>)</td>
+                                <td>Price (<span class="stablePerTokenName"></span>)</td>
+                                <td>Volume (<span class="stableName"></span>)</td>
+                                <td></td>
+                            </thead>
+                            <tbody class="myoffers text-secondary">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6 small">
+                    <div class="text-secondary fw-bold"><i class="bi bi-list"></i> Buy <span class="tokenName"></span> <span class="asksCount"></span></div>
+                    <div class="border border-secondary bg-dark rounded text-secondary overflow-auto px-2" style="min-height: 50vh;max-height: 75vh;font-size: small;">
+                        <table class="table table-dark table-hover table-sm align-middle">
+                            <thead class="text-secondary">
+                                <td>Amount (<span class="tokenName"></span>)</td>
+                                <td>Price (<span class="stablePerTokenName"></span>)</td>
+                                <td>Volume (<span class="stableName"></span>)</td>
+                                <td></td>
+                            </thead>
+                            <tbody class="asks text-secondary">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6 small">
+                    <div class="text-secondary fw-bold"><i class="bi bi-list"></i> Sell <span class="tokenName"></span> <span class="bidsCount"></span></div>
+                    <div class="border border-secondary bg-dark rounded text-secondary overflow-auto px-2" style="min-height: 50vh;max-height: 75vh;font-size: small;">
+                        <table class="table table-dark table-hover table-sm align-middle">
+                            <thead class="text-secondary">
+                                <td>Amount (<span class="tokenName"></span>)</td>
+                                <td>Price (<span class="stablePerTokenName"></span>)</td>
+                                <td>Volume (<span class="stableName"></span>)</td>
+                                <td></td>
+                            </thead>
+                            <tbody class="bids text-secondary">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-12 bg-dark text-center text-secondary" style="font-size: small;">
+                    <span class="fw-bold">RAIDSHIFT marketplace</span>
+                </div>
+                <div class="col-12 bg-dark text-center text-secondary mt-1" style="font-size: small;">
+                    <a class="text-secondary" href="https://github.com/raidshift/marketplace-contract" target="_blank" class="link-secondary"><i class="bi bi-github"></i> GitHub</a>
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a class="contractMarketplaceCodeURL text-secondary" href="" target="_blank" class="link-secondary"><i class="bi bi-box"></i> Smart Contract</a>
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a class="text-secondary" href="https://twitter.com/raidshift" target="_blank" class="link-secondary"><i class="bi bi-twitter"></i> Twitter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal CREATE OFFER -->
+    <div class="modal fade" id="CreateOfferModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark">
+                <div class="modal-body text-secondary">
+                    <span class="fw-bold">Create Offer</span><span><i class="bi bi-x-square float-end" data-bs-dismiss="modal"></i></span>
+                    <hr>
+                    <form class="create-offer-validation">
+                        <div class="form-check form-check-inline mb-4 small">
+                            <input class="form-check-input bg-secondary" type="radio" name="inlineRadioOptions" id="buy" value="buy">
+                            <label class="text-success fw-bold" for="buy">Buy <span class="tokenName"></span></label>
+                        </div>
+                        <div class="form-check form-check-inline mb-4 small">
+                            <input class="form-check-input bg-secondary" type="radio" name="inlineRadioOptions" id="sell" value="sell">
+                            <label class="text-success fw-bold" for="sell">Sell <span class="tokenName"></span></label>
+                        </div>
+                        <div class="mb-3">
+                            <label for="amount" class="form-label small text-success mb-0 fw-bold">Amount</label>
+                            <a class="float-end text-success small" id="setMaxAmountTokenCreateOffer" href="#">balance: <span class="balanceToken"></span></a>
+                            <div class="input-group">
+                                <input type="text" class="form-control bg-secondary text-light amount" id="amount">
+                                <span class="input-group-text tokenName bg-secondary border-0"></span>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="price" class="form-label small text-success mb-0 fw-bold">Price</label>
+                            <a class="float-end text-success small" id="setPriceTokenCreateOffer" href="#">current: <span class="priceToken"></span></a>
+                            <div class="input-group">
+                                <input type="text" class="form-control bg-secondary text-light price" id="price">
+                                <span class="input-group-text stablePerTokenName bg-secondary border-0"></span>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="volume" class="form-label small text-success mb-0 fw-bold">Volume</label>
+                            <a class="float-end text-success small" id="setMaxVolumeStableCreateOffer" href="#">balance: <span class="balanceStable"></span></a>
+                            <div class="input-group">
+                                <input type="text" class="form-control bg-secondary text-light volume" id="volume">
+                                <span class="input-group-text stableName bg-secondary border-0"></span>
+                            </div>
+                        </div>
+                        <div class="mb-4 small">
+                            <ul>
+                                <li class="mb-2">
+                                    Creating the offer requires you to once-only authorize (approve) the Smart
+                                    Contract to lock-in your <span class="stableName fw-bold"></span> for offers
+                                    to buy or <span class="tokenName fw-bold"></span> for offers for sale.
+                                </li>
+                                <li>
+                                    The offer can be canceled at any time as long it was not entirely accepted
+                                    by traders before. Your locked-in tokens will be refunded.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="validationMsg small">
+                        </div>
+
+                        <button type="submit" class="btn btn-success text-dark float-end submitBtn rounded-pill btn-sm fw-bold" hidden>Submit Transaction</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal ACCEPT OFFER -->
+    <div class="modal fade" id="AcceptOfferModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark">
+                <div class="modal-body text-secondary">
+                    <span class="fw-bold accept-offer-type"></span><i class="bi bi-x-square float-end" data-bs-dismiss="modal"></i>
+                    <hr>
+                    <form class="accept-offer-validation">
+                        <div class="mb-3">
+                            <label for="amountAccept" class="form-label small text-success mb-0 fw-bold">Amount</label>
+                            <a class="float-end small text-success" id="setMaxAmountTokenAcceptOffer" href="#">max: <span class="accept-offer-max-amount text-success"></span></a>
+                            <div class="input-group">
+                                <input type="text" class="form-control bg-secondary text-light amount" id="amountAccept">
+                                <span class="input-group-text tokenName bg-secondary border-0"></span>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="priceAccept" class="form-label small text-success mb-0 fw-bold">Price</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control bg-secondary text-light price" id="priceAccept">
+                                <span class="input-group-text stablePerTokenName bg-secondary border-0"></span>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="volumeAccept" class="form-label small text-success mb-0 fw-bold">Volume</label>
+                            <a class="float-end small text-success" id="setMaxVolumeStableAcceptOffer" href="#">max: <span class="accept-offer-max-volume text-success"></span></a>
+                            <div class="input-group">
+                                <input type="text" class="form-control bg-secondary text-light volume" id="volumeAccept">
+                                <span class="input-group-text stableName bg-secondary border-0"></span>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 small">
+                            <ul>
+                                <li class="mb-2">
+                                    A <span class="text-success">0.1% trading fee</span> will be deducted from the received token.
+                                </li>
+                                <li class="mb-2">
+                                    You can also accept a fraction of the amount of <span class="tokenName"></span> from the offer.
+                                </li>
+                                <li>
+                                    Accepting the offer requires you to once-only authorize (approve) the Smart
+                                    Contract to transfer your <span class="stableName fw-bold"></span> when buying
+                                    or <span class="tokenName fw-bold"></span> when selling.
+                                </li>
+
+                            </ul>
+                        </div>
+
+
+                        <div class="validationMsg small">
+                        </div>
+
+                        <button type="submit" class="btn btn-success text-dark float-end submitBtn rounded-pill btn-sm fw-bold" hidden>Submit Transaction</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal CANCEL OFFER -->
+    <div class="modal fade" id="CancelOfferModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark">
+                <div class="modal-body text-secondary">
+                    <span class="fw-bold">Cancel Offer</span> <span class="cancelOfferId"></span><span><i class="bi bi-x-square float-end" data-bs-dismiss="modal"></i></span>
+                    <hr>
+                    <form class="cancel-offer-validation">
+                        <div class="form-check form-check-inline mb-4 small">
+                            <input class="form-check-input bg-secondary" type="radio" name="inlineRadioOptions" id="cancel" value="">
+                            <label for="cancel" class="text-success fw-bold">Cancel Offer</label>
+                        </div>
+                        <div class="mb-4 small">
+                            <ul>
+                                <li>
+                                    The offer can be canceled at any time as long it was not entirely accepted
+                                    by traders before. Your locked-in tokens will be refunded.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="validationMsg small">
+                        </div>
+
+                        <button type="submit" class="btn btn-success text-dark float-end submitBtn rounded-pill btn-sm fw-bold" hidden>Submit Transaction</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Entry -->
+    <div class="modal fade" id="EntryModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark">
+                <div class="modal-body text-secondary">
+                    <div style="font-size: 1.25rem;display: flex;align-items: center;">
+                        <img src="raidshift.png" height="24px" width="24px" alt="">&nbsp;<span class="fw-bold text-light">RAIDSHIFT</span>&nbsp;<span class="text-secondary">marketplace</span>
+                    </div>
+                    <hr>
+                    <form class="entry-validation">
+                        <div class="small text-center">
+                            Please connect <a href="https://www.tronlink.org" target="_blank" class="text-success">TronLink Wallet</a> and select a trading pair below</small>
+                        </div>
+                        <hr>
+                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                            <div class="accordion-item">
+                                <div class="accordion-header" id="panelsStayOpen-headingOne">
+                                    <button class="accordion-button fw-bold pb-0 pt-0" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                        Trading pairs on TRON Mainnet
+                                    </button>
+                                </div>
+                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                                    <div class="accordion-body">
+                                        <div class="form-check small">
+                                            <input class="form-check-input bg-secondary" type="radio" name="tradingPairs" id="btc_usdt" value="">
+                                            <label for="btc_usdt" class="text-success fw-bold">BTC <i class="bi bi-arrow-left-right"></i> USDT</label>
+                                        </div>
+                                        <div class="form-check small">
+                                            <input class="form-check-input bg-secondary" type="radio" name="tradingPairs" id="eth_usdt" value="">
+                                            <label for="eth_usdt" class="text-success fw-bold">ETH <i class="bi bi-arrow-left-right"></i> USDT</label>
+                                        </div>
+                                        <div class="form-check small">
+                                            <input class="form-check-input bg-secondary" type="radio" name="tradingPairs" id="ltc_usdt" value="">
+                                            <label for="ltc_usdt" class="text-success fw-bold">LTC <i class="bi bi-arrow-left-right"></i> USDT</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header" id="panelsStayOpen-headingTwo">
+                                    <button class="accordion-button collapsed fw-bold pb-0 pt-0" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                        Trading pairs on TRON Nile Testnet
+                                    </button>
+                                </div>
+                                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                                    <div class="accordion-body">
+                                        <div class="form-check small">
+                                            <input class="form-check-input bg-secondary" type="radio" name="tradingPairs" id="jst_usdj_nile" value="">
+                                            <label for="jst_usdj_nile" class="text-success fw-bold">JST <i class="bi bi-arrow-left-right"></i> USDJ</label>
+                                        </div>
+                                        <div class="form-check small">
+                                            <input class="form-check-input bg-secondary" type="radio" name="tradingPairs" id="jst_usdt_nile" value="">
+                                            <label for="jst_usdt_nile" class="text-success fw-bold">JST <i class="bi bi-arrow-left-right"></i> USDT</label>
+                                        </div>
+                                        <div class="form-check small">
+                                            <input class="form-check-input bg-secondary" type="radio" name="tradingPairs" id="btc_usdt_nile" value="">
+                                            <label for="btc_usdt_nile" class="text-success fw-bold">BTC <i class="bi bi-arrow-left-right"></i> USDT</label>
+                                        </div>
+                                        <div style="font-size: x-small;">Get free tokens on TRON Nile Testnet at <a href="https://nileex.io/join/getJoinPage" target="_blank" class="text-secondary">https://nileex.io</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div style="font-size: x-small;">
+                            <ul>
+                                <li>
+                                    RAIDSHIFT marketplace is a <span class="text-success">decentralized exchange</span> deployed on the <a href="https://tron.network" target="_blank" class="text-success">TRON Blockchain</a>
+                                </li>
+                            </ul>
+
+                            <ul>
+                                <li>
+                                    Enjoy <span class="text-success">trading fees</span> as low as <span class="text-success">0.1%</span> for market takers only
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    Enjoy low or even <span class="text-success">zero transaction fees</span>
+                                    (You need to stake TRX for Bandwith/Energy to reduce transaction fees)
+                                </li>
+                            </ul>
+                        </div>
+                        <hr>
+                        <div class="validationMsg small">
+                        </div>
+                        <button type="submit" class="btn btn-success btn-sm text-dark float-end rounded-pill fw-bold">Start Trading</button>
+                    </form>
+                    <span class="text-secondary" style="font-size: small;">
+                        <a class="text-secondary" href="https://github.com/raidshift/marketplace-contract" target="_blank" class="link-secondary"><i class="bi bi-github"></i> GitHub</a>
+                        &nbsp;&nbsp;|&nbsp;&nbsp;
+                        <a class="text-secondary" href="https://twitter.com/raidshift" target="_blank" class="link-secondary"><i class="bi bi-twitter"></i> Twitter</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/js/bootstrap.min.js" integrity="sha512-ewfXo9Gq53e1q1+WDTjaHAGZ8UvCWq0eXONhwDuIoaH8xz2r96uoAYaQCm1oQhnBfRXrvJztNXFsTloJfgbL5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bignumber.js/9.0.1/bignumber.min.js" integrity="sha512-3dEpIO2t/6beQ77U/aYgVqJpmSkcvWuTFO4WhCQrSi2tSQV3U+k4plwSKlVOxKibsnd6Z/0evmClsMl4LVZ7Ig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
