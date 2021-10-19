@@ -9,6 +9,10 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html')
 });
 
+app.get('/nft', (req, res) => {
+  res.sendFile(__dirname + '/nft/index.html')
+});
+
 app.listen(port, () => {
   console.log(`raidshift-frontend listening on port ${port}!`)
 });
