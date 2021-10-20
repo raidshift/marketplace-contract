@@ -9,6 +9,6 @@ visit [raidshift.com](http://raidshift.com)
 Deployed Smart Contracts:
 
 * BTC <-> USDT: [TFr8j8M9dTZi4TvGbxZdNR7bfYbzVScYmk](https://tronscan.io/#/contract/TFr8j8M9dTZi4TvGbxZdNR7bfYbzVScYmk/code)
-* ETH <-> USDT: coming soon
+* ETH <-> USDT: [TUhtf9TRBN26KWN5K9fXVc2HywZbL91J2X](https://tronscan.io/#/contract/TUhtf9TRBN26KWN5K9fXVc2HywZbL91J2X/code)
 * LTC <-> USDT: coming soon
 * DOGE <-> USDT: coming soon
