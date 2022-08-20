@@ -34,9 +34,9 @@
     }
 
     .spinner-border-xs {
-        width: 0.7rem;
-        height: 0.7rem;
-        border-width: .2em;
+        width: 0.8rem;
+        height: 0.8rem;
+        border-width: .15em;
     }
 
     /* input[type="text"]:disabled {
@@ -129,12 +129,18 @@
 <body>
     <div class="container-fluid main" hidden>
         <nav class="navbar">
-            <div class="container-fluid p-0">
-                <div style="font-size: 1.25rem;display: flex;align-items:center;">
-                    <img src="raidshift.png" height="24px" width="24px" alt="">
+            <div class="container-fluid p-0 fs-3">
+                <div style="display: flex;align-items:center;">
+                    <img src="raidshift.png" height="32px" width="32px" alt="">
                     &nbsp;<span class="fw-bold">RAIDSHIFT</span>&nbsp;<span class="text-light">marketplace</span>
                 </div>
-                <div class="text-secondary" style="font-size: x-small;"><span class="account"></span> | <span class="balanceToken"></span> <span class="tokenName"></span> | <span class="balanceStable"></span> <span class="stableName"></span></div>
+                <!-- <div class="text-secondary" style="font-size: x-small;"><span class="account"></span> | <span class="balanceToken"></span> <span class="tokenName"></span> | <span class="balanceStable"></span> <span class="stableName"></span></div> -->
+                <div class="d-flex align-items-center text-light account" style="font-size: small;">
+                    <div class="spinner-border spinner-border-xs" role="status">
+                      <span class="visually-hidden">Connecting TronLink</span>
+                    </div>
+                    <span>&nbsp;Connecting&nbsp;<a href="https://www.tronlink.org" target="_blank" class="text-light">TronLink</a></span>
+                  </div>
             </div>
         </nav>
         <div class="container-fluid p-0 mt-1 pb-3">
@@ -289,7 +295,7 @@
                         <div class="validationMsg small">
                         </div>
 
-                        <button type="submit" class="btn btn-success text-dark float-end submitBtn rounded-pill btn-sm fw-bold bg-success border-0" hidden>Submit Transaction</button>
+                        <button type="submit" class="btn btn-success text-dark float-end submitBtn rounded-pill btn-sm fw-bold bg-success border-0 fs-6" hidden>Submit Transaction</button>
                     </form>
                 </div>
             </div>
@@ -354,7 +360,7 @@
                         <div class="validationMsg small">
                         </div>
 
-                        <button type="submit" class="btn btn-success text-dark float-end submitBtn rounded-pill btn-sm fw-bold bg-success border-0" hidden>Submit Transaction</button>
+                        <button type="submit" class="btn btn-success text-dark float-end submitBtn rounded-pill btn-sm fw-bold bg-success border-0 fs-6" hidden>Submit Transaction</button>
                     </form>
                 </div>
             </div>
@@ -389,7 +395,7 @@
                         <div class="validationMsg small">
                         </div>
 
-                        <button type="submit" class="btn btn-success text-dark float-end submitBtn rounded-pill btn-sm fw-bold bg-success border-0" hidden>Submit Transaction</button>
+                        <button type="submit" class="btn btn-success text-dark float-end submitBtn rounded-pill btn-sm fw-bold bg-success border-0 fs-6" hidden>Submit Transaction</button>
                         
                     </form>
                 </div>
@@ -593,7 +599,7 @@
                         <a class="text-secondary" href="https://github.com/raidshift/marketplace-contract" target="_blank" class="link-secondary"><i class="bi bi-github"></i> GitHub</a>
                         &nbsp;&nbsp;|&nbsp;&nbsp;
                         <a class="text-secondary" href="https://twitter.com/raidshift" target="_blank" class="link-secondary"><i class="bi bi-twitter"></i> Twitter</a>
-                        <div class="position-absolute end-0 bottom-0" style="font-size: x-small;">v0.1 build <build>56</build>
+                        <div class="position-absolute end-0 bottom-0" style="font-size: x-small;">v0.1 build <build>57</build>
                         </div>
                     </div>
 
