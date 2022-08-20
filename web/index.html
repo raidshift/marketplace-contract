@@ -27,7 +27,8 @@
         border: none !important;
     }
 
-    .btn {
+    .btn,
+    .btn-close {
         outline: none;
         box-shadow: none !important;
     }
@@ -136,21 +137,26 @@
                 <div class="text-secondary" style="font-size: x-small;"><span class="account"></span> | <span class="balanceToken"></span> <span class="tokenName"></span> | <span class="balanceStable"></span> <span class="stableName"></span></div>
             </div>
         </nav>
-        <div class="container-fluid p-0 mt-1">
+        <div class="container-fluid p-0 mt-1 pb-3">
             <div class="row g-3">
                 <div class="col-12 mb-0">
                     <a href target="_blank" style="text-decoration: none;" onClick="window.location.reload();">
-                        <span id="conn_badge" class="badge rounded-pill bg-success text-dark"></span>
+                        <span id="conn_badge" class="badge rounded-pill bg-success text-dark p-2 fs-6"></span>
                     </a>
                     <a href data-bs-toggle="modal" data-bs-target="#CreateOfferModal" id="createOfferLink" style="text-decoration: none;outline : none;" hidden>
-                        <span class="badge rounded-pill bg-success text-dark">Create Offer <i class="bi bi-caret-right-fill"></i></span>
+                        <span class="badge rounded-pill bg-success text-dark p-2 fs-6">Create Offer <i class="bi bi-caret-right-fill"></i></span>
                     </a>
+                    <!-- <button type="button" class="btn btn-success text-dark rounded-pill btn-sm fw-bold" onClick="window.location.reload();">
+                        <span id="conn_badge"></span>
+                    </button>
+                    <button type="button" id="createOfferLink" class="btn btn-success text-dark rounded-pill btn-sm fw-bold" data-bs-toggle="modal" data-bs-target="#CreateOfferModal" hidden>Create Offer <i class="bi bi-caret-right-fill"></i></button>
+                    -->
                 </div>
                 <div class="col-12 mb-0 mt-0 text-warning connect-msg" style="font-size: x-small;">
                     Connecting TronLink <span class="network"></span>
                 </div>
                 <div class="col-12 small">
-                    <div class="fw-bold"><i class="bi bi-list"></i> Your Offers <span class="myoffersCount"></span>
+                    <div class="fw-bold fs-6"><i class="bi bi-list"></i> Your Offers <span class="myoffersCount"></span>
                         <div class="float-end">
                             <span class="priceToken">
                                 <div class="spinner-border spinner-border-xs text-secondary" role="status">
@@ -177,7 +183,7 @@
                 </div>
 
                 <div class="col-12 col-lg-6 small">
-                    <div class="fw-bold"><i class="bi bi-list"></i> Buy <span class="tokenName"></span> <span class="asksCount"></span></div>
+                    <div class="fw-bold fs-6"><i class="bi bi-list"></i> Buy <span class="tokenName"></span> <span class="asksCount"></span></div>
                     <div class="border border-light rounded text-light overflow-auto px-2" style="min-height: 50vh;max-height: 75vh;font-size: small;">
                         <table class="table table-hover table-sm align-middle">
                             <thead class="text-light fw-bold">
@@ -193,7 +199,7 @@
                 </div>
 
                 <div class="col-12 col-lg-6 small">
-                    <div class="fw-bold"><i class="bi bi-list"></i> Sell <span class="tokenName"></span> <span class="bidsCount"></span></div>
+                    <div class="fw-bold fs-6"><i class="bi bi-list"></i> Sell <span class="tokenName"></span> <span class="bidsCount"></span></div>
                     <div class="border border-light rounded text-light overflow-auto px-2" style="min-height: 50vh;max-height: 75vh;font-size: small;">
                         <table class="table table-hover table-sm align-middle">
                             <thead class="text-light fw-bold">
@@ -226,10 +232,10 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Modal title</h5>
+                    <h5 class="modal-title">Create Offer</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body text-secondary">
+                <div class="modal-body">
                     <!-- <span class="h3">Create Offer</span><span class="h3"><i class="bi bi-x float-end" data-bs-dismiss="modal"></i></span> -->
                     <!-- <hr> -->
                     <form class="create-offer-validation" autocomplete="off">
@@ -283,7 +289,7 @@
                         <div class="validationMsg small">
                         </div>
 
-                        <button type="submit" class="btn btn-success text-dark float-end submitBtn rounded-pill btn-sm fw-bold" hidden>Submit Transaction</button>
+                        <button type="submit" class="btn btn-success text-dark float-end submitBtn rounded-pill btn-sm fw-bold bg-success border-0" hidden>Submit Transaction</button>
                     </form>
                 </div>
             </div>
@@ -293,10 +299,14 @@
     <!-- Modal ACCEPT OFFER -->
     <div class="modal fade" id="AcceptOfferModal" tabindex="-1">
         <div class="modal-dialog">
-            <div class="modal-content bg-dark">
-                <div class="modal-body text-secondary">
-                    <span class="fw-bold accept-offer-type"></span><i class="bi bi-x-square float-end" data-bs-dismiss="modal"></i>
-                    <hr>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><span class="accept-offer-type"></span></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- <span class="fw-bold accept-offer-type"></span><i class="bi bi-x-square float-end" data-bs-dismiss="modal"></i>
+                    <hr> -->
                     <form class="accept-offer-validation" autocomplete="off">
                         <div class="mb-3">
                             <label for="amountAccept" class="form-label small text-success mb-0 fw-bold">Amount</label>
@@ -323,7 +333,7 @@
                             </div>
                         </div>
 
-                        <div class="mb-4 small">
+                        <div class="mb-4 small text-light">
                             <ul>
                                 <li class="mb-2">
                                     A <span class="text-success">0.1% trading fee</span> will be deducted from the received token.
@@ -344,7 +354,7 @@
                         <div class="validationMsg small">
                         </div>
 
-                        <button type="submit" class="btn btn-success text-dark float-end submitBtn rounded-pill btn-sm fw-bold" hidden>Submit Transaction</button>
+                        <button type="submit" class="btn btn-success text-dark float-end submitBtn rounded-pill btn-sm fw-bold bg-success border-0" hidden>Submit Transaction</button>
                     </form>
                 </div>
             </div>
@@ -354,16 +364,20 @@
     <!-- Modal CANCEL OFFER -->
     <div class="modal fade" id="CancelOfferModal" tabindex="-1">
         <div class="modal-dialog">
-            <div class="modal-content bg-dark">
-                <div class="modal-body text-secondary">
-                    <span class="fw-bold">Cancel Offer</span> <span class="cancelOfferId"></span><span><i class="bi bi-x-square float-end" data-bs-dismiss="modal"></i></span>
-                    <hr>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cancel Offer</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- <span class="fw-bold">Cancel Offer</span> <span class="cancelOfferId"></span><span><i class="bi bi-x-square float-end" data-bs-dismiss="modal"></i></span>
+                    <hr> -->
                     <form class="cancel-offer-validation" autocomplete="off">
                         <div class="form-check form-check-inline mb-4 small">
                             <input class="form-check-input bg-secondary" type="radio" name="inlineRadioOptions" id="cancel" value="">
-                            <label for="cancel" class="text-success fw-bold">Cancel Offer</label>
+                            <label for="cancel" class="text-success fw-bold">Cancel Offer <span class="cancelOfferId"></span></label>
                         </div>
-                        <div class="mb-4 small">
+                        <div class="mb-4 small text-light">
                             <ul>
                                 <li>
                                     The offer can be canceled at any time as long it was not entirely accepted
@@ -375,7 +389,8 @@
                         <div class="validationMsg small">
                         </div>
 
-                        <button type="submit" class="btn btn-success text-dark float-end submitBtn rounded-pill btn-sm fw-bold" hidden>Submit Transaction</button>
+                        <button type="submit" class="btn btn-success text-dark float-end submitBtn rounded-pill btn-sm fw-bold bg-success border-0" hidden>Submit Transaction</button>
+                        
                     </form>
                 </div>
             </div>
@@ -385,12 +400,16 @@
     <!-- Modal Entry -->
     <div class="modal fade" id="EntryModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
         <div class="modal-dialog">
-            <div class="modal-content bg-dark">
-                <div class="modal-body text-secondary">
-                    <div style="font-size: 1.25rem;display: flex;align-items: center;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Select Trading Pair</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- <div style="font-size: 1.25rem;display: flex;align-items: center;">
                         <img src="raidshift.png" height="24px" width="24px" alt="">&nbsp;<span class="fw-bold text-light">RAIDSHIFT</span>&nbsp;<span class="text-secondary">marketplace</span>
                     </div>
-                    <hr>
+                    <hr> -->
                     <form class="entry-validation" autocomplete="off">
                         <div class="accordion" id="accordionPanelsStayOpenExample">
                             <div class="accordion-item">
@@ -574,7 +593,7 @@
                         <a class="text-secondary" href="https://github.com/raidshift/marketplace-contract" target="_blank" class="link-secondary"><i class="bi bi-github"></i> GitHub</a>
                         &nbsp;&nbsp;|&nbsp;&nbsp;
                         <a class="text-secondary" href="https://twitter.com/raidshift" target="_blank" class="link-secondary"><i class="bi bi-twitter"></i> Twitter</a>
-                        <div class="position-absolute end-0 bottom-0" style="font-size: x-small;">v0.1 build <build>55</build>
+                        <div class="position-absolute end-0 bottom-0" style="font-size: x-small;">v0.1 build <build>56</build>
                         </div>
                     </div>
 
