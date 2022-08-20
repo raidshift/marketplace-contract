@@ -5,12 +5,21 @@
     <meta name="google-site-verification" content="wVS9zyksLFQeCQcTdKUEK1Df2UAYdn7ukJrX3Ak9O2E" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha512-6KY5s6UI5J7SVYuZB4S/CZMyPylqyyNZco376NM2Z8Sb8OxEdp02e1jkKk/wZxIEmjQ6DRCEBhni+gpr9c4tvA==" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" integrity="sha512-xnP2tOaCJnzp2d2IqKFcxuOiVCbuessxM6wuiolT9eeEJCyy0Vhcwa4zQvdrZNVqlqaxXhHqsSV1Ww7T2jSCUQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.2.0/darkly/bootstrap.min.css" integrity="sha512-gUckM9ucxSOwqWuP2kRpTZjtzXfgyKGUlMbXcOq9SAXY+qubqqJTht1XHZvK8rUjFKylKb+gtTK2IiOK3jk4TA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css" integrity="sha512-5PV92qsds/16vyYIJo3T/As4m2d8b6oWYfoqV+vtizRB6KhF1F9kYzWzQmsO6T3z3QG2Xdhrx7FQ+5R1LiQdUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <title>RAIDSHIFT marketplace</title>
 </head>
 <style>
+    ::-webkit-scrollbar {
+        width: 0 !important
+    }
+
+    body {
+        font-family: 'Kanit', sans-serif;
+    }
+
     input[type="text"],
     input[type="radio"] {
         outline: none;
@@ -29,11 +38,11 @@
         border-width: .2em;
     }
 
-    input[type="text"]:disabled {
+    /* input[type="text"]:disabled {
         color: #212529 !important;
-    }
+    } */
 
-    .accordion-item {
+    /* .accordion-item {
         background-color: #212529;
         border: 0px;
     }
@@ -50,14 +59,18 @@
     .accordion-button:not(.collapsed) {
         background-color: #212529;
         color: #6c757d !important;
-    }
+    } */
 
-    .accordion-button:not(.collapsed)::after {
+    /* .accordion-button:not(.collapsed)::after {
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%236c757d'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
     }
 
     .accordion-button.collapsed::after {
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%236c757d'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    } */
+
+    .modal-content {
+        border-radius: 15px;
     }
 
     @-webkit-keyframes flash {
@@ -112,13 +125,13 @@
     }
 </style>
 
-<body class="bg-dark">
-    <div class="container-fluid bg-dark main" hidden>
-        <nav class="navbar navbar-dark bg-dark">
+<body>
+    <div class="container-fluid main" hidden>
+        <nav class="navbar">
             <div class="container-fluid p-0">
                 <div style="font-size: 1.25rem;display: flex;align-items:center;">
                     <img src="raidshift.png" height="24px" width="24px" alt="">
-                    &nbsp;<span class="fw-bold text-light">RAIDSHIFT</span>&nbsp;<span class="text-secondary">marketplace</span>
+                    &nbsp;<span class="fw-bold">RAIDSHIFT</span>&nbsp;<span class="text-light">marketplace</span>
                 </div>
                 <div class="text-secondary" style="font-size: x-small;"><span class="account"></span> | <span class="balanceToken"></span> <span class="tokenName"></span> | <span class="balanceStable"></span> <span class="stableName"></span></div>
             </div>
@@ -137,8 +150,8 @@
                     Connecting TronLink <span class="network"></span>
                 </div>
                 <div class="col-12 small">
-                    <div class="text-secondary fw-bold"><i class="bi bi-list"></i> Your Offers <span class="myoffersCount"></span>
-                        <div class="text-secondary float-end">
+                    <div class="fw-bold"><i class="bi bi-list"></i> Your Offers <span class="myoffersCount"></span>
+                        <div class="float-end">
                             <span class="priceToken">
                                 <div class="spinner-border spinner-border-xs text-secondary" role="status">
                                     <span class="visually-hidden">Connecting TronLink</span>
@@ -147,9 +160,9 @@
                         </div>
                     </div>
 
-                    <div class="border border-secondary bg-dark rounded text-secondary overflow-auto px-2" style="min-height: 10vh;max-height: 30vh;font-size: small;">
-                        <table class="table table-dark table-hover table-sm align-middle">
-                            <thead class="text-secondary">
+                    <div class="border border-light rounded text-light overflow-auto px-2" style="min-height: 10vh;max-height: 30vh;font-size: small;">
+                        <table class="table table-hover table-sm align-middle">
+                            <thead class="text-light fw-bold">
                                 <td>#</td>
                                 <td></td>
                                 <td>Amount (<span class="tokenName"></span>)</td>
@@ -157,52 +170,52 @@
                                 <td>Volume (<span class="stableName"></span>)</td>
                                 <td></td>
                             </thead>
-                            <tbody class="myoffers text-secondary">
+                            <tbody class="myoffers text-light">
                             </tbody>
                         </table>
                     </div>
                 </div>
 
                 <div class="col-12 col-lg-6 small">
-                    <div class="text-secondary fw-bold"><i class="bi bi-list"></i> Buy <span class="tokenName"></span> <span class="asksCount"></span></div>
-                    <div class="border border-secondary bg-dark rounded text-secondary overflow-auto px-2" style="min-height: 50vh;max-height: 75vh;font-size: small;">
-                        <table class="table table-dark table-hover table-sm align-middle">
-                            <thead class="text-secondary">
+                    <div class="fw-bold"><i class="bi bi-list"></i> Buy <span class="tokenName"></span> <span class="asksCount"></span></div>
+                    <div class="border border-light rounded text-light overflow-auto px-2" style="min-height: 50vh;max-height: 75vh;font-size: small;">
+                        <table class="table table-hover table-sm align-middle">
+                            <thead class="text-light fw-bold">
                                 <td>Amount (<span class="tokenName"></span>)</td>
                                 <td>Price (<span class="stablePerTokenName"></span>)</td>
                                 <td>Volume (<span class="stableName"></span>)</td>
                                 <td></td>
                             </thead>
-                            <tbody class="asks text-secondary">
+                            <tbody class="asks text-light">
                             </tbody>
                         </table>
                     </div>
                 </div>
 
                 <div class="col-12 col-lg-6 small">
-                    <div class="text-secondary fw-bold"><i class="bi bi-list"></i> Sell <span class="tokenName"></span> <span class="bidsCount"></span></div>
-                    <div class="border border-secondary bg-dark rounded text-secondary overflow-auto px-2" style="min-height: 50vh;max-height: 75vh;font-size: small;">
-                        <table class="table table-dark table-hover table-sm align-middle">
-                            <thead class="text-secondary">
+                    <div class="fw-bold"><i class="bi bi-list"></i> Sell <span class="tokenName"></span> <span class="bidsCount"></span></div>
+                    <div class="border border-light rounded text-light overflow-auto px-2" style="min-height: 50vh;max-height: 75vh;font-size: small;">
+                        <table class="table table-hover table-sm align-middle">
+                            <thead class="text-light fw-bold">
                                 <td>Amount (<span class="tokenName"></span>)</td>
                                 <td>Price (<span class="stablePerTokenName"></span>)</td>
                                 <td>Volume (<span class="stableName"></span>)</td>
                                 <td></td>
                             </thead>
-                            <tbody class="bids text-secondary">
+                            <tbody class="bids text-light">
                             </tbody>
                         </table>
                     </div>
                 </div>
-                <div class="col-12 bg-dark text-center text-secondary" style="font-size: small;">
+                <div class="col-12 text-center text-light" style="font-size: small;">
                     <span class="fw-bold">RAIDSHIFT marketplace</span>
                 </div>
-                <div class="col-12 bg-dark text-center text-secondary mt-1" style="font-size: small;">
-                    <a class="text-secondary" href="https://github.com/raidshift/marketplace-contract" target="_blank" class="link-secondary"><i class="bi bi-github"></i> GitHub</a>
+                <div class="col-12 text-center text-light mt-1" style="font-size: small;">
+                    <a class="text-light" href="https://github.com/raidshift/marketplace-contract" target="_blank" class="link-light"><i class="bi bi-github"></i> GitHub</a>
                     &nbsp;&nbsp;|&nbsp;&nbsp;
-                    <a class="contractMarketplaceCodeURL text-secondary" href="" target="_blank" class="link-secondary"><i class="bi bi-box"></i> Smart Contract</a>
+                    <a class="contractMarketplaceCodeURL text-light" href="" target="_blank" class="link-light"><i class="bi bi-box"></i> Smart Contract</a>
                     &nbsp;&nbsp;|&nbsp;&nbsp;
-                    <a class="text-secondary" href="https://twitter.com/raidshift" target="_blank" class="link-secondary"><i class="bi bi-twitter"></i> Twitter</a>
+                    <a class="text-light" href="https://twitter.com/raidshift" target="_blank" class="link-light"><i class="bi bi-twitter"></i> Twitter</a>
                 </div>
             </div>
         </div>
@@ -211,11 +224,15 @@
     <!-- Modal CREATE OFFER -->
     <div class="modal fade" id="CreateOfferModal" tabindex="-1">
         <div class="modal-dialog">
-            <div class="modal-content bg-dark">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
                 <div class="modal-body text-secondary">
-                    <span class="fw-bold">Create Offer</span><span><i class="bi bi-x-square float-end" data-bs-dismiss="modal"></i></span>
-                    <hr>
-                    <form class="create-offer-validation">
+                    <!-- <span class="h3">Create Offer</span><span class="h3"><i class="bi bi-x float-end" data-bs-dismiss="modal"></i></span> -->
+                    <!-- <hr> -->
+                    <form class="create-offer-validation" autocomplete="off">
                         <div class="form-check form-check-inline mb-4 small">
                             <input class="form-check-input bg-secondary" type="radio" name="inlineRadioOptions" id="buy" value="buy">
                             <label class="text-success fw-bold" for="buy">Buy <span class="tokenName"></span></label>
@@ -249,7 +266,7 @@
                                 <span class="input-group-text stableName bg-secondary border-0"></span>
                             </div>
                         </div>
-                        <div class="mb-4 small">
+                        <div class="mb-4 small text-light">
                             <ul>
                                 <li class="mb-2">
                                     Creating the offer requires you to once-only authorize (approve) the Smart
@@ -280,7 +297,7 @@
                 <div class="modal-body text-secondary">
                     <span class="fw-bold accept-offer-type"></span><i class="bi bi-x-square float-end" data-bs-dismiss="modal"></i>
                     <hr>
-                    <form class="accept-offer-validation">
+                    <form class="accept-offer-validation" autocomplete="off">
                         <div class="mb-3">
                             <label for="amountAccept" class="form-label small text-success mb-0 fw-bold">Amount</label>
                             <a class="float-end small text-success" id="setMaxAmountTokenAcceptOffer" href="#">max: <span class="accept-offer-max-amount text-success"></span></a>
@@ -341,7 +358,7 @@
                 <div class="modal-body text-secondary">
                     <span class="fw-bold">Cancel Offer</span> <span class="cancelOfferId"></span><span><i class="bi bi-x-square float-end" data-bs-dismiss="modal"></i></span>
                     <hr>
-                    <form class="cancel-offer-validation">
+                    <form class="cancel-offer-validation" autocomplete="off">
                         <div class="form-check form-check-inline mb-4 small">
                             <input class="form-check-input bg-secondary" type="radio" name="inlineRadioOptions" id="cancel" value="">
                             <label for="cancel" class="text-success fw-bold">Cancel Offer</label>
@@ -374,7 +391,7 @@
                         <img src="raidshift.png" height="24px" width="24px" alt="">&nbsp;<span class="fw-bold text-light">RAIDSHIFT</span>&nbsp;<span class="text-secondary">marketplace</span>
                     </div>
                     <hr>
-                    <form class="entry-validation">
+                    <form class="entry-validation" autocomplete="off">
                         <div class="accordion" id="accordionPanelsStayOpenExample">
                             <div class="accordion-item">
                                 <div class="accordion-header" id="panelsStayOpen-headingThree">
@@ -557,7 +574,7 @@
                         <a class="text-secondary" href="https://github.com/raidshift/marketplace-contract" target="_blank" class="link-secondary"><i class="bi bi-github"></i> GitHub</a>
                         &nbsp;&nbsp;|&nbsp;&nbsp;
                         <a class="text-secondary" href="https://twitter.com/raidshift" target="_blank" class="link-secondary"><i class="bi bi-twitter"></i> Twitter</a>
-                        <div class="position-absolute end-0 bottom-0" style="font-size: x-small;">v0.1 build <build>54</build>
+                        <div class="position-absolute end-0 bottom-0" style="font-size: x-small;">v0.1 build <build>55</build>
                         </div>
                     </div>
 
