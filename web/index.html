@@ -126,8 +126,8 @@
     }
 </style>
 
-<body>
-    <div class="container-fluid main" hidden>
+<body style="min-height: 100vh">
+    <div class="container main">
         <nav class="navbar">
             <div class="container-fluid p-0 fs-3">
                 <div style="display: flex;align-items:center;">
@@ -147,10 +147,10 @@
             <div class="row g-3">
                 <div class="col-12 mb-0">
                     <a href target="_blank" style="text-decoration: none;" onClick="window.location.reload();">
-                        <span id="conn_badge" class="badge rounded-pill bg-success text-dark p-2 fs-6"></span>
+                        <span id="conn_badge" class="badge rounded-pill bg-success text-dark px-2 py-1 fs-6"></span>
                     </a>
                     <a href data-bs-toggle="modal" data-bs-target="#CreateOfferModal" id="createOfferLink" style="text-decoration: none;outline : none;" hidden>
-                        <span class="badge rounded-pill bg-success text-dark p-2 fs-6">Create Offer <i class="bi bi-caret-right-fill"></i></span>
+                        <span class="badge rounded-pill bg-success text-dark px-2 py-1 fs-6">Create Offer <i class="bi bi-caret-right-fill"></i></span>
                     </a>
                     <!-- <button type="button" class="btn btn-success text-dark rounded-pill btn-sm fw-bold" onClick="window.location.reload();">
                         <span id="conn_badge"></span>
@@ -158,15 +158,15 @@
                     <button type="button" id="createOfferLink" class="btn btn-success text-dark rounded-pill btn-sm fw-bold" data-bs-toggle="modal" data-bs-target="#CreateOfferModal" hidden>Create Offer <i class="bi bi-caret-right-fill"></i></button>
                     -->
                 </div>
-                <div class="col-12 mb-0 mt-0 text-warning connect-msg" style="font-size: x-small;">
+                <!-- <div class="col-12 mb-0 mt-0 text-warning connect-msg" style="font-size: x-small;">
                     Connecting TronLink <span class="network"></span>
-                </div>
+                </div> -->
                 <div class="col-12 small">
                     <div class="fw-bold fs-6"><i class="bi bi-list"></i> Your Offers <span class="myoffersCount"></span>
                         <div class="float-end">
                             <span class="priceToken">
                                 <div class="spinner-border spinner-border-xs text-secondary" role="status">
-                                    <span class="visually-hidden">Connecting TronLink</span>
+                                    <span class="visually-hidden">Connecting CoinGecko</span>
                                 </div>
                             </span> <span class="stableName"></span>/<span class="tokenName"></span>
                         </div>
@@ -295,7 +295,7 @@
                         <div class="validationMsg small">
                         </div>
 
-                        <button type="submit" class="btn btn-success text-dark float-end submitBtn rounded-pill btn-sm fw-bold bg-success border-0 fs-6" hidden>Submit Transaction</button>
+                        <button type="submit" class="btn btn-success text-dark float-end submitBtn rounded-pill btn-sm fw-bold bg-success border-0 fs-6 px-2 py-0" hidden>Submit Transaction</button>
                     </form>
                 </div>
             </div>
@@ -360,7 +360,7 @@
                         <div class="validationMsg small">
                         </div>
 
-                        <button type="submit" class="btn btn-success text-dark float-end submitBtn rounded-pill btn-sm fw-bold bg-success border-0 fs-6" hidden>Submit Transaction</button>
+                        <button type="submit" class="btn btn-success text-dark float-end submitBtn rounded-pill btn-sm fw-bold bg-success border-0 fs-6 px-2 py-0" hidden>Submit Transaction</button>
                     </form>
                 </div>
             </div>
@@ -395,7 +395,7 @@
                         <div class="validationMsg small">
                         </div>
 
-                        <button type="submit" class="btn btn-success text-dark float-end submitBtn rounded-pill btn-sm fw-bold bg-success border-0 fs-6" hidden>Submit Transaction</button>
+                        <button type="submit" class="btn btn-success text-dark float-end submitBtn rounded-pill btn-sm fw-bold bg-success border-0 fs-6 px-2 py-0" hidden>Submit Transaction</button>
                         
                     </form>
                 </div>
@@ -405,11 +405,11 @@
 
     <!-- Modal Entry -->
     <div class="modal fade" id="EntryModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
-        <div class="modal-dialog">
+        <div class="modal-dialog" style="padding-top: 80px">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">Select Trading Pair</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
                 </div>
                 <div class="modal-body">
                     <!-- <div style="font-size: 1.25rem;display: flex;align-items: center;">
@@ -599,7 +599,7 @@
                         <a class="text-secondary" href="https://github.com/raidshift/marketplace-contract" target="_blank" class="link-secondary"><i class="bi bi-github"></i> GitHub</a>
                         &nbsp;&nbsp;|&nbsp;&nbsp;
                         <a class="text-secondary" href="https://twitter.com/raidshift" target="_blank" class="link-secondary"><i class="bi bi-twitter"></i> Twitter</a>
-                        <div class="position-absolute end-0 bottom-0" style="font-size: x-small;">v0.1 build <build>57</build>
+                        <div class="position-absolute end-0 bottom-0" style="font-size: x-small;">v0.1 build <build>58</build>
                         </div>
                     </div>
 
