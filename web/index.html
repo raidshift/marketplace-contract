@@ -39,18 +39,23 @@
         border-width: .15em;
     }
 
-    /* input[type="text"]:disabled {
-        color: #212529 !important;
-    } */
+    input[type="text"]:disabled {
+        color: #303030 !important;
+    }
 
-    /* .accordion-item {
-        background-color: #212529;
-        border: 0px;
+    .accordion-item {
+        background-color: #303030;
+        border: 0px !important;
+    }
+    .accordion-header {
+        border: 0px !important;
     }
 
     .accordion-button {
-        background-color: #212529;
+        background-color: #303030;
         color: #6c757d !important;
+        border: 0px !important;
+
     }
 
     .accordion-button:focus {
@@ -58,17 +63,17 @@
     }
 
     .accordion-button:not(.collapsed) {
-        background-color: #212529;
+        background-color: #303030;
         color: #6c757d !important;
-    } */
+    }
 
-    /* .accordion-button:not(.collapsed)::after {
+    .accordion-button:not(.collapsed)::after {
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%236c757d'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
     }
 
     .accordion-button.collapsed::after {
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%236c757d'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-    } */
+    }
 
     .modal-content {
         border-radius: 15px;
@@ -417,7 +422,7 @@
 
     <!-- Modal Entry -->
     <div class="modal fade" id="EntryModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
-        <div class="modal-dialog" style="padding-top: 80px">
+        <div class="modal-dialog modal-xl" style="padding-top: 80px">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">Select Trading Pair</h5>
@@ -430,7 +435,7 @@
                     <hr> -->
                     <form class="entry-validation" autocomplete="off">
                         <div class="accordion" id="accordionPanelsStayOpenExample">
-                            <div class="accordion-item">
+                            <!-- <div class="accordion-item">
                                 <div class="accordion-header" id="panelsStayOpen-headingThree">
                                     <button class="accordion-button collapsed pb-0 pt-0 btn-sm" style="font-size: small;" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
                                         <i class="bi bi-question-circle-fill text-success"></i>&nbsp;About RAIDSHIFT marketplace
@@ -441,16 +446,15 @@
 
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="accordion-item mt-3">
                                 <div class="accordion-header" id="panelsStayOpen-headingOne">
-                                    <button class="accordion-button collapsed pb-0 pt-0 btn-sm" style="font-size: small;" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
-                                        <img src="tron.svg" height="12px">&nbsp;TRON Mainnet
+                                    <button class="accordion-button pb-0 pt-0 btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                                        <img src="tron.svg" height="12px">&nbsp;<span class="text-light">TRON Mainnet</span>
                                     </button>
                                 </div>
                                 <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
                                     <div class="accordion-body">
-                                        <div style="font-size: x-small;" class="mb-4 text-center fw-bold">Please connect TronLink Wallet to TRON Mainnet (<span class="fw-bold">TronStack</span>)</div>
                                         <div class="d-grid gap-3 col-10 mx-auto">
                                             <button type="submit" class="btn btn-success btn-sm text-dark rounded-pill fw-bold" id="btc_usdt" onclick="this.form.submitter = 'btc_usdt'">
                                                 <div style="font-size: 1.25rem;display: flex;justify-content: center;">
@@ -505,12 +509,13 @@
                                                 </div>
                                             </button>
                                         </div>
+                                        <div class="mt-4 text-center text-light small">Please connect TronLink Wallet to TRON Mainnet</div>
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item mt-3">
                                 <div class="accordion-header" id="panelsStayOpen-headingTwo">
-                                    <button class="accordion-button collapsed pb-0 pt-0 btn-sm" style="font-size: small;" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                    <button class="accordion-button collapsed pb-0 pt-0 btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
                                         <img src="tron.svg" height="12px">&nbsp;TRON Nile Testnet (Playground)
                                     </button>
                                 </div>
@@ -600,7 +605,7 @@
                         </ul>
                         <ul>
                             <li>
-                                Please connect <a href="https://www.tronlink.org" target="_blank" class="text-success">TronLink Wallet</a> to <span class="text-success">TRON Mainnet (TronStack)</span> and select a trading pair (please do not connect to TRON Mainnet (TronGrid) due to connection issues)</small>
+                                Please connect <a href="https://www.tronlink.org" target="_blank" class="text-success">TronLink Wallet</a> to <span class="text-success">TRON Mainnet</span> and select a trading pair</small>
                             </li>
                         </ul>
                         <ul>
@@ -615,7 +620,7 @@
                         <a class="text-light" href="https://github.com/raidshift/marketplace-contract" target="_blank" class="link-secondary"><i class="bi bi-github"></i> GitHub</a>
                         &nbsp;&nbsp;|&nbsp;&nbsp;
                         <a class="text-light" href="https://twitter.com/raidshift" target="_blank" class="link-secondary"><i class="bi bi-twitter"></i> Twitter</a>
-                        <div class="position-absolute end-0 bottom-0" style="font-size: x-small;">v0.1 build <build>59</build>
+                        <div class="position-absolute end-0 bottom-0" style="font-size: x-small;">v0.1 build <build>60</build>
                         </div>
                     </div>
 
