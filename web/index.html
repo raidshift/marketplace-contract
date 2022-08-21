@@ -127,7 +127,7 @@
 </style>
 
 <body style="min-height: 100vh">
-    <div class="container main">
+    <div class="container">
         <nav class="navbar">
             <div class="container-fluid p-0 fs-3">
                 <div style="display: flex;align-items:center;">
@@ -135,15 +135,18 @@
                     &nbsp;<span class="fw-bold">RAIDSHIFT</span>&nbsp;<span class="text-light">marketplace</span>
                 </div>
                 <!-- <div class="text-secondary" style="font-size: x-small;"><span class="account"></span> | <span class="balanceToken"></span> <span class="tokenName"></span> | <span class="balanceStable"></span> <span class="stableName"></span></div> -->
-                <div class="d-flex align-items-center text-light account" style="font-size: small;">
-                    <div class="spinner-border spinner-border-xs" role="status">
-                      <span class="visually-hidden">Connecting TronLink</span>
+                <div id="accountDiv" hidden>
+                    <div class="d-flex align-items-center text-light account" style="font-size: small;">
+                        <div class="spinner-border spinner-border-xs" role="status">
+                            <span class="visually-hidden">Connecting TronLink</span>
+                        </div>
+                        <span>&nbsp;Connecting&nbsp;<a href="https://www.tronlink.org" target="_blank" class="text-light">TronLink</a></span>
                     </div>
-                    <span>&nbsp;Connecting&nbsp;<a href="https://www.tronlink.org" target="_blank" class="text-light">TronLink</a></span>
-                  </div>
+                </div>
             </div>
         </nav>
-        <div class="container-fluid p-0 mt-1 pb-3">
+
+        <div class="container-fluid p-0 mt-1 pb-3" id="main" hidden>
             <div class="row g-3">
                 <div class="col-12 mb-0">
                     <a href target="_blank" style="text-decoration: none;" onClick="window.location.reload();">
@@ -161,6 +164,15 @@
                 <!-- <div class="col-12 mb-0 mt-0 text-warning connect-msg" style="font-size: x-small;">
                     Connecting TronLink <span class="network"></span>
                 </div> -->
+
+                <!-- <div class="col-12 small">
+                    <div class="fw-bold fs-6"><i class="bi bi-list"></i> Select Trading Pair <span class="myoffersCount"></span></div>
+    
+                    <div class="border border-light rounded text-light overflow-auto px-2" style="min-height: 10vh;max-height: 30vh;font-size: small;">
+                        
+                    </div>
+                </div> -->
+
                 <div class="col-12 small">
                     <div class="fw-bold fs-6"><i class="bi bi-list"></i> Your Offers <span class="myoffersCount"></span>
                         <div class="float-end">
@@ -225,7 +237,7 @@
                 <div class="col-12 text-center text-light mt-1" style="font-size: small;">
                     <a class="text-light" href="https://github.com/raidshift/marketplace-contract" target="_blank" class="link-light"><i class="bi bi-github"></i> GitHub</a>
                     &nbsp;&nbsp;|&nbsp;&nbsp;
-                    <a class="contractMarketplaceCodeURL text-light" href="" target="_blank" class="link-light"><i class="bi bi-box"></i> Smart Contract</a>
+                    <a class="contractMarketplaceCodeURL text-light" href="" target="_blank" class="link-light"><i class="bi bi-box"></i> Contract</a>
                     &nbsp;&nbsp;|&nbsp;&nbsp;
                     <a class="text-light" href="https://twitter.com/raidshift" target="_blank" class="link-light"><i class="bi bi-twitter"></i> Twitter</a>
                 </div>
@@ -396,7 +408,7 @@
                         </div>
 
                         <button type="submit" class="btn btn-success text-dark float-end submitBtn rounded-pill btn-sm fw-bold bg-success border-0 fs-6 px-2 py-0" hidden>Submit Transaction</button>
-                        
+
                     </form>
                 </div>
             </div>
@@ -426,42 +438,14 @@
                                 </div>
                                 <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
                                     <div class="accordion-body">
-                                        <div style="font-size: x-small;" class="fw-bold">
-                                            <ul>
-                                                <li>
-                                                    RAIDSHIFT marketplace is an order book based <span class="text-success">decentralized exchange</span> powered by <a href="https://tron.network" target="_blank" class="text-success">TRON Blockchain</a>
-                                                </li>
-                                            </ul>
 
-                                            <ul>
-                                                <li>
-                                                    Enjoy <span class="text-success">trading fees</span> as low as <span class="text-success">0.1%</span> for market takers only
-                                                </li>
-                                            </ul>
-                                            <ul>
-                                                <li>
-                                                    Enjoy low or even <span class="text-success">zero transaction fees</span>
-                                                    (You need to stake TRX for Bandwith/Energy to reduce transaction fees)
-                                                </li>
-                                            </ul>
-                                            <ul>
-                                                <li>
-                                                    Please connect <a href="https://www.tronlink.org" target="_blank" class="text-success">TronLink Wallet</a> to <span class="text-success">TRON Mainnet (TronStack)</span> and select a trading pair (please do not connect to TRON Mainnet (TronGrid) due to connection issues)</small>
-                                                </li>
-                                            </ul>
-                                            <ul>
-                                                <li>
-                                                    To fiddle around connect TronLink Wallet to <span class="text-success">TRON Nile Testnet</span> and select a trading pair from the playground section</small>
-                                                </li>
-                                            </ul>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item mt-3">
                                 <div class="accordion-header" id="panelsStayOpen-headingOne">
                                     <button class="accordion-button collapsed pb-0 pt-0 btn-sm" style="font-size: small;" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
-                                        <img src="trx.svg" height="12px">&nbsp;TRON Mainnet
+                                        <img src="tron.svg" height="12px">&nbsp;TRON Mainnet
                                     </button>
                                 </div>
                                 <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
@@ -527,7 +511,7 @@
                             <div class="accordion-item mt-3">
                                 <div class="accordion-header" id="panelsStayOpen-headingTwo">
                                     <button class="accordion-button collapsed pb-0 pt-0 btn-sm" style="font-size: small;" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                        <img src="trx.svg" height="12px">&nbsp;TRON Nile Testnet (Playground)
+                                        <img src="tron.svg" height="12px">&nbsp;TRON Nile Testnet (Playground)
                                     </button>
                                 </div>
                                 <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
@@ -595,11 +579,43 @@
                         <div class="validationMsg small">
                         </div>
                     </form>
-                    <div class="text-secondary position-relative" style="font-size: small;">
-                        <a class="text-secondary" href="https://github.com/raidshift/marketplace-contract" target="_blank" class="link-secondary"><i class="bi bi-github"></i> GitHub</a>
+
+                    <div class="small text-light mb-4">
+                        <ul>
+                            <li>
+                                RAIDSHIFT marketplace is an order book based <span class="text-success">decentralized exchange</span> powered by <a href="https://tron.network" target="_blank" class="text-success">TRON Blockchain</a>
+                            </li>
+                        </ul>
+
+                        <ul>
+                            <li>
+                                Enjoy <span class="text-success">trading fees</span> as low as <span class="text-success">0.1%</span> for market takers only
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                Enjoy low or even <span class="text-success">zero transaction fees</span>
+                                (You need to stake TRX for Bandwith/Energy to reduce transaction fees)
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                Please connect <a href="https://www.tronlink.org" target="_blank" class="text-success">TronLink Wallet</a> to <span class="text-success">TRON Mainnet (TronStack)</span> and select a trading pair (please do not connect to TRON Mainnet (TronGrid) due to connection issues)</small>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                To fiddle around connect TronLink Wallet to <span class="text-success">TRON Nile Testnet</span> and select a trading pair from the playground section</small>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="text-secondary position-relative text-light" style="font-size: small;">
+                        <a class="text-light" href="https://github.com/raidshift/marketplace-contract" target="_blank" class="link-secondary"><i class="bi bi-github"></i> GitHub</a>
                         &nbsp;&nbsp;|&nbsp;&nbsp;
-                        <a class="text-secondary" href="https://twitter.com/raidshift" target="_blank" class="link-secondary"><i class="bi bi-twitter"></i> Twitter</a>
-                        <div class="position-absolute end-0 bottom-0" style="font-size: x-small;">v0.1 build <build>58</build>
+                        <a class="text-light" href="https://twitter.com/raidshift" target="_blank" class="link-secondary"><i class="bi bi-twitter"></i> Twitter</a>
+                        <div class="position-absolute end-0 bottom-0" style="font-size: x-small;">v0.1 build <build>59</build>
                         </div>
                     </div>
 
