@@ -43,10 +43,11 @@
         color: #303030 !important;
     }
 
-    .accordion-item {
+    /* .accordion-item {
         background-color: #303030;
         border: 0px !important;
     }
+
     .accordion-header {
         border: 0px !important;
     }
@@ -73,11 +74,12 @@
 
     .accordion-button.collapsed::after {
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%236c757d'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-    }
+    } */
 
     .modal-content {
         border-radius: 15px;
     }
+
 
     @-webkit-keyframes flash {
         from {
@@ -140,7 +142,7 @@
                     &nbsp;<span class="fw-bold">RAIDSHIFT</span>&nbsp;<span class="text-light">marketplace</span>
                 </div>
                 <!-- <div class="text-secondary" style="font-size: x-small;"><span class="account"></span> | <span class="balanceToken"></span> <span class="tokenName"></span> | <span class="balanceStable"></span> <span class="stableName"></span></div> -->
-                <div id="accountDiv" hidden>
+                <div id="accountDiv">
                     <div class="d-flex align-items-center text-light account" style="font-size: small;">
                         <div class="spinner-border spinner-border-xs" role="status">
                             <span class="visually-hidden">Connecting TronLink</span>
@@ -151,34 +153,194 @@
             </div>
         </nav>
 
-        <div class="container-fluid p-0 mt-1 pb-3" id="main" hidden>
+        <div class="container-fluid p-0 mt-1 pb-3" id="main">
             <div class="row g-3">
                 <div class="col-12 mb-0">
-                    <a href target="_blank" style="text-decoration: none;" onClick="window.location.reload();">
-                        <span id="conn_badge" class="badge rounded-pill bg-success text-dark px-2 py-1 fs-6"></span>
+                    <!-- <a href target="_blank" style="text-decoration: none;" onClick="window.location.reload();">
+                        <span id="conn_badge" class="badge rounded-pill bg-primary fs-6"></span>
                     </a>
                     <a href data-bs-toggle="modal" data-bs-target="#CreateOfferModal" id="createOfferLink" style="text-decoration: none;outline : none;" hidden>
-                        <span class="badge rounded-pill bg-success text-dark px-2 py-1 fs-6">Create Offer <i class="bi bi-caret-right-fill"></i></span>
-                    </a>
-                    <!-- <button type="button" class="btn btn-success text-dark rounded-pill btn-sm fw-bold" onClick="window.location.reload();">
+                        <span class="badge rounded-pill bg-success bg-primary fs-6">Create Offer <i class="bi bi-caret-right-fill"></i></span>
+                    </a> -->
+
+                    <!-- <button type="submit" class="btn btn-success text-dark float-end submitBtn rounded-pill btn-sm fw-bold bg-success border-0 fs-6 px-2 py-0" hidden>Submit Transaction</button> -->
+
+                    <button type="button" class="btn btn-success fw-bold text-dark rounded-pill bg-success border-0 fs-6 px-2 py-1" onClick="window.location.reload();">
                         <span id="conn_badge"></span>
                     </button>
-                    <button type="button" id="createOfferLink" class="btn btn-success text-dark rounded-pill btn-sm fw-bold" data-bs-toggle="modal" data-bs-target="#CreateOfferModal" hidden>Create Offer <i class="bi bi-caret-right-fill"></i></button>
-                    -->
+                    <button type="button" id="createOfferLink" class="btn btn-success fw-bold text-dark rounded-pill bg-success border-0 fs-6 px-2 py-1" data-bs-toggle="modal" data-bs-target="#CreateOfferModal" hidden>Create Offer <i class="bi bi-caret-right-fill"></i></button>
+
                 </div>
                 <!-- <div class="col-12 mb-0 mt-0 text-warning connect-msg" style="font-size: x-small;">
                     Connecting TronLink <span class="network"></span>
                 </div> -->
 
-                <!-- <div class="col-12 small">
-                    <div class="fw-bold fs-6"><i class="bi bi-list"></i> Select Trading Pair <span class="myoffersCount"></span></div>
-    
-                    <div class="border border-light rounded text-light overflow-auto px-2" style="min-height: 10vh;max-height: 30vh;font-size: small;">
-                        
-                    </div>
-                </div> -->
+                <div class="col-12 small" id="TradingPairs">
+                    <div class="fw-bold fs-6"><i class="bi bi-list"></i> Trading Pair</div>
+                    <div class="border border-light rounded text-light overflow-auto px-2">
 
-                <div class="col-12 small">
+                        <ul class="nav nav-pills my-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active rounded-pill fw-bold fs-6 py-1 px-3" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab"><span>TRON Mainnet</span></button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link rounded-pill fw-bold fs-6 py-1 px-3" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab">TRON Testnet</button>
+                            </li>
+                        </ul>
+                        <hr>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel">
+                                <div class="d-grid gap-3 col-10 mx-auto">
+                                    <button type="submit" class="btn btn-success btn-sm text-dark rounded-pill fw-bold" id="btc_usdt" onclick="this.form.submitter = 'btc_usdt'">
+                                        <div style="font-size: 1.25rem;display: flex;justify-content: center;">
+                                            <div style="display: flex;align-items: center">
+                                                <img src="btc.svg" height="20" width="20" />
+                                                <div class="mx-2">BTC</div>
+                                            </div>
+                                            <i class="bi bi-arrow-left-right"></i>&nbsp;
+                                            <div style="display: flex;align-items: center;">
+                                                <img src="usdt.svg" height="20" width="20" />
+                                                <div class="mx-2">USDT</div>
+                                            </div>
+                                        </div>
+                                    </button>
+                                    <button type="submit" class="btn btn-success btn-sm text-dark rounded-pill fw-bold" id="eth_usdt" onclick="this.form.submitter = 'eth_usdt'">
+                                        <div style="font-size: 1.25rem;display: flex;justify-content: center;">
+                                            <div style="display: flex;align-items: center">
+                                                <img src="eth.png" height="30" width="30" />
+                                                <div class="mx-2">ETH</div>
+                                            </div>
+                                            <i class="bi bi-arrow-left-right"></i>
+                                            <div style="display: flex;align-items: center;">
+                                                <div class="mx-2">USDT</div>
+                                                <img src="usdt.svg" height="30" width="30" />
+                                            </div>
+                                        </div>
+                                    </button>
+                                    <button type="submit" class="btn btn-success btn-sm text-dark rounded-pill fw-bold" id="ltc_usdt" onclick="this.form.submitter = 'ltc_usdt'">
+                                        <div style="font-size: 1.25rem;display: flex;justify-content: center;">
+                                            <div style="display: flex;align-items: center">
+                                                <img src="ltc.svg" height="30" width="30" />
+                                                <div class="mx-2">LTC</div>
+                                            </div>
+                                            <i class="bi bi-arrow-left-right"></i>
+                                            <div style="display: flex;align-items: center;">
+                                                <div class="mx-2">USDT</div>
+                                                <img src="usdt.svg" height="30" width="30" />
+                                            </div>
+                                        </div>
+                                    </button>
+                                    <button type="submit" class="btn btn-success btn-sm text-dark rounded-pill fw-bold" id="doge_usdt" onclick="this.form.submitter = 'doge_usdt'">
+                                        <div style="font-size: 1.25rem;display: flex;justify-content: center;">
+                                            <div style="display: flex;align-items: center">
+                                                <img src="doge.svg" height="30" width="30" />
+                                                <div class="mx-2">DOGE</div>
+                                            </div>
+                                            <i class="bi bi-arrow-left-right"></i>
+                                            <div style="display: flex;align-items: center;">
+                                                <div class="mx-2">USDT</div>
+                                                <img src="usdt.svg" height="30" width="30" />
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="mt-3 text-center text-light small">Please connect TronLink Wallet to TRON Mainnet</div>
+                            </div>
+
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel">
+                                <div class="d-grid gap-3 col-10 mx-auto">
+                                    <button type="submit" class="btn btn-success btn-sm text-dark rounded-pill fw-bold" id="jst_usdj_nile" onclick="this.form.submitter = 'jst_usdj_nile'">
+                                        <div style="font-size: 1.25rem;display: flex;justify-content: center;">
+                                            <div style="display: flex;align-items: center">
+                                                <img src="jst.svg" height="30" width="30" />
+                                                <div class="mx-2">JST</div>
+                                            </div>
+                                            <i class="bi bi-arrow-left-right"></i>
+                                            <div style="display: flex;align-items: center;">
+                                                <div class="mx-2">USDJ</div>
+                                                <img src="usdj.png" height="30" width="30" />
+                                            </div>
+                                        </div>
+                                    </button>
+                                    <button type="submit" class="btn btn-success btn-sm text-dark rounded-pill fw-bold" id="jst_usdt_nile" onclick="this.form.submitter = 'jst_usdt_nile'">
+                                        <div style="font-size: 1.25rem;display: flex;justify-content: center;">
+                                            <div style="display: flex;align-items: center">
+                                                <img src="jst.svg" height="30" width="30" />
+                                                <div class="mx-2">JST</div>
+                                            </div>
+                                            <i class="bi bi-arrow-left-right"></i>
+                                            <div style="display: flex;align-items: center;">
+                                                <div class="mx-2">USDT</div>
+                                                <img src="usdt.svg" height="30" width="30" />
+                                            </div>
+                                        </div>
+                                    </button>
+                                    <button type="submit" class="btn btn-success btn-sm text-dark rounded-pill fw-bold" id="btc_usdt_nile" onclick="this.form.submitter = 'btc_usdt_nile'">
+                                        <div style="font-size: 1.25rem;display: flex;justify-content: center;">
+                                            <div style="display: flex;align-items: center">
+                                                <img src="btc.svg" height="30" width="30" />
+                                                <div class="mx-2">BTC</div>
+                                            </div>
+                                            <i class="bi bi-arrow-left-right"></i>
+                                            <div style="display: flex;align-items: center;">
+                                                <div class="mx-2">USDT</div>
+                                                <img src="usdt.svg" height="30" width="30" />
+                                            </div>
+                                        </div>
+                                    </button>
+                                    <button type="submit" class="btn btn-success btn-sm text-dark rounded-pill fw-bold" id="eth_usdt_nile" onclick="this.form.submitter = 'eth_usdt_nile'">
+                                        <div style="font-size: 1.25rem;display: flex;justify-content: center;">
+                                            <div style="display: flex;align-items: center">
+                                                <img src="eth.png" height="30" width="30" />
+                                                <div class="mx-2">ETH</div>
+                                            </div>
+                                            <i class="bi bi-arrow-left-right"></i>
+                                            <div style="display: flex;align-items: center;">
+                                                <div class="mx-2">USDT</div>
+                                                <img src="usdt.svg" height="30" width="30" />
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="mt-3 text-center text-light small">Please connect TronLink Wallet to TRON Nile Testnet<br>Get free tokens on TRON Nile Testnet at <a href="https://nileex.io/join/getJoinPage" target="_blank" class="text-light">https://nileex.io</a></div>
+                            </div>
+                        </div>
+
+
+                        <hr>
+                        <div class="text-light">
+                            <ul>
+                                <li>
+                                    RAIDSHIFT marketplace is an order book based <span class="text-success">decentralized exchange</span> powered by <a href="https://tron.network" target="_blank" class="text-success">TRON Blockchain</a>
+                                </li>
+                            </ul>
+
+                            <ul>
+                                <li>
+                                    Enjoy <span class="text-success">trading fees</span> as low as <span class="text-success">0.1%</span> for market takers only
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    Enjoy low or even <span class="text-success">zero transaction fees</span>
+                                    (You need to stake TRX for Bandwith/Energy to reduce transaction fees)
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    Please connect <a href="https://www.tronlink.org" target="_blank" class="text-success">TronLink Wallet</a> to <span class="text-success">TRON Mainnet</span> and select a trading pair</small>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    To fiddle around connect TronLink Wallet to <span class="text-success">TRON Nile Testnet</span> and select a trading pair from the playground section</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 small" id="YourOffers" hidden>
                     <div class="fw-bold fs-6"><i class="bi bi-list"></i> Your Offers <span class="myoffersCount"></span>
                         <div class="float-end">
                             <span class="priceToken">
@@ -205,7 +367,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-lg-6 small">
+                <div class="col-12 col-lg-6 small" id="Buys" hidden>
                     <div class="fw-bold fs-6"><i class="bi bi-list"></i> Buy <span class="tokenName"></span> <span class="asksCount"></span></div>
                     <div class="border border-light rounded text-light overflow-auto px-2" style="min-height: 50vh;max-height: 75vh;font-size: small;">
                         <table class="table table-hover table-sm align-middle">
@@ -221,7 +383,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-lg-6 small">
+                <div class="col-12 col-lg-6 small" id="Sells" hidden>
                     <div class="fw-bold fs-6"><i class="bi bi-list"></i> Sell <span class="tokenName"></span> <span class="bidsCount"></span></div>
                     <div class="border border-light rounded text-light overflow-auto px-2" style="min-height: 50vh;max-height: 75vh;font-size: small;">
                         <table class="table table-hover table-sm align-middle">
@@ -312,7 +474,7 @@
                         <div class="validationMsg small">
                         </div>
 
-                        <button type="submit" class="btn btn-success text-dark float-end submitBtn rounded-pill btn-sm fw-bold bg-success border-0 fs-6 px-2 py-0" hidden>Submit Transaction</button>
+                        <button type="submit" class="btn btn-success text-dark float-end submitBtn rounded-pill btn-sm fw-bold bg-success border-0 fs-6 px-2 py-1" hidden>Submit Transaction</button>
                     </form>
                 </div>
             </div>
@@ -377,7 +539,7 @@
                         <div class="validationMsg small">
                         </div>
 
-                        <button type="submit" class="btn btn-success text-dark float-end submitBtn rounded-pill btn-sm fw-bold bg-success border-0 fs-6 px-2 py-0" hidden>Submit Transaction</button>
+                        <button type="submit" class="btn btn-success text-dark float-end submitBtn rounded-pill btn-sm fw-bold bg-success border-0 fs-6 px-2 py-1" hidden>Submit Transaction</button>
                     </form>
                 </div>
             </div>
@@ -412,7 +574,7 @@
                         <div class="validationMsg small">
                         </div>
 
-                        <button type="submit" class="btn btn-success text-dark float-end submitBtn rounded-pill btn-sm fw-bold bg-success border-0 fs-6 px-2 py-0" hidden>Submit Transaction</button>
+                        <button type="submit" class="btn btn-success text-dark float-end submitBtn rounded-pill btn-sm fw-bold bg-success border-0 fs-6 px-2 py-1" hidden>Submit Transaction</button>
 
                     </form>
                 </div>
@@ -620,7 +782,7 @@
                         <a class="text-light" href="https://github.com/raidshift/marketplace-contract" target="_blank" class="link-secondary"><i class="bi bi-github"></i> GitHub</a>
                         &nbsp;&nbsp;|&nbsp;&nbsp;
                         <a class="text-light" href="https://twitter.com/raidshift" target="_blank" class="link-secondary"><i class="bi bi-twitter"></i> Twitter</a>
-                        <div class="position-absolute end-0 bottom-0" style="font-size: x-small;">v0.1 build <build>60</build>
+                        <div class="position-absolute end-0 bottom-0" style="font-size: x-small;">v0.1 build <build>61</build>
                         </div>
                     </div>
 
