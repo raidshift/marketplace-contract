@@ -82,7 +82,7 @@
 
     .nav-link:not(.active) {
         background-color: #222 !important;
-        color: #303030 !important;
+        color: #444 !important;
         /* text-decoration: underline !important; */
         /* border: 1px solid #00bc8c !important; */
         border-bottom-left-radius: 0;
@@ -92,7 +92,7 @@
 
     .nav-link.active {
         background-color: #303030 !important;
-        color: #adb5bd !important;
+        /* color: #adb5bd !important; */
         /* background-color: #00bc8c !important;
         color: #303030 !important; */
         /* border: 1px solid #00bc8c !important; */
@@ -155,9 +155,9 @@
 <body style="min-height: 100vh">
     <div class="container">
         <nav class="navbar">
-            <div class="container-fluid p-0 fs-3">
+            <div class="container-fluid p-0 fs-4">
                 <div style="display: flex;align-items:center;">
-                    <img src="raidshift.png" height="32px" width="32px" alt="">
+                    <img src="raidshift.png" height="24px" width="24px" alt="">
                     &nbsp;<span class="fw-bold">RAIDSHIFT</span>&nbsp;<span class="text-light">marketplace</span>
                 </div>
                 <!-- <div class="text-secondary" style="font-size: x-small;"><span class="account"></span> | <span class="balanceToken"></span> <span class="tokenName"></span> | <span class="balanceStable"></span> <span class="stableName"></span></div> -->
@@ -214,8 +214,8 @@
                         </ul>
                     </div>
 
-                    <div class="text-light fw-bold fs-6 text-center">Trading Pairs</div>
-                    <div class="px-2">
+
+                    <div class="px-2 mb-4">
                         <ul class="nav nav-pills mt-4" id="pills-tab" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active pill fs-6 py-1 px-3" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab"><span>TRON Mainnet</span></button>
@@ -224,11 +224,11 @@
                                 <button class="nav-link pill fs-6 py-1 px-3" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab">TRON Testnet</button>
                             </li>
                         </ul>
-
+                        <!-- <div class="bg-dark text-light"><div class="mx-3 pt-4">Select trading pair</div></div> -->
                         <div class="tab-content" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="pills-home" role="tabpanel">
                                 <div class="list-group list-group-flush fs-5">
-                                    <button type="button" class="list-group-item list-group-item-action text-light" style="border-top-right-radius: 0.375rem;">
+                                    <button type="button" class="list-group-item list-group-item-action " style="border-top-right-radius: 0.375rem;">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="d-flex align-items-center">
                                                 <img src="btc.svg" height="32" width="32" class="me-2 my-2" />
@@ -239,7 +239,7 @@
                                             <i class="bi bi-caret-right-fill"></i>
                                         </div>
                                     </button>
-                                    <button type="button" class="list-group-item list-group-item-action text-light">
+                                    <button type="button" class="list-group-item list-group-item-action">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="d-flex align-items-center">
                                                 <img src="eth.png" height="32" width="32" class="me-2 my-2" />
@@ -250,7 +250,7 @@
                                             <i class="bi bi-caret-right-fill"></i>
                                         </div>
                                     </button>
-                                    <button type="button" class="list-group-item list-group-item-action text-light">
+                                    <button type="button" class="list-group-item list-group-item-action">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="d-flex align-items-center">
                                                 <img src="ltc.svg" height="32" width="32" class="me-2 my-2" />
@@ -261,7 +261,7 @@
                                             <i class="bi bi-caret-right-fill"></i>
                                         </div>
                                     </button>
-                                    <button type="button" class="list-group-item list-group-item-action text-light" style="border-bottom-left-radius: 0.375rem;border-bottom-right-radius: 0.375rem;">
+                                    <button type="button" class="list-group-item list-group-item-action" style="border-bottom-left-radius: 0.375rem;border-bottom-right-radius: 0.375rem;">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="d-flex align-items-center">
                                                 <img src="doge.svg" height="32" width="32" class="me-2 my-2" />
@@ -277,7 +277,7 @@
 
                             <div class="tab-pane fade" id="pills-profile" role="tabpanel">
                                 <div class="list-group list-group-flush fs-5">
-                                    <button type="button" class="list-group-item list-group-item-action text-light" style="border-top-left-radius: 0.375rem;border-top-right-radius: 0.375rem;">
+                                    <button type="button" class="list-group-item list-group-item-action" style="border-top-left-radius: 0.375rem;border-top-right-radius: 0.375rem;">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="d-flex align-items-center">
                                                 <img src="jst.svg" height="32" width="32" class="me-2 my-2" />
@@ -288,7 +288,7 @@
                                             <i class="bi bi-caret-right-fill"></i>
                                         </div>
                                     </button>
-                                    <button type="button" class="list-group-item list-group-item-action text-light">
+                                    <button type="button" class="list-group-item list-group-item-action">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="d-flex align-items-center">
                                                 <img src="jst.svg" height="32" width="32" class="me-2 my-2" />
@@ -299,7 +299,7 @@
                                             <i class="bi bi-caret-right-fill"></i>
                                         </div>
                                     </button>
-                                    <button type="button" class="list-group-item list-group-item-action text-light">
+                                    <button type="button" class="list-group-item list-group-item-action">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="d-flex align-items-center">
                                                 <img src="btc.svg" height="32" width="32" class="me-2 my-2" />
@@ -310,7 +310,7 @@
                                             <i class="bi bi-caret-right-fill"></i>
                                         </div>
                                     </button>
-                                    <button type="button" class="list-group-item list-group-item-action text-light" style="border-bottom-left-radius: 0.375rem;border-bottom-right-radius: 0.375rem;">
+                                    <button type="button" class="list-group-item list-group-item-action" style="border-bottom-left-radius: 0.375rem;border-bottom-right-radius: 0.375rem;">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="d-flex align-items-center">
                                                 <img src="eth.png" height="32" width="32" class="me-2 my-2" />
@@ -769,7 +769,7 @@
                         <a class="text-light" href="https://github.com/raidshift/marketplace-contract" target="_blank" class="link-secondary"><i class="bi bi-github"></i> GitHub</a>
                         &nbsp;&nbsp;|&nbsp;&nbsp;
                         <a class="text-light" href="https://twitter.com/raidshift" target="_blank" class="link-secondary"><i class="bi bi-twitter"></i> Twitter</a>
-                        <div class="position-absolute end-0 bottom-0" style="font-size: x-small;">v0.1 build <build>63</build>
+                        <div class="position-absolute end-0 bottom-0" style="font-size: x-small;">v0.1 build <build>64</build>
                         </div>
                     </div>
 
