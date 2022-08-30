@@ -43,6 +43,10 @@
         color: #303030 !important;
     }
 
+    .dropshadow {
+        filter: drop-shadow(0px 0px 2px #555);
+    }
+
     /* .accordion-item {
         background-color: #303030;
         border: 0px !important;
@@ -76,8 +80,12 @@
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%236c757d'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
     } */
 
-    .modal-content {
+    /* .modal-content {
         border-radius: 15px;
+    } */
+
+    .rounded15 {
+        border-radius: 15px !important;
     }
 
     .nav-link:not(.active) {
@@ -85,19 +93,31 @@
         color: #444 !important;
         /* text-decoration: underline !important; */
         /* border: 1px solid #00bc8c !important; */
-        border-bottom-left-radius: 0;
+        /* border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px; */
 
     }
 
     .nav-link.active {
         /* background-color: #303030 !important; */
+        background-color: #222 !important;
+
         /* color: #adb5bd !important; */
-        background-color: #00bc8c !important;
-        color: #303030 !important;
-        /* border: 1px solid #00bc8c !important; */
+        /* background-color: #00bc8c !important; */
+        /* color: #303030 !important; */
+        color: #00bc8c !important;
+
+        border: 3px solid #00bc8c !important;
+        border-top: 0px !important;
+        border-left: 0px !important;
+        border-right: 0px !important;
+        /* border-bottom: 2px ; */
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
+        /* border-top-left-radius: 20px;
+        border-top-right-radius: 20px; */
     }
 
     @-webkit-keyframes flash {
@@ -154,10 +174,10 @@
 
 <body style="min-height: 100vh">
     <div class="container">
-        <nav class="navbar" id="HeadingTop" hidden>
+        <nav class="navbar" id="HeadingTop">
             <div class="container p-0 fs-3">
                 <div style="display: flex;align-items:center;">
-                    <img src="raidshift.png" height="24px" width="24px" alt="">
+                    <img src="raidshift.png" height="32px" width="32px" alt="">
                     &nbsp;<span class="fw-bold">RAIDSHIFT</span>&nbsp;<span class="text-light">marketplace</span>
                 </div>
                 <!-- <div class="text-secondary" style="font-size: x-small;"><span class="account"></span> | <span class="balanceToken"></span> <span class="tokenName"></span> | <span class="balanceStable"></span> <span class="stableName"></span></div> -->
@@ -184,19 +204,19 @@
 
                     <!-- <button type="submit" class="btn btn-success text-dark float-end submitBtn rounded-pill btn-sm fw-bold bg-success border-0 fs-6 px-2 py-0" hidden>Submit Transaction</button> -->
 
-                    <button type="button" class="btn btn-success fw-bold text-dark rounded-pill bg-success border-0 fs-6 px-2 py-1" onClick="window.location.reload();">
+                    <button type="button" class="btn btn-success text-dark rounded-pill bg-success border-0 fs-6 px-2 py-0 fw-bold" onClick="window.location.reload();">
                         <span id="conn_badge"></span>
                     </button>
-                    <button type="button" id="createOfferLink" class="btn btn-success fw-bold text-dark rounded-pill bg-success border-0 fs-6 px-2 py-1 ms-2" data-bs-toggle="modal" data-bs-target="#CreateOfferModal" hidden>Create Offer <i class="bi bi-caret-right-fill"></i></button>
+                    <button type="button" id="createOfferLink" class="btn btn-success text-dark rounded-pill bg-success border-0 fs-6 px-2 py-0 ms-2 fw-bold" data-bs-toggle="modal" data-bs-target="#CreateOfferModal" hidden>Create Offer <i class="bi bi-caret-right-fill"></i></button>
 
                 </div>
                 <!-- <div class="col-12 mb-0 mt-0 text-warning connect-msg" style="font-size: x-small;">
                     Connecting TronLink <span class="network"></span>
                 </div> -->
 
-                <div class="col-12 col-lg-6 mt-5" style="display: flex; align-items: center; justify-content: center;" id="HeadingLeft">
+                <!-- <div class="col-12 mt-4" style="display: flex; align-items: center; justify-content: center;" id="HeadingLeft">
                     <div>
-                        <div class="d-flex align-items-center fs-2 justify-content-center" style="height: 32px;">
+                        <div class="d-flex align-items-center fs-3 justify-content-center" style="height: 32px;">
                             <img src="raidshift.png" height="32px" width="32px" alt="">
                             &nbsp;<span class="fw-bold">RAIDSHIFT</span>&nbsp;<span class="text-light">marketplace</span>
                         </div>
@@ -212,26 +232,26 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
-                <div class="col-12 col-lg-6 mt-5" id="TradingPairs">
+                <div class="col-12 mt-5" id="TradingPairs">
                     <!-- <div class="text-light mb-3 fs-5 d-flex justify-content-center">Select trading pair</div> -->
                     <div class="mb-4">
-                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                        <ul class="nav nav-pills mb-2" id="pills-tab" role="tablist">
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link active pill fs-6 py-1 px-3" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab"><span>Trading pair</span></button>
+                                <button class="nav-link active pill fs-6 py-0 px-1 ms-1 fw-bold" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab"><span>Trading pairs</span></button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link pill fs-6 py-1 px-3" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab">Trading pair (Testnet)</button>
+                                <button class="nav-link pill fs-6 py-0 px-1 ms-2 fw-bold" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab">Trading pairs (Testnet)</button>
                             </li>
                         </ul>
                         <div class="tab-content" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="pills-home" role="tabpanel">
-                                <div class="list-group list-group-flush fs-5 border border-success" style="border-radius: 0.375rem; border-top-left-radius: 0rem;">
-                                    <button type="button" class="list-group-item list-group-item-action">
+                                <div class="list-group list-group-flush fs-6 rounded15">
+                                    <button type="button" class="list-group-item list-group-item-action text-light fw-bold">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="d-flex align-items-center">
-                                                <img src="btc.svg" height="32" width="32" class="me-2 my-2" />
+                                                <img src="btc.svg" height="24" width="24" class="me-2 my-1" />
                                                 <div class="me-2">BTC</div>
                                                 <i class="bi bi-arrow-left-right fs-6"></i>
                                                 <div class="ms-2">USDT</div>
@@ -239,10 +259,10 @@
                                             <i class="bi bi-caret-right-fill"></i>
                                         </div>
                                     </button>
-                                    <button type="button" class="list-group-item list-group-item-action">
+                                    <button type="button" class="list-group-item list-group-item-action text-light fw-bold">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="d-flex align-items-center">
-                                                <img src="eth.png" height="32" width="32" class="me-2 my-2" />
+                                                <img src="eth.png" height="24" width="24" class="me-2 my-1" />
                                                 <div class="me-2">ETH</div>
                                                 <i class="bi bi-arrow-left-right fs-6"></i>
                                                 <div class="ms-2">USDT</div>
@@ -250,10 +270,10 @@
                                             <i class="bi bi-caret-right-fill"></i>
                                         </div>
                                     </button>
-                                    <button type="button" class="list-group-item list-group-item-action">
+                                    <button type="button" class="list-group-item list-group-item-action text-light fw-bold">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="d-flex align-items-center">
-                                                <img src="ltc.svg" height="32" width="32" class="me-2 my-2" />
+                                                <img src="ltc.svg" height="24" width="24" class="me-2 my-1" />
                                                 <div class="me-2">LTC</div>
                                                 <i class="bi bi-arrow-left-right fs-6"></i>
                                                 <div class="ms-2">USDT</div>
@@ -261,10 +281,10 @@
                                             <i class="bi bi-caret-right-fill"></i>
                                         </div>
                                     </button>
-                                    <button type="button" class="list-group-item list-group-item-action">
+                                    <button type="button" class="list-group-item list-group-item-action text-light fw-bold">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="d-flex align-items-center">
-                                                <img src="doge.svg" height="32" width="32" class="me-2 my-2" />
+                                                <img src="doge.svg" height="24" width="24" class="me-2 my-1" />
                                                 <div class="me-2">DOGE</div>
                                                 <i class="bi bi-arrow-left-right fs-6"></i>
                                                 <div class="ms-2">USDT</div>
@@ -277,11 +297,11 @@
                             </div>
 
                             <div class="tab-pane fade" id="pills-profile" role="tabpanel">
-                                <div class="list-group list-group-flush fs-5 border border-success" style="border-radius: 0.375rem;">
-                                    <button type="button" class="list-group-item list-group-item-action" onclick="setTradingPair('jst_usdj_nile')">
+                                <div class="list-group list-group-flush fs-6 rounded15">
+                                    <button type="button" class="list-group-item list-group-item-action text-light fw-bold" onclick="setTradingPair('jst_usdj_nile')">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="d-flex align-items-center">
-                                                <img src="jst.svg" height="32" width="32" class="me-2 my-2" />
+                                                <img src="jst.svg" height="24" width="24" class="me-2 my-1" />
                                                 <div class="me-2">JST</div>
                                                 <i class="bi bi-arrow-left-right fs-6"></i>
                                                 <div class="ms-2">USDJ</div>
@@ -289,10 +309,10 @@
                                             <i class="bi bi-caret-right-fill"></i>
                                         </div>
                                     </button>
-                                    <button type="button" class="list-group-item list-group-item-action" onclick="setTradingPair('jst_usdt_nile')">
+                                    <button type="button" class="list-group-item list-group-item-action text-light fw-bold" onclick="setTradingPair('jst_usdt_nile')">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="d-flex align-items-center">
-                                                <img src="jst.svg" height="32" width="32" class="me-2 my-2" />
+                                                <img src="jst.svg" height="24" width="24" class="me-2 my-1" />
                                                 <div class="me-2">JST</div>
                                                 <i class="bi bi-arrow-left-right fs-6"></i>
                                                 <div class="ms-2">USDT</div>
@@ -300,10 +320,10 @@
                                             <i class="bi bi-caret-right-fill"></i>
                                         </div>
                                     </button>
-                                    <button type="button" class="list-group-item list-group-item-action">
+                                    <button type="button" class="list-group-item list-group-item-action text-light fw-bold">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="d-flex align-items-center">
-                                                <img src="btc.svg" height="32" width="32" class="me-2 my-2" />
+                                                <img src="btc.svg" height="24" width="24" class="me-2 my-1" />
                                                 <div class="me-2">BTC</div>
                                                 <i class="bi bi-arrow-left-right fs-6 "></i>
                                                 <div class="ms-2">USDT</div>
@@ -311,10 +331,10 @@
                                             <i class="bi bi-caret-right-fill"></i>
                                         </div>
                                     </button>
-                                    <button type="button" class="list-group-item list-group-item-action">
+                                    <button type="button" class="list-group-item list-group-item-action text-light fw-bold">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="d-flex align-items-center">
-                                                <img src="eth.png" height="32" width="32" class="me-2 my-2" />
+                                                <img src="eth.png" height="24" width="24" class="me-2 my-1" />
                                                 <div class="me-2">ETH</div>
                                                 <i class="bi bi-arrow-left-right fs-6"></i>
                                                 <div class="ms-2">USDT</div>
@@ -330,7 +350,8 @@
                 </div>
 
                 <div class="col-12 small" id="YourOffers" hidden>
-                    <div class="fw-bold fs-6"><i class="bi bi-list"></i> Your Offers <span class="myoffersCount"></span>
+                    <div class="fw-bold fs-6 ms-1">
+                        <i class="bi bi-list"></i> Your Offers <span class="myoffersCount"></span>
                         <div class="float-end">
                             <span class="priceToken">
                                 <div class="spinner-border spinner-border-xs text-secondary" role="status">
@@ -340,7 +361,7 @@
                         </div>
                     </div>
 
-                    <div class="border border-light rounded text-light overflow-auto px-2" style="min-height: 10vh;max-height: 30vh;font-size: small;">
+                    <div class="rounded text-light overflow-auto px-2 bg-dark rounded15" style="min-height: 10vh;max-height: 30vh;font-size: small;">
                         <table class="table table-hover table-sm align-middle">
                             <thead class="text-light fw-bold">
                                 <td>#</td>
@@ -357,8 +378,10 @@
                 </div>
 
                 <div class="col-12 col-lg-6 small" id="Buys" hidden>
-                    <div class="fw-bold fs-6"><i class="bi bi-list"></i> Buy <span class="tokenName"></span> <span class="asksCount"></span></div>
-                    <div class="border border-light rounded text-light overflow-auto px-2" style="min-height: 50vh;max-height: 75vh;font-size: small;">
+                    <div class="fw-bold fs-6">
+                        <i class="bi bi-list"></i> Buy <span class="tokenName"></span> <span class="asksCount"></span>
+                    </div>
+                    <div class="rounded text-light overflow-auto px-2 bg-dark rounded15" style="min-height: 50vh;max-height: 75vh;font-size: small;">
                         <table class="table table-hover table-sm align-middle">
                             <thead class="text-light fw-bold">
                                 <td>Amount (<span class="tokenName"></span>)</td>
@@ -373,8 +396,10 @@
                 </div>
 
                 <div class="col-12 col-lg-6 small" id="Sells" hidden>
-                    <div class="fw-bold fs-6"><i class="bi bi-list"></i> Sell <span class="tokenName"></span> <span class="bidsCount"></span></div>
-                    <div class="border border-light rounded text-light overflow-auto px-2" style="min-height: 50vh;max-height: 75vh;font-size: small;">
+                    <div class="fw-bold fs-6">
+                        <i class="bi bi-list"></i> Sell <span class="tokenName"></span> <span class="bidsCount"></span>
+                    </div>
+                    <div class="rounded text-light overflow-auto px-2 bg-dark rounded15" style="min-height: 50vh;max-height: 75vh;font-size: small;">
                         <table class="table table-hover table-sm align-middle">
                             <thead class="text-light fw-bold">
                                 <td>Amount (<span class="tokenName"></span>)</td>
@@ -391,15 +416,15 @@
                 <div class="col-12 text-center text-light" style="font-size: small;position: relative;">
                     <span class="fw-bold">RAIDSHIFT marketplace</span>
                     <div style="position:absolute;right:0%;top:0px;font-size: x-small;" class="me-2">
-                        (build <build>72</build>)
+                        (build <build>73</build>)
                     </div>
                 </div>
 
                 <div class="col-12 text-center text-light mt-1" style="font-size: small;">
                     <a class="text-light" href="https://github.com/raidshift/marketplace-contract" target="_blank" class="link-light"><i class="bi bi-github"></i> GitHub</a>
                     &nbsp;&nbsp;|&nbsp;&nbsp;
-                    <a class="contractMarketplaceCodeURL text-light" href="" target="_blank" class="link-light"><i class="bi bi-box"></i> Contract</a>
-                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <span id="FooterContract" hidden><a class="contractMarketplaceCodeURL text-light" href="" target="_blank" class="link-light"><i class="bi bi-box"></i> Contract</a>
+                        &nbsp;&nbsp;|&nbsp;&nbsp;</span>
                     <a class="text-light" href="https://twitter.com/raidshift" target="_blank" class="link-light"><i class="bi bi-twitter"></i> Twitter</a>
                 </div>
 
@@ -410,7 +435,7 @@
     <!-- Modal CREATE OFFER -->
     <div class="modal fade" id="CreateOfferModal" tabindex="-1">
         <div class="modal-dialog">
-            <div class="modal-content">
+            <div class="modal-content rounded15">
                 <div class="modal-header">
                     <h5 class="modal-title">Create Offer</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -479,7 +504,7 @@
     <!-- Modal ACCEPT OFFER -->
     <div class="modal fade" id="AcceptOfferModal" tabindex="-1">
         <div class="modal-dialog">
-            <div class="modal-content">
+            <div class="modal-content rounded15">
                 <div class="modal-header">
                     <h5 class="modal-title"><span class="accept-offer-type"></span></h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -544,7 +569,7 @@
     <!-- Modal CANCEL OFFER -->
     <div class="modal fade" id="CancelOfferModal" tabindex="-1">
         <div class="modal-dialog">
-            <div class="modal-content">
+            <div class="modal-content rounded15">
                 <div class="modal-header">
                     <h5 class="modal-title">Cancel Offer</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -580,7 +605,7 @@
     <!-- Modal Entry -->
     <div class="modal fade" id="EntryModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
         <div class="modal-dialog modal-xl" style="padding-top: 80px">
-            <div class="modal-content">
+            <div class="modal-content rounded15">
                 <div class="modal-header">
                     <h5 class="modal-title">Select Trading Pair</h5>
                     <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
