@@ -232,6 +232,9 @@
                     </div>
                 </div> -->
 
+                <!-- <div style="font-size: small;text-align: center;" class="text-light me-3">Select trading pair on TRON Mainnet</div> -->
+                <!-- <div style="font-size: small;" class="text-light ms-1 mt-2">Select trading pair on TRON Nile Testnet (obtain free tokens at <a href="https://nileex.io/join/getJoinPage" target="_blank" class="text-light">https://nileex.io</a>)</div> -->
+
                 <div class="col-12 mt-3" id="TradingPairs">
                     <div class="rounded15 bg-secondary">
                         <ul class="nav nav-pills py-2 ps-3" id="pills-tab" role="tablist">
@@ -242,12 +245,10 @@
                                 <button class="nav-link rounded-pill fs-6 py-0 px-2 ms-2 fw-bold" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab">TRON Nile Testnet</button>
                             </li>
                         </ul>
-
                         <div class="tab-content" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="pills-home" role="tabpanel">
-                                <!-- <div style="font-size: small;" class="text-light ms-1 mt-2">Select trading pair on TRON Mainnet</div> -->
                                 <div class="list-group list-group-flush fs-6 rounded15-bottom">
-                                    <button type="button" class="list-group-item list-group-item-action text-light fw-bold">
+                                    <button type="button" class="list-group-item list-group-item-action text-light fw-bold" onclick="setTradingPair('btc_usdt')">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="d-flex align-items-center">
                                                 <img src="btc.svg" height="24" width="24" class="me-2" />
@@ -258,7 +259,7 @@
                                             <i class="bi bi-caret-right-fill"></i>
                                         </div>
                                     </button>
-                                    <button type="button" class="list-group-item list-group-item-action text-light fw-bold">
+                                    <button type="button" class="list-group-item list-group-item-action text-light fw-bold" onclick="setTradingPair('eth_usdt')">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="d-flex align-items-center">
                                                 <img src="eth.png" height="24" width="24" class="me-2" />
@@ -269,7 +270,7 @@
                                             <i class="bi bi-caret-right-fill"></i>
                                         </div>
                                     </button>
-                                    <button type="button" class="list-group-item list-group-item-action text-light fw-bold">
+                                    <button type="button" class="list-group-item list-group-item-action text-light fw-bold" onclick="setTradingPair('ltc_usdt')">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="d-flex align-items-center">
                                                 <img src="ltc.svg" height="24" width="24" class="me-2" />
@@ -280,7 +281,7 @@
                                             <i class="bi bi-caret-right-fill"></i>
                                         </div>
                                     </button>
-                                    <button type="button" class="list-group-item list-group-item-action text-light fw-bold">
+                                    <button type="button" class="list-group-item list-group-item-action text-light fw-bold" onclick="setTradingPair('doge_usdt')">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="d-flex align-items-center">
                                                 <img src="doge.svg" height="24" width="24" class="me-2" />
@@ -295,7 +296,6 @@
                             </div>
 
                             <div class="tab-pane fade" id="pills-profile" role="tabpanel">
-                                <!-- <div style="font-size: small;" class="text-light ms-1 mt-2">Select trading pair on TRON Nile Testnet (obtain free tokens at <a href="https://nileex.io/join/getJoinPage" target="_blank" class="text-light">https://nileex.io</a>)</div> -->
                                 <div class="list-group list-group-flush fs-6 rounded15-bottom">
                                     <button type="button" class="list-group-item list-group-item-action text-light fw-bold" onclick="setTradingPair('jst_usdj_nile')">
                                         <div class="d-flex justify-content-between align-items-center">
@@ -347,7 +347,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 small" id="YourOffers">
+                <div class="col-12 small" id="YourOffers" hidden>
                     <div class="fw-bold fs-6 ms-1">
                         <i class="bi bi-list"></i> Your Offers <span class="myoffersCount"></span>
 
@@ -369,7 +369,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-lg-6 small" id="Buys">
+                <div class="col-12 col-lg-6 small" id="Buys" hidden>
                     <div class="fw-bold fs-6 ms-1">
                         <i class="bi bi-list"></i> Buy <span class="tokenName"></span> <span class="asksCount"></span>
                     </div>
@@ -387,7 +387,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-lg-6 small" id="Sells">
+                <div class="col-12 col-lg-6 small" id="Sells" hidden>
                     <div class="fw-bold fs-6 ms-1">
                         <i class="bi bi-list"></i> Sell <span class="tokenName"></span> <span class="bidsCount"></span>
                     </div>
@@ -408,7 +408,7 @@
                 <div class="col-12 text-center text-light" style="font-size: small;position: relative;">
                     <span class="fw-bold">RAIDSHIFT marketplace</span>
                     <div style="position:absolute;right:0%;top:0px;font-size: x-small;" class="me-2">
-                        (build <build>79</build>)
+                        (build <build>80</build>)
                     </div>
                 </div>
 
