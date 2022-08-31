@@ -88,8 +88,17 @@
         border-radius: 15px !important;
     }
 
+    .rounded15-bottom {
+        border-radius: 15px !important;
+        border-top-left-radius: 0px !important;
+        border-top-right-radius: 0px !important;
+    }
+
     .nav-link:not(.active) {
-        background-color: #222 !important;
+        /* background-color: #222 !important; */
+        background-color: #303030 !important;
+        /* color: #292929 !important; */
+
         color: #444 !important;
         /* text-decoration: underline !important; */
         /* border: 1px solid #00bc8c !important; */
@@ -108,7 +117,7 @@
         background-color: #00bc8c !important;
         color: #303030 !important;
         /* color: #00bc8c !important; */
-/* 
+        /* 
         border: 3px solid #00bc8c !important;
         border-top: 0px !important;
         border-left: 0px !important;
@@ -195,20 +204,21 @@
         <div class="container p-0 mt-1 pb-3">
             <div class="row g-3">
                 <div class="col-12" id="MenuBar" hidden>
-                    <!-- <a href target="_blank" style="text-decoration: none;" onClick="window.location.reload();">
+                    <div class="rounded15 py-2 ps-3" style="background-color: #292929">
+                        <!-- <a href target="_blank" style="text-decoration: none;" onClick="window.location.reload();">
                         <span id="conn_badge" class="badge rounded-pill bg-primary fs-6"></span>
                     </a>
                     <a href data-bs-toggle="modal" data-bs-target="#CreateOfferModal" id="createOfferLink" style="text-decoration: none;outline : none;" hidden>
                         <span class="badge rounded-pill bg-success bg-primary fs-6">Create Offer <i class="bi bi-caret-right-fill"></i></span>
                     </a> -->
 
-                    <!-- <button type="submit" class="btn btn-success text-dark float-end submitBtn rounded-pill btn-sm fw-bold bg-success border-0 fs-6 px-2 py-0" hidden>Submit Transaction</button> -->
+                        <!-- <button type="submit" class="btn btn-success text-dark float-end submitBtn rounded-pill btn-sm fw-bold bg-success border-0 fs-6 px-2 py-0" hidden>Submit Transaction</button> -->
 
-                    <button type="button" class="btn btn-success text-dark rounded-pill bg-success border-0 fs-6 px-2 py-0 fw-bold" onClick="window.location.reload();">
-                        <span id="conn_badge"></span>
-                    </button>
-                    <button type="button" id="createOfferLink" class="btn btn-success text-dark rounded-pill bg-success border-0 fs-6 px-2 ms-2 py-0 fw-bold" data-bs-toggle="modal" data-bs-target="#CreateOfferModal" hidden>Create Offer <i class="bi bi-caret-right-fill"></i></button>
-
+                        <button type="button" class="btn btn-success text-dark rounded-pill bg-success border-0 fs-6 px-2 py-0 fw-bold" onClick="window.location.reload();">
+                            <span id="conn_badge"></span>
+                        </button>
+                        <button type="button" id="createOfferLink" class="btn btn-success text-dark rounded-pill bg-success border-0 fs-6 px-2 ms-2 py-0 fw-bold" data-bs-toggle="modal" data-bs-target="#CreateOfferModal" hidden>Create Offer <i class="bi bi-caret-right-fill"></i></button>
+                    </div>
                 </div>
                 <!-- <div class="col-12 mb-0 mt-0 text-warning connect-msg" style="font-size: x-small;">
                     Connecting TronLink <span class="network"></span>
@@ -235,8 +245,8 @@
                 </div> -->
 
                 <div class="col-12 mt-3" id="TradingPairs">
-                    <div>
-                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                    <div class="rounded15" style="background-color: #292929">
+                        <ul class="nav nav-pills py-2 ps-3" id="pills-tab" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active rounded-pill fs-6 py-0 px-2 fw-bold" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab"><span>Trading pairs</span></button>
                             </li>
@@ -244,11 +254,11 @@
                                 <button class="nav-link rounded-pill fs-6 py-0 px-2 ms-2 fw-bold" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab">Trading pairs (Testnet)</button>
                             </li>
                         </ul>
-                        
-                        <div class="tab-content mb-3" id="pills-tabContent">
+
+                        <div class="tab-content" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="pills-home" role="tabpanel">
-                                <div style="font-size: small;" class="text-light ms-1 mt-2">Select trading pair on TRON Mainnet</div>
-                                <div class="list-group list-group-flush fs-6 rounded15">
+                                <!-- <div style="font-size: small;" class="text-light ms-1 mt-2">Select trading pair on TRON Mainnet</div> -->
+                                <div class="list-group list-group-flush fs-6 rounded15-bottom">
                                     <button type="button" class="list-group-item list-group-item-action text-light fw-bold">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="d-flex align-items-center">
@@ -297,8 +307,8 @@
                             </div>
 
                             <div class="tab-pane fade" id="pills-profile" role="tabpanel">
-                                <div style="font-size: small;" class="text-light ms-1 mt-2">Select trading pair on TRON Nile Testnet (obtain free tokens at <a href="https://nileex.io/join/getJoinPage" target="_blank" class="text-light">https://nileex.io</a>)</div>
-                                <div class="list-group list-group-flush fs-6 rounded15">
+                                <!-- <div style="font-size: small;" class="text-light ms-1 mt-2">Select trading pair on TRON Nile Testnet (obtain free tokens at <a href="https://nileex.io/join/getJoinPage" target="_blank" class="text-light">https://nileex.io</a>)</div> -->
+                                <div class="list-group list-group-flush fs-6 rounded15-bottom">
                                     <button type="button" class="list-group-item list-group-item-action text-light fw-bold" onclick="setTradingPair('jst_usdj_nile')">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="d-flex align-items-center">
@@ -416,7 +426,7 @@
                 <div class="col-12 text-center text-light" style="font-size: small;position: relative;">
                     <span class="fw-bold">RAIDSHIFT marketplace</span>
                     <div style="position:absolute;right:0%;top:0px;font-size: x-small;" class="me-2">
-                        (build <build>74</build>)
+                        (build <build>75</build>)
                     </div>
                 </div>
 
