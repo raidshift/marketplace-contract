@@ -95,38 +95,13 @@
     }
 
     .nav-link:not(.active) {
-        /* background-color: #222 !important; */
         background-color: #303030 !important;
-        /* color: #292929 !important; */
-
         color: #444 !important;
-        /* text-decoration: underline !important; */
-        /* border: 1px solid #00bc8c !important; */
-        /* border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px; */
-
     }
 
     .nav-link.active {
-        /* background-color: #303030 !important; */
-        /* background-color: #222 !important; */
-
-        /* color: #adb5bd !important; */
         background-color: #00bc8c !important;
         color: #303030 !important;
-        /* color: #00bc8c !important; */
-        /* 
-        border: 3px solid #00bc8c !important;
-        border-top: 0px !important;
-        border-left: 0px !important;
-        border-right: 0px !important; */
-        /* border-bottom: 2px ; */
-        /* border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0; */
-        /* border-top-left-radius: 20px;
-        border-top-right-radius: 20px; */
     }
 
     @-webkit-keyframes flash {
@@ -205,6 +180,14 @@
             <div class="row g-3">
                 <div class="col-12" id="MenuBar" hidden>
                     <div class="rounded15 py-2 ps-3" style="background-color: #292929">
+                        <div class="float-end px-2 text-light">
+                            <span class="priceToken">
+                                <div class="spinner-border spinner-border-xs" role="status">
+                                    <span class="visually-hidden">Connecting CoinGecko</span>
+                                </div>
+                            </span>
+                            <span class="stableName"></span>/<span class="tokenName me-1"></span>
+                        </div>
                         <!-- <a href target="_blank" style="text-decoration: none;" onClick="window.location.reload();">
                         <span id="conn_badge" class="badge rounded-pill bg-primary fs-6"></span>
                     </a>
@@ -362,13 +345,7 @@
                 <div class="col-12 small" id="YourOffers">
                     <div class="fw-bold fs-6 ms-1">
                         <i class="bi bi-list"></i> Your Offers <span class="myoffersCount"></span>
-                        <div class="float-end">
-                            <span class="priceToken">
-                                <div class="spinner-border spinner-border-xs text-secondary" role="status">
-                                    <span class="visually-hidden">Connecting CoinGecko</span>
-                                </div>
-                            </span> <span class="stableName"></span>/<span class="tokenName me-1"></span>
-                        </div>
+
                     </div>
 
                     <div class="rounded text-light overflow-auto px-2 bg-dark rounded15" style="min-height: 10vh;max-height: 30vh;font-size: small;">
@@ -426,7 +403,7 @@
                 <div class="col-12 text-center text-light" style="font-size: small;position: relative;">
                     <span class="fw-bold">RAIDSHIFT marketplace</span>
                     <div style="position:absolute;right:0%;top:0px;font-size: x-small;" class="me-2">
-                        (build <build>75</build>)
+                        (build <build>76</build>)
                     </div>
                 </div>
 
