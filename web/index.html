@@ -47,42 +47,9 @@
         filter: drop-shadow(0px 0px 2px #555);
     }
 
-    /* .accordion-item {
-        background-color: #303030;
-        border: 0px !important;
+    a {
+        outline: none;
     }
-
-    .accordion-header {
-        border: 0px !important;
-    }
-
-    .accordion-button {
-        background-color: #303030;
-        color: #6c757d !important;
-        border: 0px !important;
-
-    }
-
-    .accordion-button:focus {
-        box-shadow: none;
-    }
-
-    .accordion-button:not(.collapsed) {
-        background-color: #303030;
-        color: #6c757d !important;
-    }
-
-    .accordion-button:not(.collapsed)::after {
-        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%236c757d'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-    }
-
-    .accordion-button.collapsed::after {
-        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%236c757d'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-    } */
-
-    /* .modal-content {
-        border-radius: 15px;
-    } */
 
     .rounded15 {
         border-radius: 15px !important;
@@ -417,16 +384,20 @@
                 <div class="col-12 text-center text-light" style="font-size: small;position: relative;">
                     <span class="fw-bold">RAIDSHIFT marketplace</span>
                     <div style="position:absolute;right:0%;top:0px;font-size: x-small;" class="me-2">
-                        (build <build>85</build>)
+                        (build <build>86</build>)
                     </div>
                 </div>
 
                 <div class="col-12 text-center text-light mt-1" style="font-size: small;">
+                    <a class="text-light" href="https://github.com/raidshift/marketplace-contract" data-bs-toggle="modal" data-bs-target="#AboutModal" class="link-light"><i class="bi bi-info-circle"></i> About</a>
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
                     <a class="text-light" href="https://github.com/raidshift/marketplace-contract" target="_blank" class="link-light"><i class="bi bi-github"></i> GitHub</a>
                     &nbsp;&nbsp;|&nbsp;&nbsp;
                     <span id="FooterContract" hidden><a class="contractMarketplaceCodeURL text-light" href="" target="_blank" class="link-light"><i class="bi bi-box"></i> Contract</a>
                         &nbsp;&nbsp;|&nbsp;&nbsp;</span>
                     <a class="text-light" href="https://twitter.com/raidshift" target="_blank" class="link-light"><i class="bi bi-twitter"></i> Twitter</a>
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a class="text-light" href="mailto:raidshift.marketplace@gmail.com" class="link-light"><i class="bi bi-envelope-fill"></i> Mail</a>
                 </div>
 
             </div>
@@ -604,18 +575,18 @@
     </div>
 
     <!-- Modal About -->
-    <div class="modal fade" id="AboutModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
-        <div class="modal-dialog modal-xl" style="padding-top: 80px">
+    <div class="modal fade" id="AboutModal" tabindex="-1">
+        <div class="modal-dialog modal-lg" style="padding-top: 80px">
             <div class="modal-content rounded15">
                 <div class="modal-header">
-                    <h5 class="modal-title">Select Trading Pair</h5>
-                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                    <h5 class="modal-title">About RAIDSHIFT marketplace</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="small text-light mb-4">
+                    <div class="small text-light">
                         <ul>
                             <li>
-                                RAIDSHIFT marketplace is an order book based <span class="text-success">decentralized exchange</span> powered by <a href="https://tron.network" target="_blank" class="text-success">TRON Blockchain</a>
+                                RAIDSHIFT marketplace is a <span class="text-success">decentralized Peer-to-Peer crypto token exchange</span> powered by the <a href="https://tron.network" target="_blank" class="text-success">TRON Blockchain</a>
                             </li>
                         </ul>
 
@@ -632,12 +603,12 @@
                         </ul>
                         <ul>
                             <li>
-                                Please connect <a href="https://www.tronlink.org" target="_blank" class="text-success">TronLink Wallet</a> to <span class="text-success">TRON Mainnet</span> and select a trading pair</small>
+                                Connect your wallet via <a href="https://www.tronlink.org" target="_blank" class="text-success">TronLink</a> to <span class="text-success">TRON Mainnet</span> and select a trading pair on TRON Mainnet</small>
                             </li>
                         </ul>
                         <ul>
                             <li>
-                                To fiddle around connect TronLink Wallet to <span class="text-success">TRON Nile Testnet</span> and select a trading pair from the playground section</small>
+                                Alternatively connect your wallet to <span class="text-success">TRON Nile Testnet</span> and select a trading pair on TRON Nile Testnet. Get free test tokens at <a href="https://nileex.io/join/getJoinPage" target="_blank" class="text-light">https://nileex.io</a> !</small>
                             </li>
                         </ul>
                     </div>
