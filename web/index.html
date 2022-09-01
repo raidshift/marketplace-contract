@@ -417,7 +417,7 @@
                 <div class="col-12 text-center text-light" style="font-size: small;position: relative;">
                     <span class="fw-bold">RAIDSHIFT marketplace</span>
                     <div style="position:absolute;right:0%;top:0px;font-size: x-small;" class="me-2">
-                        (build <build>84</build>)
+                        (build <build>85</build>)
                     </div>
                 </div>
 
@@ -603,8 +603,8 @@
         </div>
     </div>
 
-    <!-- Modal Entry -->
-    <div class="modal fade" id="EntryModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+    <!-- Modal About -->
+    <div class="modal fade" id="AboutModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
         <div class="modal-dialog modal-xl" style="padding-top: 80px">
             <div class="modal-content rounded15">
                 <div class="modal-header">
@@ -612,162 +612,6 @@
                     <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
                 </div>
                 <div class="modal-body">
-                    <!-- <div style="font-size: 1.25rem;display: flex;align-items: center;">
-                        <img src="raidshift.png" height="24px" width="24px" alt="">&nbsp;<span class="fw-bold text-light">RAIDSHIFT</span>&nbsp;<span class="text-secondary">marketplace</span>
-                    </div>
-                    <hr> -->
-                    <form class="entry-validation" autocomplete="off">
-                        <div class="accordion" id="accordionPanelsStayOpenExample">
-                            <!-- <div class="accordion-item">
-                                <div class="accordion-header" id="panelsStayOpen-headingThree">
-                                    <button class="accordion-button collapsed pb-0 pt-0 btn-sm" style="font-size: small;" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                                        <i class="bi bi-question-circle-fill text-success"></i>&nbsp;About RAIDSHIFT marketplace
-                                    </button>
-                                </div>
-                                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-                                    <div class="accordion-body">
-
-                                    </div>
-                                </div>
-                            </div> -->
-                            <div class="accordion-item mt-3">
-                                <div class="accordion-header" id="panelsStayOpen-headingOne">
-                                    <button class="accordion-button pb-0 pt-0 btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
-                                        <img src="tron.svg" height="12px">&nbsp;<span class="text-light">TRON Mainnet</span>
-                                    </button>
-                                </div>
-                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-                                    <div class="accordion-body">
-                                        <div class="d-grid gap-3 col-10 mx-auto">
-                                            <button type="submit" class="btn btn-success btn-sm text-dark rounded-pill fw-bold" id="btc_usdt" onclick="this.form.submitter = 'btc_usdt'">
-                                                <div style="font-size: 1.25rem;display: flex;justify-content: center;">
-                                                    <div style="display: flex;align-items: center">
-                                                        <img src="btc.svg" height="30" width="30" />
-                                                        <div class="mx-2">BTC</div>
-                                                    </div>
-                                                    <i class="bi bi-arrow-left-right"></i>
-                                                    <div style="display: flex;align-items: center;">
-                                                        <div class="mx-2">USDT</div>
-                                                        <img src="usdt.svg" height="30" width="30" />
-                                                    </div>
-                                                </div>
-                                            </button>
-                                            <button type="submit" class="btn btn-success btn-sm text-dark rounded-pill fw-bold" id="eth_usdt" onclick="this.form.submitter = 'eth_usdt'">
-                                                <div style="font-size: 1.25rem;display: flex;justify-content: center;">
-                                                    <div style="display: flex;align-items: center">
-                                                        <img src="eth.png" height="30" width="30" />
-                                                        <div class="mx-2">ETH</div>
-                                                    </div>
-                                                    <i class="bi bi-arrow-left-right"></i>
-                                                    <div style="display: flex;align-items: center;">
-                                                        <div class="mx-2">USDT</div>
-                                                        <img src="usdt.svg" height="30" width="30" />
-                                                    </div>
-                                                </div>
-                                            </button>
-                                            <button type="submit" class="btn btn-success btn-sm text-dark rounded-pill fw-bold" id="ltc_usdt" onclick="this.form.submitter = 'ltc_usdt'">
-                                                <div style="font-size: 1.25rem;display: flex;justify-content: center;">
-                                                    <div style="display: flex;align-items: center">
-                                                        <img src="ltc.svg" height="30" width="30" />
-                                                        <div class="mx-2">LTC</div>
-                                                    </div>
-                                                    <i class="bi bi-arrow-left-right"></i>
-                                                    <div style="display: flex;align-items: center;">
-                                                        <div class="mx-2">USDT</div>
-                                                        <img src="usdt.svg" height="30" width="30" />
-                                                    </div>
-                                                </div>
-                                            </button>
-                                            <button type="submit" class="btn btn-success btn-sm text-dark rounded-pill fw-bold" id="doge_usdt" onclick="this.form.submitter = 'doge_usdt'">
-                                                <div style="font-size: 1.25rem;display: flex;justify-content: center;">
-                                                    <div style="display: flex;align-items: center">
-                                                        <img src="doge.svg" height="30" width="30" />
-                                                        <div class="mx-2">DOGE</div>
-                                                    </div>
-                                                    <i class="bi bi-arrow-left-right"></i>
-                                                    <div style="display: flex;align-items: center;">
-                                                        <div class="mx-2">USDT</div>
-                                                        <img src="usdt.svg" height="30" width="30" />
-                                                    </div>
-                                                </div>
-                                            </button>
-                                        </div>
-                                        <div class="mt-4 text-center text-light small">Please connect TronLink Wallet to TRON Mainnet</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item mt-3">
-                                <div class="accordion-header" id="panelsStayOpen-headingTwo">
-                                    <button class="accordion-button collapsed pb-0 pt-0 btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                        <img src="tron.svg" height="12px">&nbsp;TRON Nile Testnet (Playground)
-                                    </button>
-                                </div>
-                                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-                                    <div class="accordion-body">
-                                        <div style="font-size: x-small;" class="mb-4 text-center fw-bold">Please connect TronLink Wallet to TRON Nile Testnet.<br>Get free tokens on TRON Nile Testnet at <a href="https://nileex.io/join/getJoinPage" target="_blank" class="text-secondary">https://nileex.io</a></div>
-                                        <div class="d-grid gap-3 col-10 mx-auto">
-                                            <button type="submit" class="btn btn-success btn-sm text-dark rounded-pill fw-bold" id="jst_usdj_nile" onclick="this.form.submitter = 'jst_usdj_nile'">
-                                                <div style="font-size: 1.25rem;display: flex;justify-content: center;">
-                                                    <div style="display: flex;align-items: center">
-                                                        <img src="jst.svg" height="30" width="30" />
-                                                        <div class="mx-2">JST</div>
-                                                    </div>
-                                                    <i class="bi bi-arrow-left-right"></i>
-                                                    <div style="display: flex;align-items: center;">
-                                                        <div class="mx-2">USDJ</div>
-                                                        <img src="usdj.png" height="30" width="30" />
-                                                    </div>
-                                                </div>
-                                            </button>
-                                            <button type="submit" class="btn btn-success btn-sm text-dark rounded-pill fw-bold" id="jst_usdt_nile" onclick="this.form.submitter = 'jst_usdt_nile'">
-                                                <div style="font-size: 1.25rem;display: flex;justify-content: center;">
-                                                    <div style="display: flex;align-items: center">
-                                                        <img src="jst.svg" height="30" width="30" />
-                                                        <div class="mx-2">JST</div>
-                                                    </div>
-                                                    <i class="bi bi-arrow-left-right"></i>
-                                                    <div style="display: flex;align-items: center;">
-                                                        <div class="mx-2">USDT</div>
-                                                        <img src="usdt.svg" height="30" width="30" />
-                                                    </div>
-                                                </div>
-                                            </button>
-                                            <button type="submit" class="btn btn-success btn-sm text-dark rounded-pill fw-bold" id="btc_usdt_nile" onclick="this.form.submitter = 'btc_usdt_nile'">
-                                                <div style="font-size: 1.25rem;display: flex;justify-content: center;">
-                                                    <div style="display: flex;align-items: center">
-                                                        <img src="btc.svg" height="30" width="30" />
-                                                        <div class="mx-2">BTC</div>
-                                                    </div>
-                                                    <i class="bi bi-arrow-left-right"></i>
-                                                    <div style="display: flex;align-items: center;">
-                                                        <div class="mx-2">USDT</div>
-                                                        <img src="usdt.svg" height="30" width="30" />
-                                                    </div>
-                                                </div>
-                                            </button>
-                                            <button type="submit" class="btn btn-success btn-sm text-dark rounded-pill fw-bold" id="eth_usdt_nile" onclick="this.form.submitter = 'eth_usdt_nile'">
-                                                <div style="font-size: 1.25rem;display: flex;justify-content: center;">
-                                                    <div style="display: flex;align-items: center">
-                                                        <img src="eth.png" height="30" width="30" />
-                                                        <div class="mx-2">ETH</div>
-                                                    </div>
-                                                    <i class="bi bi-arrow-left-right"></i>
-                                                    <div style="display: flex;align-items: center;">
-                                                        <div class="mx-2">USDT</div>
-                                                        <img src="usdt.svg" height="30" width="30" />
-                                                    </div>
-                                                </div>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="validationMsg small">
-                        </div>
-                    </form>
-
                     <div class="small text-light mb-4">
                         <ul>
                             <li>
@@ -797,19 +641,11 @@
                             </li>
                         </ul>
                     </div>
-
-
-                    <div class="text-secondary position-relative text-light" style="font-size: small;">
-                        <a class="text-light" href="https://github.com/raidshift/marketplace-contract" target="_blank" class="link-secondary"><i class="bi bi-github"></i> GitHub</a>
-                        &nbsp;&nbsp;|&nbsp;&nbsp;
-                        <a class="text-light" href="https://twitter.com/raidshift" target="_blank" class="link-secondary"><i class="bi bi-twitter"></i> Twitter</a>
-                    </div>
                 </div>
-
             </div>
         </div>
     </div>
-    </div>
+    <!-- </div> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/js/bootstrap.min.js" integrity="sha512-ewfXo9Gq53e1q1+WDTjaHAGZ8UvCWq0eXONhwDuIoaH8xz2r96uoAYaQCm1oQhnBfRXrvJztNXFsTloJfgbL5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
