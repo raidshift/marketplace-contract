@@ -155,62 +155,35 @@
         <div class="container p-0 mt-1 pb-3">
             <div class="row g-3">
                 <div class="col-12" id="MenuBar" hidden>
-                    <div class="rounded15 py-2 ps-3 bg-secondary">
-                        <div class="float-end px-2 text-light">
-                            <span class="priceToken">
-                                <div class="spinner-border spinner-border-xs" role="status">
-                                    <span class="visually-hidden">Connecting CoinGecko</span>
-                                </div>
-                            </span>
-                            <span class="stableName"></span>/<span class="tokenName me-1"></span>
+                    <div class="rounded15  ps-3 bg-secondary d-flex py-1 justify-content-between">
+                        <div>
+                            <button type="button" class="btn btn-success text-dark rounded-pill bg-success border-0 fs-6 py-0 me-2 my-1 fw-bold" onClick="window.location.reload();" style="width:160px;text-align: center;">
+                                <span id="conn_badge"></span>
+                            </button>
+                            <button type="button" id="createOfferLink" class="btn btn-success text-dark rounded-pill bg-success border-0 fs-6 py-0 my-1 fw-bold" data-bs-toggle="modal" data-bs-target="#CreateOfferModal" style="width:160px;text-align: center;" hidden>Create Offer</button>
                         </div>
-                        <!-- <a href target="_blank" style="text-decoration: none;" onClick="window.location.reload();">
-                        <span id="conn_badge" class="badge rounded-pill bg-primary fs-6"></span>
-                    </a>
-                    <a href data-bs-toggle="modal" data-bs-target="#CreateOfferModal" id="createOfferLink" style="text-decoration: none;outline : none;" hidden>
-                        <span class="badge rounded-pill bg-success bg-primary fs-6">Create Offer <i class="bi bi-caret-right-fill"></i></span>
-                    </a> -->
-
-                        <!-- <button type="submit" class="btn btn-success text-dark float-end submitBtn rounded-pill btn-sm fw-bold bg-success border-0 fs-6 px-2 py-0" hidden>Submit Transaction</button> -->
-
-                        <button type="button" class="btn btn-success text-dark rounded-pill bg-success border-0 fs-6 px-2 py-0 me-2 fw-bold" onClick="window.location.reload();">
-                            <span id="conn_badge"></span>
-                        </button>
-                        <button type="button" id="createOfferLink" class="btn btn-success text-dark rounded-pill bg-success border-0 fs-6 px-2 py-0 fw-bold" data-bs-toggle="modal" data-bs-target="#CreateOfferModal" hidden>Create Offer</button>
+                        <div class="px-2 text-light d-flex align-items-center">
+                            <div>
+                                <span class="priceToken">
+                                    <div class="spinner-border spinner-border-xs" role="status">
+                                        <span class="visually-hidden">Connecting CoinGecko</span>
+                                    </div>
+                                </span>
+                                <span class="stableName"></span>/<span class="tokenName me-1"></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- <div class="col-12 mb-0 mt-0 text-warning connect-msg" style="font-size: x-small;">
-                    Connecting TronLink <span class="network"></span>
-                </div> -->
-
-                <!-- <div class="col-12 mt-4" style="display: flex; align-items: center; justify-content: center;" id="HeadingLeft">
-                    <div>
-                        <div class="d-flex align-items-center fs-3 justify-content-center" style="height: 32px;">
-                            <img src="raidshift.png" height="32px" width="32px" alt="">
-                            &nbsp;<span class="fw-bold">RAIDSHIFT</span>&nbsp;<span class="text-light">marketplace</span>
-                        </div>
-                        <div class="text-light mt-4">
-                            <div class="text-center mb-3">
-                                RAIDSHIFT marketplace is a <span class="text-success">decentralized token exchange</span>
-                            </div>
-                            <div class="text-center mb-3">
-                                Enjoy <span class="text-success">trading fees</span> as low as <span class="text-success">0.1%</span> for market takers only
-                            </div>
-                            <div class="text-center">
-                                Connect your wallet with <a href="https://www.tronlink.org" target="_blank" class="text-success">TronLink</a> and select a trading pair
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
 
                 <!-- <div style="font-size: small;text-align: center;" class="text-light me-3">Select trading pair on TRON Mainnet</div> -->
                 <!-- <div style="font-size: small;" class="text-light ms-1 mt-2">Select trading pair on TRON Nile Testnet (obtain free tokens at <a href="https://nileex.io/join/getJoinPage" target="_blank" class="text-light">https://nileex.io</a>)</div> -->
 
                 <div class="col-12 mt-3" id="TradingPairs">
                     <div class="rounded15 bg-secondary">
+                        <!-- <span class="ms-3 fw-bold">Select trading pair on</span> -->
                         <ul class="nav nav-pills py-2 ps-3" id="pills-tab" role="tablist">
                             <li class="me-2 fw-bold">
-                                Select trading pair on
+                                Trading pairs
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active rounded-pill fs-6 py-0 px-2 me-2 fw-bold" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab">
@@ -387,7 +360,7 @@
                 <div class="col-12 text-center text-light" style="font-size: small;position: relative;">
                     <span class="fw-bold">RAIDSHIFT marketplace</span>
                     <div style="position:absolute;right:0%;top:0px;font-size: x-small;" class="me-2">
-                        (build <build>87</build>)
+                        (build <build>88</build>)
                     </div>
                 </div>
 
