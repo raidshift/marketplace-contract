@@ -180,11 +180,10 @@
 
 
                 <div class="col-12" id="TradingPairs">
-                    <div class="container text-center bg-secondary rounded15">
-                        <div class="fw-bold text-light">
-                            Select trading pair
-                        </div>
-           
+                    <div class="fw-bold fs-6 ms-1">
+                        <i class="bi bi-list"></i> Trading pairs
+                    </div>
+                    <div class="container text-center bg-dark rounded15">
                         <div class="row">
                             <div class="col-sm-6 col-lg-3 py-3">
                                 <button type="button" class="btn btn-sueccess btn-sm bg-success text-dark rounded border-0 rounded15 fs-6" style="width:145px" onclick="setTradingPair('btc_usdt')">
@@ -313,118 +312,6 @@
                     </div>
 
                 </div>
-<!-- 
-                <div class="col-12 mt-3" id="TradingPairs">
-                    <div class="rounded15 bg-secondary">
-                        <ul class="nav nav-pills py-2 ps-3" id="pills-tab" role="tablist">
-                            <li class="me-2 fw-bold">
-                                Trading pairs
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active rounded-pill fs-6 py-0 px-2 me-2 fw-bold" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab">
-                                    <div class="d-flex align-items-center"><img src="tron.svg" height="12" width="12" class="me-2" /><span>Mainnet</span></div>
-                                </button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link rounded-pill fs-6 py-0 px-2 fw-bold" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab">
-                                    <div class="d-flex align-items-center"><img src="tron.svg" height="12" width="12" class="me-2" /><span>Testnet</span></div>
-                                </button>
-                            </li>
-                        </ul>
-                        <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel">
-                                <div class="list-group list-group-flush fs-6 rounded15-bottom">
-                                    <div class="container text-center">
-                                        <div class="row g-3 mt-3">
-                                            <div class="col-sm-6 col-lg-3">
-                                                <button type="button" class="btn btn-sueccess btn-sm bg-success text-dark rounded border-0 fw-bold rounded15 fs-6" style="width:145px" onclick="setTradingPair('btc_usdt')">
-                                                    <div class="d-flex align-items-center justify-content-between">
-                                                        <img src="btc.svg" height="32px" width="32px" />
-                                                        BTC/USDT
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div class="col-sm-6 col-lg-3">
-                                                <button type="button" class="btn btn-sueccess btn-sm bg-success text-dark rounded border-0 fw-bold rounded15 fs-6" style="width:145px" onclick="setTradingPair('eth_usdt')">
-                                                    <div class="d-flex align-items-center justify-content-between">
-                                                        <img src="eth.png" height="32px" width="32px" />
-                                                        ETH/USDT
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div class="col-sm-6 col-lg-3">
-                                                <button type="button" class="btn btn-sueccess btn-sm bg-success text-dark rounded border-0 fw-bold rounded15 fs-6" style="width:145px" onclick="setTradingPair('ltc_usdt')">
-                                                    <div class="d-flex align-items-center justify-content-between">
-                                                        <img src="ltc.svg" height="32px" width="32px" />
-                                                        LTC/USDT
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div class="col-sm-6 col-lg-3">
-                                                <button type="button" class="btn btn-sueccess btn-sm bg-success text-dark rounded border-0 fw-bold rounded15 fs-6" style="width:145px" onclick="setTradingPair('doge_usdt')">
-                                                    <div class="d-flex align-items-center justify-content-between">
-                                                        <img src="doge.svg" height="32px" width="32px" />
-                                                        DOGE/USDT
-                                                    </div>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="tab-pane fade" id="pills-profile" role="tabpanel">
-                                <div class="list-group list-group-flush fs-6">
-                                    <button type="button" class="list-group-item list-group-item-action text-light fw-bold" onclick="setTradingPair('jst_usdj_nile')">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="d-flex align-items-center">
-                                                <img src="jst.svg" height="24" width="24" class="me-2" />
-                                                <div class="me-2">JST</div>
-                                                <i class="bi bi-arrow-left-right fs-6"></i>
-                                                <div class="ms-2">USDJ</div>
-                                            </div>
-                                            <i class="bi bi-caret-right-fill"></i>
-                                        </div>
-                                    </button>
-                                    <button type="button" class="list-group-item list-group-item-action text-light fw-bold" onclick="setTradingPair('jst_usdt_nile')">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="d-flex align-items-center">
-                                                <img src="jst.svg" height="24" width="24" class="me-2" />
-                                                <div class="me-2">JST</div>
-                                                <i class="bi bi-arrow-left-right fs-6"></i>
-                                                <div class="ms-2">USDT</div>
-                                            </div>
-                                            <i class="bi bi-caret-right-fill"></i>
-                                        </div>
-                                    </button>
-                                    <button type="button" class="list-group-item list-group-item-action text-light fw-bold" onclick="setTradingPair('btc_usdt_nile')">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="d-flex align-items-center">
-                                                <img src="btc.svg" height="24" width="24" class="me-2" />
-                                                <div class="me-2">BTC</div>
-                                                <i class="bi bi-arrow-left-right fs-6 "></i>
-                                                <div class="ms-2">USDT</div>
-                                            </div>
-                                            <i class="bi bi-caret-right-fill"></i>
-                                        </div>
-                                    </button>
-                                    <button type="button" class="list-group-item list-group-item-action text-light fw-bold" onclick="setTradingPair('eth_usdt_nile')">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="d-flex align-items-center">
-                                                <img src="eth.png" height="24" width="24" class="me-2" />
-                                                <div class="me-2">ETH</div>
-                                                <i class="bi bi-arrow-left-right fs-6"></i>
-                                                <div class="ms-2">USDT</div>
-                                            </div>
-                                            <i class="bi bi-caret-right-fill"></i>
-                                        </div>
-                                    </button>
-                                </div>
-                                <div style="font-size: small;" class="text-light text-center">Get free tokens on TRON Nile Testnet at <a href="https://nileex.io/join/getJoinPage" target="_blank" class="text-light">https://nileex.io</a> !</div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
 
                 <div class="col-12 small" id="YourOffers" hidden>
                     <div class="fw-bold fs-6 ms-1">
@@ -486,7 +373,7 @@
                 <div class="col-12 text-center text-light" style="font-size: small;position: relative;">
                     <span class="fw-bold">RAIDSHIFT marketplace</span>
                     <div style="position:absolute;right:0%;top:0px;font-size: x-small;" class="me-2">
-                        (build <build>90</build>)
+                        (build <build>91</build>)
                     </div>
                 </div>
 
