@@ -155,12 +155,20 @@
         <div class="container p-0 mt-1 pb-3">
             <div class="row g-3">
                 <div class="col-12" id="MenuBar" hidden>
-                    <div class="rounded15  ps-3 bg-secondary d-flex py-1 justify-content-between">
+                    <div class="rounded15 py-3 ps-3 bg-secondary d-flex  justify-content-between">
                         <div>
-                            <button type="button" class="btn btn-success text-dark rounded-pill bg-success border-0 fs-6 py-0 me-2 my-1 fw-bold" onClick="window.location.reload();" style="width:160px;text-align: center;">
-                                <span id="conn_badge"></span>
+                            <button type="button" class="btn btn-sueccess btn-sm bg-success text-dark rounded border-0 rounded15 fs-6 me-3 my-2" style="width:145px" onclick="window.location.reload();">
+                                <!-- <button type="button" class="btn btn-success text-dark rounded-pill bg-success border-0 fs-6 py-0 me-2 my-1 fw-bold" onClick="window.location.reload();" style="width:160px;text-align: center;"> -->
+                                <!-- <span id="conn_badge"></span> -->
+                                <div id="conn_badge" class="d-flex align-items-center justify-content-between"></div>
                             </button>
-                            <button type="button" id="createOfferLink" class="btn btn-success text-dark rounded-pill bg-success border-0 fs-6 py-0 my-1 fw-bold" data-bs-toggle="modal" data-bs-target="#CreateOfferModal" style="width:160px;text-align: center;" hidden>Create Offer</button>
+                            <button id="createOfferLink" type="button" class="btn btn-sueccess btn-sm bg-success text-dark rounded border-0 rounded15 fs-6 my-2" data-bs-toggle="modal" data-bs-target="#CreateOfferModal" style="width:145px" hidden>
+                                <div class="text-center fw-bold">
+                                    Create Offer
+                                </div>
+                            </button>
+
+                            <!-- <button type="button" id="createOfferLink" class="btn btn-success text-dark rounded-pill bg-success border-0 fs-6 py-0 my-1 fw-bold" data-bs-toggle="modal" data-bs-target="#CreateOfferModal" style="width:160px;text-align: center;" hidden>Create Offer</button> -->
                         </div>
                         <div class="px-2 text-light d-flex align-items-center">
                             <div>
@@ -169,7 +177,7 @@
                                         <span class="visually-hidden">Connecting CoinGecko</span>
                                     </div>
                                 </span>
-                                <span class="stableName"></span>/<span class="tokenName me-1"></span>
+                                <span class="stableName"></span>/<span class="tokenName me-2"></span>
                             </div>
                         </div>
                     </div>
@@ -185,7 +193,7 @@
                     </div>
                     <div class="container text-center bg-dark rounded15">
                         <div class="row">
-                            <div class="col-sm-6 col-lg-3 py-3">
+                            <div class="col-sm-6 col-lg-3 py-lg-5 py-md-4 py-3">
                                 <button type="button" class="btn btn-sueccess btn-sm bg-success text-dark rounded border-0 rounded15 fs-6" style="width:145px" onclick="setTradingPair('btc_usdt')">
                                     <div class="d-flex align-items-center justify-content-between">
                                         <img src="btc.svg" height="32px" width="32px" />
@@ -200,7 +208,7 @@
                                     </div>
                                 </button>
                             </div>
-                            <div class="col-sm-6 col-lg-3 py-3">
+                            <div class="col-sm-6 col-lg-3 py-lg-5 py-md-4 py-3">
                                 <button type="button" class="btn btn-sueccess btn-sm bg-success text-dark rounded border-0 rounded15 fs-6" style="width:145px" onclick="setTradingPair('eth_usdt')">
                                     <div class="d-flex align-items-center justify-content-between">
                                         <img src="eth.png" height="32px" width="32px" />
@@ -215,7 +223,7 @@
                                     </div>
                                 </button>
                             </div>
-                            <div class="col-sm-6 col-lg-3 py-3">
+                            <div class="col-sm-6 col-lg-3 py-lg-5 py-md-4 py-3">
                                 <button type="button" class="btn btn-sueccess btn-sm bg-success text-dark rounded border-0 rounded15 fs-6" style="width:145px" onclick="setTradingPair('ltc_usdt')">
                                     <div class="d-flex align-items-center justify-content-between">
                                         <img src="ltc.svg" height="32px" width="32px" />
@@ -230,7 +238,7 @@
                                     </div>
                                 </button>
                             </div>
-                            <div class="col-sm-6 col-lg-3 py-3">
+                            <div class="col-sm-6 col-lg-3 py-lg-5 py-md-4 py-3">
                                 <button type="button" class="btn btn-sueccess btn-sm bg-success text-dark rounded border-0 rounded15 fs-6" style="width:145px" onclick="setTradingPair('doge_usdt')">
                                     <div class="d-flex align-items-center justify-content-between">
                                         <img src="doge.svg" height="32px" width="32px" />
@@ -245,7 +253,7 @@
                                     </div>
                                 </button>
                             </div>
-                            <div class="col-sm-6 col-lg-3 py-3">
+                            <div class="col-sm-6 col-lg-3 py-lg-5 py-md-4 py-3">
                                 <button type="button" class="btn btn-sueccess btn-sm bg-success text-dark rounded border-0 rounded15 fs-6" style="width:145px" onclick="setTradingPair('jst_usdj_nile')">
                                     <div class="d-flex align-items-center justify-content-between">
                                         <img src="jst.svg" height="32px" width="32px" />
@@ -260,7 +268,7 @@
                                     </div>
                                 </button>
                             </div>
-                            <div class="col-sm-6 col-lg-3 py-3">
+                            <div class="col-sm-6 col-lg-3 py-lg-5 py-md-4 py-3">
                                 <button type="button" class="btn btn-sueccess btn-sm bg-success text-dark rounded border-0 rounded15 fs-6" style="width:145px" onclick="setTradingPair('jst_usdt_nile')">
                                     <div class="d-flex align-items-center justify-content-between">
                                         <img src="jst.svg" height="32px" width="32px" />
@@ -275,7 +283,7 @@
                                     </div>
                                 </button>
                             </div>
-                            <div class="col-sm-6 col-lg-3 py-3">
+                            <div class="col-sm-6 col-lg-3 py-lg-5 py-md-4 py-3">
                                 <button type="button" class="btn btn-sueccess btn-sm bg-success text-dark rounded border-0 rounded15 fs-6" style="width:145px" onclick="setTradingPair('btc_usdt_nile')">
                                     <div class="d-flex align-items-center justify-content-between">
                                         <img src="btc.svg" height="32px" width="32px" />
@@ -292,7 +300,7 @@
                                     </div>
                                 </button>
                             </div>
-                            <div class="col-sm-6 col-lg-3 py-3">
+                            <div class="col-sm-6 col-lg-3 py-lg-5 py-md-4 py-3">
                                 <button type="button" class="btn btn-sueccess btn-sm bg-success text-dark rounded border-0 rounded15 fs-6" style="width:145px" onclick="setTradingPair('eth_usdt_nile')">
                                     <div class="d-flex align-items-center justify-content-between">
                                         <img src="eth.png" height="32px" width="32px" />
@@ -334,7 +342,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-lg-6 small" id="Buys">
+                <div class="col-12 col-lg-6 small" id="Buys" hidden>
                     <div class="fw-bold fs-6 ms-1">
                         <i class="bi bi-list"></i> Buy <span class="tokenName"></span> <span class="asksCount"></span>
                     </div>
@@ -352,7 +360,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-lg-6 small" id="Sells">
+                <div class="col-12 col-lg-6 small" id="Sells" hidden>
                     <div class="fw-bold fs-6 ms-1">
                         <i class="bi bi-list"></i> Sell <span class="tokenName"></span> <span class="bidsCount"></span>
                     </div>
@@ -373,7 +381,7 @@
                 <div class="col-12 text-center text-light" style="font-size: small;position: relative;">
                     <span class="fw-bold">RAIDSHIFT marketplace</span>
                     <div style="position:absolute;right:0%;top:0px;font-size: x-small;" class="me-2">
-                        (build <build>91</build>)
+                        (build <build>92</build>)
                     </div>
                 </div>
 
