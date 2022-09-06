@@ -57,10 +57,16 @@
             0 6px 20px 0 rgba(0, 0, 0, 0.2);
     }
 
-    .rounded15-bottom {
+    .rounded15-l {
+        border-radius: 15px !important;
+        border-top-right-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;
+    }
+
+    .rounded15-r {
         border-radius: 15px !important;
         border-top-left-radius: 0px !important;
-        border-top-right-radius: 0px !important;
+        border-bottom-left-radius: 0px !important;
     }
 
     .dropdown-menu>li>a:hover {
@@ -258,7 +264,7 @@
                 <div class="col-12 text-center text-light" style="font-size: small;position: relative;">
                     <span class="fw-bold">RAIDSHIFT marketplace</span>
                     <div style="position:absolute;right:0%;top:0px;font-size: x-small;" class="me-2">
-                        (build <build>98</build>)
+                        (build <build>99</build>)
                     </div>
                 </div>
 
@@ -302,16 +308,16 @@
                             <label for="amount" class="form-label small text-success mb-0 fw-bold">Amount</label>
                             <a class="float-end text-success small" id="setMaxAmountTokenCreateOffer" href="#">balance: <span class="balanceToken"></span></a>
                             <div class="input-group">
-                                <input type="text" class="form-control bg-secondary text-light amount" id="amount">
-                                <span class="input-group-text tokenName bg-secondary border-0"></span>
+                                <input type="text" class="form-control bg-secondary text-light amount rounded15-l" id="amount">
+                                <span class="input-group-text tokenName bg-secondary border-0 rounded15-r"></span>
                             </div>
                         </div>
                         <div class="mb-3">
                             <label for="price" class="form-label small text-success mb-0 fw-bold">Price</label>
                             <a class="float-end text-success small" id="setPriceTokenCreateOffer" href="#">current: <span class="priceToken"></span></a>
                             <div class="input-group">
-                                <input type="text" class="form-control bg-secondary text-light price" id="price">
-                                <span class="input-group-text stablePerTokenName bg-secondary border-0"></span>
+                                <input type="text" class="form-control bg-secondary text-light price rounded15-l" id="price">
+                                <span class="input-group-text stablePerTokenName bg-secondary border-0 rounded15-r"></span>
                             </div>
                         </div>
 
@@ -319,8 +325,8 @@
                             <label for="volume" class="form-label small text-success mb-0 fw-bold">Volume</label>
                             <a class="float-end text-success small" id="setMaxVolumeStableCreateOffer" href="#">balance: <span class="balanceStable"></span></a>
                             <div class="input-group">
-                                <input type="text" class="form-control bg-secondary text-light volume" id="volume">
-                                <span class="input-group-text stableName bg-secondary border-0"></span>
+                                <input type="text" class="form-control bg-secondary text-light volume rounded15-l" id="volume">
+                                <span class="input-group-text stableName bg-secondary border-0 rounded15-r"></span>
                             </div>
                         </div>
                         <div class="mb-4 small text-light">
@@ -363,15 +369,15 @@
                             <label for="amountAccept" class="form-label small text-success mb-0 fw-bold">Amount</label>
                             <a class="float-end small text-success" id="setMaxAmountTokenAcceptOffer" href="#">max: <span class="accept-offer-max-amount text-success"></span></a>
                             <div class="input-group">
-                                <input type="text" class="form-control bg-secondary text-light amount" id="amountAccept">
-                                <span class="input-group-text tokenName bg-secondary border-0"></span>
+                                <input type="text" class="form-control bg-secondary text-light amount rounded15-l" id="amountAccept">
+                                <span class="input-group-text tokenName bg-secondary border-0 rounded15-r"></span>
                             </div>
                         </div>
                         <div class="mb-3">
                             <label for="priceAccept" class="form-label small text-success mb-0 fw-bold">Price</label>
                             <div class="input-group">
-                                <input type="text" class="form-control bg-secondary text-light price" id="priceAccept">
-                                <span class="input-group-text stablePerTokenName bg-secondary border-0"></span>
+                                <input type="text" class="form-control bg-secondary text-light price rounded15-l" id="priceAccept">
+                                <span class="input-group-text stablePerTokenName bg-secondary border-0 rounded15-r"></span>
                             </div>
                         </div>
 
@@ -379,8 +385,8 @@
                             <label for="volumeAccept" class="form-label small text-success mb-0 fw-bold">Volume</label>
                             <a class="float-end small text-success" id="setMaxVolumeStableAcceptOffer" href="#">max: <span class="accept-offer-max-volume text-success"></span></a>
                             <div class="input-group">
-                                <input type="text" class="form-control bg-secondary text-light volume" id="volumeAccept">
-                                <span class="input-group-text stableName bg-secondary border-0"></span>
+                                <input type="text" class="form-control bg-secondary text-light volume rounded15-l" id="volumeAccept">
+                                <span class="input-group-text stableName bg-secondary border-0 rounded15-r"></span>
                             </div>
                         </div>
 
@@ -450,7 +456,7 @@
 
     <!-- Modal About -->
     <div class="modal fade" id="AboutModal" tabindex="-1">
-        <div class="modal-dialog modal-lg" style="padding-top: 80px">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content rounded15">
                 <div class="modal-header">
                     <h5 class="modal-title">About RAIDSHIFT marketplace</h5>
