@@ -53,6 +53,8 @@
 
     .rounded15 {
         border-radius: 15px !important;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.2);
     }
 
     .rounded15-bottom {
@@ -61,23 +63,10 @@
         border-top-right-radius: 0px !important;
     }
 
-    .nav-link:not(.active) {
-        background-color: #303030 !important;
-        color: #444 !important;
-    }
-
-    .nav-link.active {
-        /* background-color: #00bc8c !important;*/
-        color: #fff !important;
-
-        /* border: 2px solid #00bc8c; */
-        /* color: #00bc8c !important; */
-        background-color: #303030 !important;
-    }
-
-    .list-group-item:hover {
-        /* background-color: #00bc8c; */
-        color: white !important;
+    .dropdown-menu>li>a:hover {
+        background-color: #00bc8c;
+        color: #222;
+        font-weight: bold;
     }
 
     @-webkit-keyframes flash {
@@ -154,30 +143,51 @@
 
         <div class="container p-0 mt-1 pb-3">
             <div class="row g-3">
-                <div class="col-12" id="MenuBar" hidden>
+                <div class="col-12" id="MenuBar">
                     <div class="rounded15 py-1 ps-3 bg-secondary d-flex  justify-content-between">
                         <div>
-                            <button type="button" class="btn btn-sueccess btn-sm bg-success text-dark rounded border-0 rounded15 fs-6 me-3 my-1" style="width:145px" onclick="window.location.reload();">
-                                <!-- <button type="button" class="btn btn-success text-dark rounded-pill bg-success border-0 fs-6 py-0 me-2 my-1 fw-bold" onClick="window.location.reload();" style="width:160px;text-align: center;"> -->
-                                <!-- <span id="conn_badge"></span> -->
-                                <div id="conn_badge" class="d-flex align-items-center justify-content-between"></div>
+                            <button type="button" class="btn btn-sueccess btn-sm bg-success text-dark rounded border-0 rounded15 fs-6 me-2 my-1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div id="conn_badge" class="d-flex align-items-center fw-bold">Select trading pair</div>
                             </button>
-                            <button id="createOfferLink" type="button" class="btn btn-sueccess btn-sm bg-success text-dark rounded border-0 rounded15 fs-6 my-1" data-bs-toggle="modal" data-bs-target="#CreateOfferModal" style="width:145px" hidden>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="?pair=btc_usdt">
+                                        <div class="d-flex align-items-center"><img src="btc.svg" height="24px" width="24px" />&nbsp;&nbsp;BTC/USDT</div>
+                                    </a></li>
+                                <li><a class="dropdown-item" href="?pair=eth_usdt">
+                                        <div class="d-flex align-items-center"><img src="eth.png" height="24px" width="24px" />&nbsp;&nbsp;ETH/USDT</div>
+                                    </a></li>
+                                <li><a class="dropdown-item" href="?pair=ltc_usdt">
+                                        <div class="d-flex align-items-center"><img src="ltc.svg" height="24px" width="24px" />&nbsp;&nbsp;LTC/USDT</div>
+                                    </a></li>
+                                <li><a class="dropdown-item" href="?pair=doge_usdt">
+                                        <div class="d-flex align-items-center"><img src="doge.svg" height="24px" width="24px" />&nbsp;&nbsp;DOGE/USDT</div>
+                                    </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="?pair=jst_usdj_nile">
+                                        <div class="d-flex align-items-center"><img src="jst.svg" height="24px" width="24px" />&nbsp;&nbsp;JST/USDJ (Nile Testnet)</div>
+                                    </a></li>
+                                <li><a class="dropdown-item" href="?pair=jst_usdt_nile">
+                                        <div class="d-flex align-items-center"><img src="jst.svg" height="24px" width="24px" />&nbsp;&nbsp;JST/USDT (Nile Testnet)</div>
+                                    </a></li>
+                                <li><a class="dropdown-item" href="?pair=btc_usdt_nile">
+                                        <div class="d-flex align-items-center"><img src="btc.svg" height="24px" width="24px" />&nbsp;&nbsp;BTC/USDT (Nile Testnet)</div>
+                                    </a></li>
+                                <li><a class="dropdown-item" href="?pair=eth_usdt_nile">
+                                        <div class="d-flex align-items-center"><img src="eth.png" height="24px" width="24px" />&nbsp;&nbsp;ETH/USDT (Nile Testnet)</div>
+                                    </a></li>
+                            </ul>
+                            <button id="createOfferLink" type="button" class="btn btn-sueccess btn-sm bg-success text-dark rounded border-0 rounded15 fs-6 my-1" data-bs-toggle="modal" data-bs-target="#CreateOfferModal" hidden>
                                 <div class="text-center fw-bold">
                                     Create Offer
                                 </div>
                             </button>
 
-                            <!-- <button type="button" id="createOfferLink" class="btn btn-success text-dark rounded-pill bg-success border-0 fs-6 py-0 my-1 fw-bold" data-bs-toggle="modal" data-bs-target="#CreateOfferModal" style="width:160px;text-align: center;" hidden>Create Offer</button> -->
                         </div>
                         <div class="px-2 text-light d-flex align-items-center">
-                            <div>
-                                <span class="priceToken">
-                                    <div class="spinner-border spinner-border-xs" role="status">
-                                        <span class="visually-hidden">Connecting CoinGecko</span>
-                                    </div>
-                                </span>
-                                <span class="stableName"></span>/<span class="tokenName me-2"></span>
+                            <div id="CurrentPrice" hidden>
+                                <span class="priceToken"></span>&nbsp;<span class="stableName"></span>/<span class="tokenName me-2"></span>
                             </div>
                         </div>
                     </div>
@@ -186,142 +196,7 @@
                 <!-- <div style="font-size: small;text-align: center;" class="text-light me-3">Select trading pair on TRON Mainnet</div> -->
                 <!-- <div style="font-size: small;" class="text-light ms-1 mt-2">Select trading pair on TRON Nile Testnet (obtain free tokens at <a href="https://nileex.io/join/getJoinPage" target="_blank" class="text-light">https://nileex.io</a>)</div> -->
 
-
-                <div class="col-12" id="TradingPairs">
-                    <div class="fw-bold fs-6 ms-1">
-                        <i class="bi bi-list"></i> Trading pairs
-                    </div>
-                    <div class="container text-center bg-dark rounded15">
-                        <div class="row">
-                            <div class="col-sm-6 col-lg-3 py-lg-5 py-md-4 py-3">
-                                <button type="button" class="btn btn-sueccess btn-sm bg-success text-dark rounded border-0 rounded15 fs-6" style="width:145px" onclick="setTradingPair('btc_usdt')">
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <img src="btc.svg" height="32px" width="32px" />
-                                        <table>
-                                            <tr>
-                                                <td style="text-align: right;;" class="fw-bold">BTC/USDT</td>
-                                            </tr>
-                                            <tr>
-                                                <td style="font-size:x-small;text-align: right;">TRON Mainnet</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </button>
-                            </div>
-                            <div class="col-sm-6 col-lg-3 py-lg-5 py-md-4 py-3">
-                                <button type="button" class="btn btn-sueccess btn-sm bg-success text-dark rounded border-0 rounded15 fs-6" style="width:145px" onclick="setTradingPair('eth_usdt')">
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <img src="eth.png" height="32px" width="32px" />
-                                        <table>
-                                            <tr>
-                                                <td style="text-align: right;" class="fw-bold">ETH/USDT</td>
-                                            </tr>
-                                            <tr>
-                                                <td style="font-size:x-small;text-align: right;">TRON Mainnet</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </button>
-                            </div>
-                            <div class="col-sm-6 col-lg-3 py-lg-5 py-md-4 py-3">
-                                <button type="button" class="btn btn-sueccess btn-sm bg-success text-dark rounded border-0 rounded15 fs-6" style="width:145px" onclick="setTradingPair('ltc_usdt')">
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <img src="ltc.svg" height="32px" width="32px" />
-                                        <table>
-                                            <tr>
-                                                <td style="text-align: right;" class="fw-bold">LTC/USDT</td>
-                                            </tr>
-                                            <tr>
-                                                <td style="font-size:x-small;text-align: right;">TRON Mainnet</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </button>
-                            </div>
-                            <div class="col-sm-6 col-lg-3 py-lg-5 py-md-4 py-3">
-                                <button type="button" class="btn btn-sueccess btn-sm bg-success text-dark rounded border-0 rounded15 fs-6" style="width:145px" onclick="setTradingPair('doge_usdt')">
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <img src="doge.svg" height="32px" width="32px" />
-                                        <table>
-                                            <tr>
-                                                <td style="text-align: right;" class="fw-bold">DOGE/USDT</td>
-                                            </tr>
-                                            <tr>
-                                                <td style="font-size:x-small;text-align: right;">TRON Mainnet</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </button>
-                            </div>
-                            <div class="col-sm-6 col-lg-3 py-lg-5 py-md-4 py-3">
-                                <button type="button" class="btn btn-sueccess btn-sm bg-success text-dark rounded border-0 rounded15 fs-6" style="width:145px" onclick="setTradingPair('jst_usdj_nile')">
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <img src="jst.svg" height="32px" width="32px" />
-                                        <table>
-                                            <tr>
-                                                <td style="text-align: right;" class="fw-bold">JST/USDJ</td>
-                                            </tr>
-                                            <tr>
-                                                <td style="font-size:x-small;text-align: right;">TRON Nile Testnet</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </button>
-                            </div>
-                            <div class="col-sm-6 col-lg-3 py-lg-5 py-md-4 py-3">
-                                <button type="button" class="btn btn-sueccess btn-sm bg-success text-dark rounded border-0 rounded15 fs-6" style="width:145px" onclick="setTradingPair('jst_usdt_nile')">
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <img src="jst.svg" height="32px" width="32px" />
-                                        <table>
-                                            <tr>
-                                                <td style="text-align: right;" class="fw-bold">JST/USDT</td>
-                                            </tr>
-                                            <tr>
-                                                <td style="font-size:x-small;text-align: right;">TRON Nile Testnet</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </button>
-                            </div>
-                            <div class="col-sm-6 col-lg-3 py-lg-5 py-md-4 py-3">
-                                <button type="button" class="btn btn-sueccess btn-sm bg-success text-dark rounded border-0 rounded15 fs-6" style="width:145px" onclick="setTradingPair('btc_usdt_nile')">
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <img src="btc.svg" height="32px" width="32px" />
-                                        <div class="d-flex align-items-center">
-                                            <table>
-                                                <tr>
-                                                    <td style="text-align: right;" class="fw-bold">BTC/USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="font-size:x-small;text-align: right;">TRON Nile Testnet</td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </button>
-                            </div>
-                            <div class="col-sm-6 col-lg-3 py-lg-5 py-md-4 py-3">
-                                <button type="button" class="btn btn-sueccess btn-sm bg-success text-dark rounded border-0 rounded15 fs-6" style="width:145px" onclick="setTradingPair('eth_usdt_nile')">
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <img src="eth.png" height="32px" width="32px" />
-                                        <table>
-                                            <tr>
-                                                <td style="text-align: right;" class="fw-bold">ETH/USDT</td>
-                                            </tr>
-                                            <tr>
-                                                <td style="font-size:x-small;text-align: right;">TRON Nile Testnet</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </button>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="col-12 small" id="YourOffers" hidden>
+                <div class="col-12 small" id="YourOffers">
                     <div class="fw-bold fs-6 ms-1">
                         <i class="bi bi-list"></i> Your Offers <span class="myoffersCount"></span>
                     </div>
@@ -342,7 +217,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-lg-6 small" id="Buys" hidden>
+                <div class="col-12 col-lg-6 small" id="Buys">
                     <div class="fw-bold fs-6 ms-1">
                         <i class="bi bi-list"></i> Buy <span class="tokenName"></span> <span class="asksCount"></span>
                     </div>
@@ -360,7 +235,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-lg-6 small" id="Sells" hidden>
+                <div class="col-12 col-lg-6 small" id="Sells">
                     <div class="fw-bold fs-6 ms-1">
                         <i class="bi bi-list"></i> Sell <span class="tokenName"></span> <span class="bidsCount"></span>
                     </div>
@@ -381,7 +256,7 @@
                 <div class="col-12 text-center text-light" style="font-size: small;position: relative;">
                     <span class="fw-bold">RAIDSHIFT marketplace</span>
                     <div style="position:absolute;right:0%;top:0px;font-size: x-small;" class="me-2">
-                        (build <build>93</build>)
+                        (build <build>94</build>)
                     </div>
                 </div>
 
@@ -600,12 +475,12 @@
                         </ul>
                         <ul>
                             <li>
-                                Connect your wallet via <a href="https://www.tronlink.org" target="_blank" class="text-success">TronLink</a> to <span class="text-success">TRON Mainnet</span> and select a trading pair on TRON Mainnet</small>
+                                Connect your wallet via <a href="https://www.tronlink.org" target="_blank" class="text-success">TronLink</a> to <span class="text-success">TRON Mainnet</span> and select a trading pair</small>
                             </li>
                         </ul>
                         <ul>
                             <li>
-                                Alternatively connect your wallet to <span class="text-success">TRON Nile Testnet</span> and select a trading pair on TRON Nile Testnet. Get free test tokens at <a href="https://nileex.io/join/getJoinPage" target="_blank" class="text-light">https://nileex.io</a> !</small>
+                                Alternatively connect your wallet to <span class="text-success">TRON Nile Testnet</span> and select a Nile Testnet - trading pair. Get free test tokens at <a href="https://nileex.io/join/getJoinPage" target="_blank" class="text-light">https://nileex.io</a> !</small>
                             </li>
                         </ul>
                     </div>
@@ -615,7 +490,9 @@
     </div>
     <!-- </div> -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/js/bootstrap.min.js" integrity="sha512-ewfXo9Gq53e1q1+WDTjaHAGZ8UvCWq0eXONhwDuIoaH8xz2r96uoAYaQCm1oQhnBfRXrvJztNXFsTloJfgbL5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js" integrity="sha512-6UofPqm0QupIL0kzS/UIzekR73/luZdC6i/kXDbWnLOJoqwklBK6519iUnShaYceJ0y4FaiPtX/hRnV/X/xlUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.min.js" integrity="sha512-8Y8eGK92dzouwpROIppwr+0kPauu0qqtnzZZNEF8Pat5tuRNJxJXCkbQfJ0HlUG3y1HB3z18CSKmUo7i2zcPpg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
 
