@@ -146,8 +146,8 @@
                 <div class="col-12" id="MenuBar">
                     <div class="rounded15 py-1 ps-3 bg-secondary d-flex  justify-content-between">
                         <div>
-                            <button type="button" class="btn btn-sueccess btn-sm bg-success text-dark rounded border-0 rounded15 fs-6 me-2 my-1" data-bs-toggle="dropdown" aria-expanded="false">
-                                <div id="conn_badge" class="d-flex align-items-center fw-bold">&nbsp;</div>
+                            <button type="button" class="btn btn-sueccess btn-sm bg-success text-dark rounded border-0 rounded15 fs-6 me-2 my-1" data-bs-toggle="dropdown" aria-expanded="false" style="width:140px">
+                                <div id="conn_badge" class="d-flex align-items-center justify-content-center fw-bold">&nbsp;</div>
                             </button>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="?pair=btc_usdt">
@@ -178,17 +178,19 @@
                                         <div class="d-flex align-items-center"><img src="eth.png" height="24px" width="24px" />&nbsp;&nbsp;ETH/USDT (Nile Testnet)</div>
                                     </a></li>
                             </ul>
-                            <button id="createOfferLink" type="button" class="btn btn-sueccess btn-sm bg-success text-dark rounded border-0 rounded15 fs-6 my-1" data-bs-toggle="modal" data-bs-target="#CreateOfferModal" hidden>
-                                <div class="text-center fw-bold">
-                                    Create Offer
-                                </div>
+                            <button id="createOfferLink" type="button" class="btn btn-success btn-sm bg-success text-dark rounded border-0 rounded15 fs-6 my-1 fw-bold" data-bs-toggle="modal" data-bs-target="#CreateOfferModal" style="width:140px" hidden>
+                                <i class="bi bi-plus-circle-fill"></i>&nbsp;&nbsp;Create Offer
                             </button>
 
                         </div>
-                        <div class="px-2 text-light d-flex align-items-center">
-                            <div id="CurrentPrice" hidden>
-                                <span class="priceToken"></span>&nbsp;<span class="stableName"></span>/<span class="tokenName me-2"></span>
+                        <div class="px-3 text-light d-flex align-items-center">
+                            <div id="CurrentPrice" class = "small" hidden>
+                                <span class="priceToken"></span>&nbsp;<span class="stableName"></span>/<span class="tokenName me-3"></span>
                             </div>
+                            <a href="#" class="text-success" data-bs-toggle="modal" data-bs-target="#AboutModal"><i class="bi bi-question-circle-fill"></i></a>
+                            <!-- <button type="button" class="btn btn-success btn-sm bg-secondary text-light rounded border-0 rounded15 fs-6 me-2 my-1 fw-bold" data-bs-toggle="modal" data-bs-target="#AboutModal">
+                                <i class="bi bi-question-circle-fill"></i>
+                            </button> -->
                         </div>
                     </div>
                 </div>
@@ -256,13 +258,13 @@
                 <div class="col-12 text-center text-light" style="font-size: small;position: relative;">
                     <span class="fw-bold">RAIDSHIFT marketplace</span>
                     <div style="position:absolute;right:0%;top:0px;font-size: x-small;" class="me-2">
-                        (build <build>97</build>)
+                        (build <build>100</build>)
                     </div>
                 </div>
 
                 <div class="col-12 text-center text-light mt-1" style="font-size: small;">
-                    <a class="text-light" href="https://github.com/raidshift/marketplace-contract" data-bs-toggle="modal" data-bs-target="#AboutModal" class="link-light"><i class="bi bi-info-circle"></i> About</a>
-                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <!-- <a class="text-light" href="https://github.com/raidshift/marketplace-contract" data-bs-toggle="modal" data-bs-target="#AboutModal" class="link-light"><i class="bi bi-question-circle"></i> About</a>
+                    &nbsp;&nbsp;|&nbsp;&nbsp; -->
                     <a class="text-light" href="https://github.com/raidshift/marketplace-contract" target="_blank" class="link-light"><i class="bi bi-github"></i> GitHub</a>
                     &nbsp;&nbsp;|&nbsp;&nbsp;
                     <span id="FooterContract" hidden><a class="contractMarketplaceCodeURL text-light" href="" target="_blank" class="link-light"><i class="bi bi-box"></i> Contract</a>
@@ -455,32 +457,32 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="small text-light">
+                    <div class="text-light">
                         <ul>
                             <li>
-                                RAIDSHIFT marketplace is a <span class="text-success">decentralized Peer-to-Peer crypto token exchange</span> powered by the <a href="https://tron.network" target="_blank" class="text-success">TRON Blockchain</a>
+                                RAIDSHIFT marketplace is a <span class="text-success">decentralized Peer-to-Peer crypto token exchange</span> on <a href="https://tron.network" target="_blank" class="text-success">TRON Blockchain</a>
                             </li>
                         </ul>
 
                         <ul>
                             <li>
-                                Enjoy <span class="text-success">trading fees</span> as low as <span class="text-success">0.1%</span> for market takers only
+                                Enjoy <span class="text-success">trading fees</span> as low as <span class="text-success">0.1%</span> for <span class="text-success">market takers</span> only
                             </li>
                         </ul>
                         <ul>
                             <li>
                                 Enjoy low or even <span class="text-success">zero transaction fees</span>
-                                (You need to stake TRX for Bandwith/Energy to reduce transaction fees)
+                                (You need to stake TRX for Bandwith & Energy to reduce transaction fees)
                             </li>
                         </ul>
                         <ul>
                             <li>
-                                Connect your wallet via <a href="https://www.tronlink.org" target="_blank" class="text-success">TronLink</a> to <span class="text-success">TRON Mainnet</span> and select a trading pair</small>
+                                Connect your wallet with <a href="https://www.tronlink.org" target="_blank" class="text-success">TronLink</a> to <span class="text-success">TRON Mainnet</span> and select a trading pair</small>
                             </li>
                         </ul>
                         <ul>
                             <li>
-                                Alternatively connect your wallet to <span class="text-success">TRON Nile Testnet</span> and select a Nile Testnet - trading pair. Get free test tokens at <a href="https://nileex.io/join/getJoinPage" target="_blank" class="text-light">https://nileex.io</a> !</small>
+                                To fiddle around connect your wallet to <span class="text-success">TRON Nile Testnet</span> and select a Nile Testnet - trading pair. Get free test tokens at <a href="https://nileex.io/join/getJoinPage" target="_blank" class="text-light">https://nileex.io</a> !</small>
                             </li>
                         </ul>
                     </div>
