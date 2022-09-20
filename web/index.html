@@ -264,7 +264,7 @@
                 <div class="col-12 text-center text-light" style="font-size: small;position: relative;">
                     <span class="fw-bold">RAIDSHIFT marketplace</span>
                     <div style="position:absolute;right:0%;top:0px;font-size: x-small;" class="me-2">
-                        (build <build>114</build>)
+                        (build <build>115</build>)
                     </div>
                 </div>
 
@@ -292,13 +292,17 @@
                     <h5 class="modal-title">Create Offer</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body pt-1">
+                    <div class="text-light small d-flex justify-content-between mb-3">
+                        <div class="fw-bold text-secondary">Balance</div>
+                        <div class="text-secondary"><span class="balanceToken"></span>&nbsp;<span class="tokenName"></span>&nbsp;|&nbsp;<span class="balanceStable"></span>&nbsp;<span class="stableName"></span></div>
+                    </div>
                     <form class="create-offer-validation" autocomplete="off">
-                        <div class="form-check form-check-inline mb-4 small">
+                        <div class="form-check form-check-inline mb-3 small">
                             <input class="form-check-input bg-secondary" type="radio" name="inlineRadioOptions" id="buy" value="buy">
                             <label class="text-success fw-bold" for="buy">Buy <span class="tokenName"></span></label>
                         </div>
-                        <div class="form-check form-check-inline mb-4 small">
+                        <div class="form-check form-check-inline mb-3 small">
                             <input class="form-check-input bg-secondary" type="radio" name="inlineRadioOptions" id="sell" value="sell">
                             <label class="text-success fw-bold" for="sell">Sell <span class="tokenName"></span></label>
                         </div>
