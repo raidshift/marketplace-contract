@@ -1,1 +1,1332 @@
-const a0_0x37f0c0=a0_0x25c6;(function(_0x53752a,_0x2cfc52){const _0xa0b47c=a0_0x25c6,_0xd0b4d1=_0x53752a();while(!![]){try{const _0x356a1c=-parseInt(_0xa0b47c(0x147))/0x1*(-parseInt(_0xa0b47c(0x1a4))/0x2)+-parseInt(_0xa0b47c(0x13f))/0x3*(-parseInt(_0xa0b47c(0x17f))/0x4)+-parseInt(_0xa0b47c(0x127))/0x5+-parseInt(_0xa0b47c(0xc5))/0x6+parseInt(_0xa0b47c(0xbc))/0x7*(-parseInt(_0xa0b47c(0x104))/0x8)+parseInt(_0xa0b47c(0xdb))/0x9+parseInt(_0xa0b47c(0x197))/0xa;if(_0x356a1c===_0x2cfc52)break;else _0xd0b4d1['push'](_0xd0b4d1['shift']());}catch(_0x486ff0){_0xd0b4d1['push'](_0xd0b4d1['shift']());}}}(a0_0x40d9,0x2d118));let NETWORK,CONTRACT_MARKETPLACE,CONTRACT_A4B,CONTRACT_B4A,CONTRACT_TOKEN,CONTRACT_STABLE,NAME_TOKEN,NAME_STABLE,IMG_TOKEN,TRC20_TOKEN_APPROVE_OWNER,TRC20_TOKEN_APPROVE_SPENDER,TRC20_TOKEN_APPROVE_VALUE,TRC20_STABLE_APPROVE_OWNER,TRC20_STABLE_APPROVE_SPENDER,TRC20_STABLE_APPROVE_VALUE,DECIMALS_TOKEN,DECIMALS_STABLE,FEED_TOKEN,FEED_STABLE,FEED_URL,CONTRACT_A4B_NETWORK_URL,CONTRACT_B4A_NETWORK_URL,HTML_CONN_BADGE,HTML_CONN_BADGE_SPINNER,TRONSCAN_URL_PREFIX,TRANSACTION_URL,ALLOWANCE_FIX_TOKEN,ALLOWANCE_FIX_STABLE,TRONGRID_URL_PREFIX;function a0_0x40d9(){const _0x2245ad=['):\x20START','true','error','https://tronscan.io','owner','getAttribute','.stableName','.account','minus','result','<span\x20class=\x22text-danger\x22>Please\x20choose\x20either\x20Buy\x20','ETH','https://nile.tronscan.org','665596TtHdlI','data-offer-id','#sell_btn_active_','CreateOffer','<td\x20class=\x22text-success\x22>\x20','toFixed','<span\x20class=\x22fw-bold\x22>Accept\x20Offer</span>','prototype','textbox.id\x20==\x20\x22price\x22\x20val=','<td\x20style=\x22text-align:right\x22><a\x20href\x20style=\x22text-decoration:\x20none;outline\x20:\x20none;\x22\x20data-bs-toggle=\x22modal\x22\x20data-bs-target=\x22#CancelOfferModal\x22\x20data-bs-id=\x22','volume','Mainnet','\x22\x20class=\x22buy_btn_active\x22\x20style=\x22text-align:right\x22\x20','<span\x20class=\x22text-danger\x22>Please\x20enter\x20valid\x20values</span>','.create-offer-validation','setSelectionRange','forEach','<td\x20class=\x22amount_',')</span>','\x22\x20target=\x22_blank\x22\x20class=\x22text-danger\x22>','meta','wad','ajax','ltc.svg','1747210RWEJCd','valA','</div>','.accept-offer-validation','#sell_btn_inactive_','click','.bids','buy','#cancel_','/#/transaction/','BTC','valSTABLE','><a\x20href\x20style=\x22text-decoration:\x20none;outline\x20:\x20none;\x22\x20data-bs-toggle=\x22modal\x22\x20data-bs-target=\x22#AcceptOfferModal\x22\x20data-bs-id=\x22','1580vpqFaW','disabled','.asks','eth_usdt','<span\x20class=\x22text-danger\x22>','message','#setPriceTokenCreateOffer','length','INITIALIZING\x20TRONWEB','\x22\x20class=\x22sell_btn_active\x22\x20style=\x22text-align:right\x22\x20','minValStable\x20=\x20','Unable\x20to\x20confirm\x20transaction\x20due\x20to\x20insufficient\x20funds','<td>','div','test','data','<tr\x20id=\x22buy_','STOPPING\x20PRICE\x20FEED','bitcoin','jst.svg','then','AccountResourceInsufficient\x20error','prop','UpdateOffer','#buy_btn_active_','keydown','&vs_currencies=usd','INITIALIZING\x20FAILED:','<td\x20id=\x22buy_btn_inactive_','reload','event_name','TXQzQaA9ooyWqFbYdti77puGejBV8kzpx8','append','.myoffers','href','stop','cancel','isGreaterThan','.tokenName','selectionEnd','hex','seller','contract','sell','<td\x20id=\x22sell_btn_active_','src','STOPPING\x20TRONWEB\x20DATA\x20FEED\x20','\x22\x20height=\x2224px\x22\x20width=\x2224px\x22\x20/>&nbsp;&nbsp;','<td\x20id=\x22sell_btn_inactive_','\x22><span\x20class=\x22badge\x20rounded-pill\x20bg-success\x20text-dark\x20\x22>Cancel</span></a></td>','\x22\x20target=\x22_blank\x22\x20class=\x22text-warning\x22>','.bidsCount','#setMaxAmountTokenCreateOffer','allowance','\x22\x20data-bs-sell=\x22true\x22><span\x20class=\x22badge\x20rounded-pill\x20bg-success\x20text-dark\x22>Sell</span></a></td>','/v1/contracts/','isLessThan','Nile\x20Testnet','tether','https://api.trongrid.io','call','price','volumeVal\x20=\x20','<td\x20class=\x22volume_','<span\x20class=\x22text-danger\x22>Please\x20select\x20Cancel\x20Offer</span>','push','data-exact-val-stable','283066qfjnsM','cancelOffer','oldSelectionStart','.asksCount','issuer','getMinValTOKEN','defaultAddress','minValToken\x20=\x20','USDJ','1855752WEjJgV','#buy','just-stablecoin','litecoin','</td>','.priceToken','usd','AcceptOffer','LTC','#FooterContractA4B','data-bs-id','<div\x20class=\x22spinner-border\x20spinner-border-sm\x20text-warning\x22\x20role=\x22status\x22><span\x20class=\x22visually-hidden\x22>Waiting...</span></div>\x20<span\x20class=\x22text-warning\x22>Waiting\x20for\x20signature...</span>','TR3DLthpnDdCGabhVDbD3VMsiJoCXY3bZd','):\x20CONFIRMED','slice','log','catch','TUhtf9TRBN26KWN5K9fXVc2HywZbL91J2X','.contractA4BCodeURL','.accept-offer-max-volume','.amount','get','730107ORiENH','.accept-offer-type','amount','times','<td\x20id=\x22buy_btn_active_','removeClass','priceFeedIntervall\x20cleared','oldSelectionEnd','btc.svg','<img\x20src=\x22tron.svg\x22\x20height=\x2214\x22\x20width=\x2214\x22\x20/>&nbsp;','AbiCoder','#sell','createOffer','application/json','#accountDiv','relatedTarget','replace','Sell\x20','addClass','valTOKEN','&order_by=block_timestamp,asc&search_internal=false','):\x20WAITING\x20FOR\x20CONFIRMATION','data-offer-sell','USDT','watch','acceptOffer','valB','Approval','flash','base58','#setMaxVolumeStableAcceptOffer','guy','dogecoin','.submitBtn','.price','select','setAccount','remaining','keyup','STARTING\x20TRONWEB\x20DATA\x20FEED','0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF','8ZwStha','balanceFeedInterval\x20cleared','stopPropagation','amountAccept','https://nile.trongrid.io','<span\x20style=\x22font-size:x-small\x22>&nbsp;(Test)</span>','value','</a>\x20to\x20be\x20confirmed...</span>','preventDefault','exactValSTABLE','<span\x20class=\x22fw-bold\x22>Approval\x20(','TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t','Buy','balanceOf','#sell_','substr','blur','getMinValSTABLE','acceptOfferMaxExactVolume\x20=\x20','pair','toLowerCase','.validationMsg','\x22\x20data-bs-sell=\x22false\x22><span\x20class=\x22badge\x20rounded-pill\x20bg-success\x20text-dark\x22>Buy</span></a></td>','TF17BgPaZYbz8oxbjhriubPDsA7ArKoLX3','isEqualTo','mouseup','</a>\x20confirmation\x20failed</span>','oldValue','.accept-offer-max-amount','#setMaxAmountTokenAcceptOffer','show.bs.modal','focus','<span\x20class=\x22text-danger\x22>MaxVolume\x20minus\x20Volume\x20is\x20too\x20low</span>','json','text','370310HHCEPG','ready','html','340282366920938463463374607431768211455','addEventListener','#createOfferLink','<div\x20class=\x22spinner-border\x20spinner-border-sm\x20text-warning\x22\x20role=\x22status\x22><span\x20class=\x22visually-hidden\x22>Waiting...</span></div>\x20<span\x20class=\x22text-warning\x22>Waiting\x20for\x20','/events?limit=200&min_block_timestamp=','val','doge.svg','code','CreateOfferModal','address','><span\x20class=\x22badge\x20rounded-pill\x20bg-secondary\x20text-dark\x22>Buy</span></td>','><a\x20href\x20style=\x22text-decoration:\x20none;outline\x20:\x20none;\x22\x20data-bs-toggle=\x22modal\x22\x20\x20data-bs-target=\x22#AcceptOfferModal\x22\x20data-bs-id=\x22','.myoffersCount','#AcceptOfferModal','THb4CqiFdwNHsWsQCs4JhzwjMWys4aqCbF','approve','checked','eth.png','TEZRaiqKSsNcLNTxQjLvKLejpRy6g64p9Q','.cancelOfferId','location','6ihdKFg','querySelectorAll','request','.volume','TN3W4H6rK2ce4vX9YnFQHwKENnHjoxb3m9','#CurrentPrice','</span>','selectionStart','25KoYUzw','#buy_','...','search','#buy_btn_inactive_','\x20transaction\x20<a\x20href=\x22','contextmenu','exactValTOKEN','#cancel','ethereum','CancelOfferModal','<span\x20class=\x22text-danger\x22>Your\x20','STARTING\x20PRICE\x20FEED\x20(','</a>\x20confirmed</span>','tronWeb','TV2hkq3aRKgRWadPXPVmGqHGzHew58nSUs','<span\x20class=\x22text-success\x22>','empty','jst_usdj_nile','\x22\x20class=\x22buy_btn_inactive\x22\x20style=\x22text-align:right\x22\x20','\x20balance\x20is\x20too\x20low</span>','hidden','action','/code','Buy\x20','/#/contract/','sort','<span\x20class=\x22fw-bold\x22>Cancel\x20Offer</span>','#FooterContractB4A','DOGE','sendTransaction\x20(','TQAymA8RuqWRpYrrKsYfh45H71h7WiY5G8','volumeAccept','attr','getElementById','</tr>','#conn_badge','data-bs-sell','block_timestamp','<td\x20class=\x22text-success\x22>','finally','<span\x20class=\x22text-danger\x22>Amount\x20is\x20too\x20low</span>','spender'];a0_0x40d9=function(){return _0x2245ad;};return a0_0x40d9();}const DECIMALS_8=0x8,DECIMALS_6=0x6,DECIMALS_2=0x2,MAX_LIST_ITEMS=0x1f4;let yourOffers=[],sellOffers=[],buyOffers=[],rawOffersA4B=[],rawOffersB4A=[],priceIdxA4B=[],priceIdxB4A=[],issuerIdxA4B=[],issuerIdxB4A=[],eventsBlockTimeStampA4B=0x0,eventsBlockTimeStampB4A=0x0,updatedIds=[],updateIssuerIds=[],yourOffersSet=![],buySellOffersSet=![],marketplace=null,token=null,stable=null,minValToken=null,minValStable=null,priceToken=null,balanceToken=null,balanceStable=null,allowanceToken=null,allowanceStable=null,priceFeedIntervall=null,balanceFeedInterval=null,createOfferWatcher,removeOfferWatcher,acceptOfferWatcher;cropZerosRegEx=/(\.[0-9]*[1-9])0+$|\.0*$/;const AbiCoder=ethers['utils'][a0_0x37f0c0(0xe5)],abiCoder=new AbiCoder();function shortenString(_0x5b8be9){const _0x31943e=a0_0x37f0c0;let _0x320e4e=_0x5b8be9;return _0x320e4e[_0x31943e(0x113)](0x0,0x5)+_0x31943e(0x149)+_0x320e4e[_0x31943e(0x113)](_0x320e4e[_0x31943e(0x1ab)]-0x5,_0x320e4e['length']);}function valueMoveCommaLeft(_0x51a6aa,_0x2fcdd0){const _0x12f0a8=a0_0x37f0c0;return BigNumber(_0x51a6aa)[_0x12f0a8(0x86)](0xa**_0x2fcdd0);}function valueMoveCommaRight(_0x3ec8d5,_0x1cf6ef){const _0x9120ce=a0_0x37f0c0;return BigNumber(_0x3ec8d5)[_0x9120ce(0xde)](0xa**_0x1cf6ef);}function adjustDecimals(_0xf2e4b5){const _0x4cd49f=a0_0x37f0c0;let _0x945b2e,_0x56ac3f=BigNumber(_0xf2e4b5);if(_0x56ac3f[_0x4cd49f(0xb1)](0.01))_0x945b2e=DECIMALS_8;else _0x56ac3f['isLessThan'](0x1)?_0x945b2e=DECIMALS_6:_0x945b2e=DECIMALS_2;return _0x56ac3f[_0x4cd49f(0x184)](_0x945b2e)[_0x4cd49f(0xeb)](cropZerosRegEx,'$1');}function getPrice(){const _0x1f2ee9=a0_0x37f0c0;$[_0x1f2ee9(0x195)]({'url':FEED_URL,'dataType':_0x1f2ee9(0x125),'success':function(_0x42408a){const _0x2d20c3=_0x1f2ee9;priceToken=adjustDecimals(BigNumber(_0x42408a[FEED_TOKEN][_0x2d20c3(0xcb)])['div'](_0x42408a[FEED_STABLE]['usd'])[_0x2d20c3(0x184)](DECIMALS_8)),$(_0x2d20c3(0xca))[_0x2d20c3(0x126)](priceToken);}});}function startPriceFeed(){const _0x4bc226=a0_0x37f0c0;priceFeedIntervall==null&&(console['log'](_0x4bc226(0x153)+FEED_URL+')'),getPrice(),priceFeedIntervall=setInterval(function(){getPrice();},0x2710));}function stopPriceFeed(){const _0x55a49b=a0_0x37f0c0;console['log'](_0x55a49b(0x8a)),priceFeedIntervall!=null&&(clearInterval(priceFeedIntervall),priceFeedIntervall=null,console['log'](_0x55a49b(0xe1)));}async function getFromTronWeb(){const _0x4edd8a=a0_0x37f0c0;await new Promise(_0x589ddc=>setTimeout(_0x589ddc,0x64)),balanceToken=String(await token[_0x4edd8a(0x111)](window[_0x4edd8a(0x155)]['defaultAddress'][_0x4edd8a(0xf8)])[_0x4edd8a(0xb5)]()),await new Promise(_0x8fba57=>setTimeout(_0x8fba57,0x64)),balanceStable=String(await stable[_0x4edd8a(0x111)](window[_0x4edd8a(0x155)]['defaultAddress'][_0x4edd8a(0xf8)])[_0x4edd8a(0xb5)]()),ALLOWANCE_FIX_TOKEN?allowanceToken=String((await token[_0x4edd8a(0xae)](window[_0x4edd8a(0x155)]['defaultAddress'][_0x4edd8a(0xf8)],CONTRACT_MARKETPLACE)[_0x4edd8a(0xb5)]())[_0x4edd8a(0x100)]):allowanceToken=String(await token[_0x4edd8a(0xae)](window[_0x4edd8a(0x155)][_0x4edd8a(0xc2)]['base58'],CONTRACT_MARKETPLACE)[_0x4edd8a(0xb5)]()),await new Promise(_0x56b892=>setTimeout(_0x56b892,0x64)),ALLOWANCE_FIX_STABLE?allowanceStable=String((await stable[_0x4edd8a(0xae)](window[_0x4edd8a(0x155)][_0x4edd8a(0xc2)][_0x4edd8a(0xf8)],CONTRACT_MARKETPLACE)[_0x4edd8a(0xb5)]())[_0x4edd8a(0x100)]):allowanceStable=String(await stable[_0x4edd8a(0xae)](window[_0x4edd8a(0x155)][_0x4edd8a(0xc2)]['base58'],CONTRACT_MARKETPLACE)['call']()),await new Promise(_0x38ea4b=>setTimeout(_0x38ea4b,0x64)),minValToken=String(await marketplace[_0x4edd8a(0xc1)]()[_0x4edd8a(0xb5)]()),await new Promise(_0x3cb455=>setTimeout(_0x3cb455,0x64)),minValStable=String(await marketplace[_0x4edd8a(0x115)]()[_0x4edd8a(0xb5)]()),$('.balanceToken')['text'](valueMoveCommaLeft(balanceToken,DECIMALS_TOKEN)[_0x4edd8a(0x184)](DECIMALS_8)[_0x4edd8a(0xeb)](cropZerosRegEx,'$1')),$('.balanceStable')[_0x4edd8a(0x126)](valueMoveCommaLeft(balanceStable,DECIMALS_STABLE)[_0x4edd8a(0x184)](DECIMALS_8)['replace'](cropZerosRegEx,'$1')),$(_0x4edd8a(0x179))[_0x4edd8a(0x129)](_0x4edd8a(0xe4)+shortenString(window[_0x4edd8a(0x155)]['defaultAddress']['base58']));}async function startTronWebFeed(){const _0x4fa782=a0_0x37f0c0;try{balanceFeedInterval==null&&(console[_0x4fa782(0xd4)](_0x4fa782(0x102)),await getFromTronWeb(),balanceFeedInterval=setInterval(async function(){await getFromTronWeb();},0x2710));}catch(_0x385114){}}function stopTronWebFeed(){const _0x274140=a0_0x37f0c0;console[_0x274140(0xd4)](_0x274140(0xa7)),balanceFeedInterval!=null&&(clearInterval(balanceFeedInterval),balanceFeedInterval=null,console[_0x274140(0xd4)](_0x274140(0x105)));}let LOCK=![],TRONWEB_INITIALIZED=![],TRONWEB_USER_HEX,PREV_ACCOUNT=null,ENTERED=![];$(document)[a0_0x37f0c0(0x128)](async function(){setTradingPair();});async function initializeFeeds(){startPriceFeed(),startEventFeed();}function a0_0x25c6(_0x2116a8,_0x5c3d96){const _0x40d924=a0_0x40d9();return a0_0x25c6=function(_0x25c60e,_0x151c49){_0x25c60e=_0x25c60e-0x82;let _0x1cdbdb=_0x40d924[_0x25c60e];return _0x1cdbdb;},a0_0x25c6(_0x2116a8,_0x5c3d96);}async function initializeTronWeb(){const _0x2b7623=a0_0x37f0c0;console['log'](_0x2b7623(0x1ac));try{await tronLinkReady(),await getTronWeb(),await startTronWebFeed(),$('#createOfferLink')['prop'](_0x2b7623(0x15c),![]);}catch(_0x5b792f){console[_0x2b7623(0xd4)](_0x2b7623(0x94)+_0x5b792f),$(_0x2b7623(0x12c))[_0x2b7623(0x8f)](_0x2b7623(0x15c),!![]),stopTronWebFeed();}}async function getTronWeb(){const _0x230a1c=a0_0x37f0c0;try{const _0x5ee227=await tronLink[_0x230a1c(0x141)]({'method':'tron_requestAccounts'});if(_0x5ee227[_0x230a1c(0x131)]!=0xc8)throw _0x5ee227;token=await tronWeb[_0x230a1c(0xa3)]()['at'](CONTRACT_TOKEN),stable=await tronWeb['contract']()['at'](CONTRACT_STABLE),marketplace=await tronWeb[_0x230a1c(0xa3)]()['at'](CONTRACT_MARKETPLACE),TRONWEB_INITIALIZED=!![],TRONWEB_USER_HEX=window[_0x230a1c(0x155)]['defaultAddress'][_0x230a1c(0xa1)];}catch(_0x58a0ae){throw _0x58a0ae;}}async function tronLinkReady(){await new Promise(_0x59714f=>{const _0x4616d4=setInterval(()=>{const _0x5efdfb=a0_0x25c6;if(window[_0x5efdfb(0x155)]&&window[_0x5efdfb(0x155)][_0x5efdfb(0xc2)][_0x5efdfb(0xf8)])return clearInterval(_0x4616d4),_0x59714f();},0x64);});}setInterval(function(){const _0x161d89=a0_0x37f0c0,_0x2029f3=tronWeb['defaultAddress']['base58'];if(!PREV_ACCOUNT&&_0x2029f3)PREV_ACCOUNT=_0x2029f3;else PREV_ACCOUNT&&PREV_ACCOUNT!=_0x2029f3&&window[_0x161d89(0x13e)][_0x161d89(0x96)]();},0x3e8),window[a0_0x37f0c0(0x12b)](a0_0x37f0c0(0x1a9),async function(_0x41372d){const _0x4b0cba=a0_0x37f0c0;_0x41372d[_0x4b0cba(0x88)][_0x4b0cba(0x1a9)]&&_0x41372d[_0x4b0cba(0x88)]['message'][_0x4b0cba(0x15d)]==_0x4b0cba(0xff)&&(ENTERED&&!LOCK&&(LOCK=!![],addr=_0x41372d['data'][_0x4b0cba(0x1a9)]['data'][_0x4b0cba(0x133)],(addr==undefined||addr==null||!addr)&&window[_0x4b0cba(0x13e)][_0x4b0cba(0x96)](),!TRONWEB_INITIALIZED?await initializeTronWeb():await getTronWeb()[_0x4b0cba(0x8d)](()=>{})[_0x4b0cba(0xd5)](_0x3f7c90=>{const _0xb52786=_0x4b0cba;this['window'][_0xb52786(0x13e)][_0xb52786(0x96)]();}),LOCK=![]));});function sortRawOffersByPrice(_0x15aedf){const _0x536b4f=a0_0x37f0c0;let _0x21d570=_0x15aedf?priceIdxA4B:priceIdxB4A,_0x1f181a=_0x15aedf?rawOffersA4B:rawOffersB4A;_0x21d570[_0x536b4f(0x161)]((_0x4b651e,_0x5e9762)=>{const _0x1118af=_0x536b4f;let _0x3f6bc5=BigNumber(_0x1f181a[_0x4b651e][_0x1118af(0xb6)]),_0xea78d9=BigNumber(_0x1f181a[_0x5e9762][_0x1118af(0xb6)]);if(_0x3f6bc5==0x0)return 0x1;if(_0xea78d9==0x0)return-0x1;if(_0x3f6bc5[_0x1118af(0xb1)](_0xea78d9))return _0x15aedf?-0x1:0x1;if(_0x3f6bc5[_0x1118af(0x9e)](_0xea78d9))return _0x15aedf?0x1:-0x1;return 0x0;});}async function fetchEventsOnePage(_0x4c2c94,_0x326b5a,_0x25ae59){const _0x3ad952=a0_0x37f0c0,_0x288494={'method':'GET','headers':{'Accept':_0x3ad952(0xe8)}};let _0x529f99=TRONGRID_URL_PREFIX+_0x3ad952(0xb0)+_0x25ae59+_0x3ad952(0x12e)+_0x4c2c94+_0x3ad952(0xef);return _0x326b5a&&(_0x529f99+='&fingerprint='+_0x326b5a),await fetch(_0x529f99,_0x288494)[_0x3ad952(0x8d)](_0x20e4aa=>_0x20e4aa[_0x3ad952(0x125)]())[_0x3ad952(0x8d)](_0x5bca62=>{return _0x5bca62;})[_0x3ad952(0xd5)](_0x500d6f=>{const _0x154074=_0x3ad952;console[_0x154074(0x174)](_0x500d6f);});}function logOffer(_0x4de6d9){const _0x320af6=a0_0x37f0c0;console[_0x320af6(0xd4)](_0x4de6d9['id']+',\x20'+_0x4de6d9[_0x320af6(0xc0)]+',\x20'+_0x4de6d9[_0x320af6(0x14e)]+',\x20'+_0x4de6d9['exactValSTABLE']+',\x20'+_0x4de6d9[_0x320af6(0xee)]+',\x20'+_0x4de6d9[_0x320af6(0x1a2)]+',\x20'+_0x4de6d9[_0x320af6(0xb6)]+',\x20'+_0x4de6d9[_0x320af6(0xa4)]);}async function fetchEvents(_0x598189){const _0x3c8356=a0_0x37f0c0;let _0x1ba22e=undefined,_0x526a74=undefined,_0x4f1cb5=_0x598189?eventsBlockTimeStampA4B:eventsBlockTimeStampB4A,_0x1f9ba9=0x0,_0x1c1e40=_0x598189?CONTRACT_A4B:CONTRACT_B4A,_0x251fa3=_0x598189?rawOffersA4B:rawOffersB4A,_0x2fefb5=_0x598189?priceIdxA4B:priceIdxB4A,_0x24d66f=_0x598189?issuerIdxA4B:issuerIdxB4A,_0x1c0af3=_0x598189?'s':'b',_0xc5d404=![];while(!![]){_0x526a74=undefined;while(!_0x526a74){_0x526a74=await fetchEventsOnePage(_0x4f1cb5,_0x1ba22e,_0x1c1e40),await new Promise(_0x70864a=>setTimeout(_0x70864a,0x64));}_0x526a74[_0x3c8356(0x88)]['forEach'](_0x592b0d=>{const _0x36b6ec=_0x3c8356;if(_0x592b0d[_0x36b6ec(0x97)]==_0x36b6ec(0x90)){_0x1f9ba9<_0x592b0d[_0x36b6ec(0x16d)]&&(_0x1f9ba9=_0x592b0d[_0x36b6ec(0x16d)]);let _0x2ce489,_0xae5712,_0x96b6b6=0x0;_0x598189?(_0x2ce489=_0x592b0d[_0x36b6ec(0x17b)]['valA'],_0xae5712=_0x592b0d[_0x36b6ec(0x17b)][_0x36b6ec(0xf5)]):(_0xae5712=_0x592b0d[_0x36b6ec(0x17b)][_0x36b6ec(0x198)],_0x2ce489=_0x592b0d[_0x36b6ec(0x17b)][_0x36b6ec(0xf5)]);!BigNumber(_0x2ce489)['isEqualTo'](0x0)&&!BigNumber(_0xae5712)[_0x36b6ec(0x11c)](0x0)&&(_0x96b6b6=BigNumber(_0xae5712)[_0x36b6ec(0x86)](_0x2ce489)[_0x36b6ec(0x184)](DECIMALS_8));let _0x4358c2=_0x592b0d[_0x36b6ec(0x17b)]['id']>=_0x251fa3[_0x36b6ec(0x1ab)]?!![]:![];if(_0x4358c2||BigNumber(_0x2ce489)[_0x36b6ec(0xb1)](_0x251fa3[_0x592b0d[_0x36b6ec(0x17b)]['id']][_0x36b6ec(0x14e)])||BigNumber(_0xae5712)[_0x36b6ec(0xb1)](_0x251fa3[_0x592b0d[_0x36b6ec(0x17b)]['id']][_0x36b6ec(0x10d)])){let _0x239506='41'+_0x592b0d[_0x36b6ec(0x17b)][_0x36b6ec(0xa2)][_0x36b6ec(0x113)](0x2)[_0x36b6ec(0x118)](),_0x9c36fe=_0x1c0af3+_0x592b0d['result']['id'];_0x4358c2?(_0x2fefb5[_0x36b6ec(0xba)](_0x592b0d[_0x36b6ec(0x17b)]['id']),yourOffersSet&&_0x239506===TRONWEB_USER_HEX&&(_0x24d66f['push'](_0x592b0d[_0x36b6ec(0x17b)]['id']),updateIssuerIds[_0x36b6ec(0xba)](_0x9c36fe)),updatedIds[_0x36b6ec(0xba)](_0x9c36fe),_0xc5d404=!![]):!(_0x96b6b6===_0x251fa3[_0x592b0d[_0x36b6ec(0x17b)]['id']][_0x36b6ec(0xb6)])&&(updatedIds[_0x36b6ec(0xba)](_0x9c36fe),_0xc5d404=!![]),_0x251fa3[_0x592b0d[_0x36b6ec(0x17b)]['id']]={'id':_0x9c36fe,'issuer':_0x239506,'exactValTOKEN':_0x2ce489,'exactValSTABLE':_0xae5712,'valTOKEN':valueMoveCommaLeft(_0x2ce489,DECIMALS_TOKEN)[_0x36b6ec(0x184)](DECIMALS_8),'valSTABLE':valueMoveCommaLeft(_0xae5712,DECIMALS_STABLE)['toFixed'](DECIMALS_8),'price':_0x96b6b6,'sell':_0x598189};}}}),_0x1ba22e=_0x526a74[_0x3c8356(0x193)]['fingerprint'];if(!_0x1ba22e)break;}_0xc5d404&&sortRawOffersByPrice(_0x598189),_0x598189?eventsBlockTimeStampA4B=_0x1f9ba9:eventsBlockTimeStampB4A=_0x1f9ba9;}function displayOffers(){const _0x32f949=a0_0x37f0c0;let _0x2b54e1=0x0,_0x4f6b1f=0x0,_0x36f71c=0x0;$(_0x32f949(0x1a6))[_0x32f949(0x158)](),$(_0x32f949(0x19d))['empty'](),$('.myoffers')[_0x32f949(0x158)](),priceIdxA4B[_0x32f949(0x18f)](_0x500af7=>{const _0x131388=_0x32f949;let _0x5ce7b0=rawOffersA4B[_0x500af7];_0x5ce7b0[_0x131388(0xb6)]>0x0&&($('.asks')['append'](sellOfferToHTML(_0x5ce7b0)),_0x4f6b1f++);}),$(_0x32f949(0xbf))[_0x32f949(0x126)]('('+_0x4f6b1f+')'),priceIdxB4A[_0x32f949(0x18f)](_0x1e44ad=>{const _0x5d11a0=_0x32f949;let _0xa0df9c=rawOffersB4A[_0x1e44ad];_0xa0df9c[_0x5d11a0(0xb6)]>0x0&&($('.bids')['append'](buyOfferToHTML(_0xa0df9c)),_0x36f71c++);}),$(_0x32f949(0xac))['text']('('+_0x36f71c+')'),issuerIdxA4B[_0x32f949(0x18f)](_0x30ab21=>{const _0x3f246a=_0x32f949;let _0x5ca1be=rawOffersA4B[_0x30ab21];_0x5ca1be['price']>0x0&&($(_0x3f246a(0x9a))[_0x3f246a(0x99)](yourOfferToHTML(_0x5ca1be)),$(_0x3f246a(0x91)+_0x5ca1be['id'])['prop'](_0x3f246a(0x15c),!![]),$(_0x3f246a(0x14b)+_0x5ca1be['id'])[_0x3f246a(0x8f)](_0x3f246a(0x15c),![]),$(_0x3f246a(0x181)+_0x5ca1be['id'])[_0x3f246a(0x8f)](_0x3f246a(0x15c),!![]),$(_0x3f246a(0x19b)+_0x5ca1be['id'])['prop']('hidden',![]),_0x2b54e1++);}),issuerIdxB4A[_0x32f949(0x18f)](_0x1829d8=>{const _0x1c804a=_0x32f949;let _0x2e8ef6=rawOffersB4A[_0x1829d8];_0x2e8ef6[_0x1c804a(0xb6)]>0x0&&($(_0x1c804a(0x9a))[_0x1c804a(0x99)](yourOfferToHTML(_0x2e8ef6)),$(_0x1c804a(0x91)+_0x2e8ef6['id'])[_0x1c804a(0x8f)](_0x1c804a(0x15c),!![]),$(_0x1c804a(0x14b)+_0x2e8ef6['id'])[_0x1c804a(0x8f)](_0x1c804a(0x15c),![]),$('#sell_btn_active_'+_0x2e8ef6['id'])[_0x1c804a(0x8f)](_0x1c804a(0x15c),!![]),$(_0x1c804a(0x19b)+_0x2e8ef6['id'])[_0x1c804a(0x8f)]('hidden',![]),_0x2b54e1++);}),$(_0x32f949(0x136))[_0x32f949(0x126)]('('+_0x2b54e1+')');}function flashOffers(){const _0x465d63=a0_0x37f0c0;updatedIds[_0x465d63(0x18f)](_0x319561=>{const _0x4bfaee=_0x465d63;$(_0x4bfaee(0x19f)+_0x319561)[_0x4bfaee(0xe0)](_0x4bfaee(0xf7)),$(_0x4bfaee(0x148)+_0x319561)['removeClass']('flash'),$(_0x4bfaee(0x112)+_0x319561)[_0x4bfaee(0xe0)](_0x4bfaee(0xf7)),setTimeout(function(){const _0x45a224=_0x4bfaee;$(_0x45a224(0x19f)+_0x319561)[_0x45a224(0xed)](_0x45a224(0xf7)),$(_0x45a224(0x148)+_0x319561)[_0x45a224(0xed)](_0x45a224(0xf7)),$(_0x45a224(0x112)+_0x319561)['addClass'](_0x45a224(0xf7));},0x64);});}async function fetchAndDisplayEvents(){const _0x18aab8=a0_0x37f0c0;updatedIds=[],updateIssuerIds=[],await fetchEvents(!![]),await fetchEvents(![]);let _0x56a3e9=![];if(TRONWEB_INITIALIZED&&!yourOffersSet){for(let _0x1b493e=0x0;_0x1b493e<rawOffersA4B[_0x18aab8(0x1ab)];_0x1b493e++){rawOffersA4B[_0x1b493e][_0x18aab8(0xc0)]===TRONWEB_USER_HEX&&(issuerIdxA4B[_0x18aab8(0xba)](_0x1b493e),updateIssuerIds['push'](rawOffersA4B[_0x1b493e][_0x18aab8(0xc0)]['id']));}for(let _0x3edeca=0x0;_0x3edeca<rawOffersB4A['length'];_0x3edeca++){rawOffersB4A[_0x3edeca][_0x18aab8(0xc0)]===TRONWEB_USER_HEX&&(issuerIdxB4A[_0x18aab8(0xba)](_0x3edeca),updateIssuerIds['push'](rawOffersB4A[_0x3edeca][_0x18aab8(0xc0)]['id']));}yourOffersSet=!![],_0x56a3e9=!![];}(updatedIds[_0x18aab8(0x1ab)]>0x0||updateIssuerIds[_0x18aab8(0x1ab)]>0x0||_0x56a3e9)&&(displayOffers(),flashOffers());}async function startEventFeed(){const _0x59455b=a0_0x37f0c0;try{console[_0x59455b(0xd4)]('STARTING\x20EVENT\x20FEED');while(!![]){await fetchAndDisplayEvents(),await new Promise(_0x408e9b=>setTimeout(_0x408e9b,0x3e8));}}catch(_0x2aae32){console[_0x59455b(0xd4)](_0x2aae32);}}function yourOfferToHTML(_0x234d24){const _0x52c9b6=a0_0x37f0c0;let _0x1a68aa='<tr\x20id=\x22cancel_'+_0x234d24['id']+'\x22>';return _0x1a68aa+=_0x52c9b6(0x85)+_0x234d24['id']+_0x52c9b6(0xc9),_0x1a68aa+=_0x52c9b6(0x183)+(_0x234d24[_0x52c9b6(0xa4)]?'Sell':_0x52c9b6(0x110))+'</td>',_0x1a68aa+=_0x52c9b6(0x190)+_0x234d24['id']+'\x22>'+adjustDecimals(_0x234d24[_0x52c9b6(0xee)])+_0x52c9b6(0xc9),_0x1a68aa+=_0x52c9b6(0x16e)+adjustDecimals(_0x234d24[_0x52c9b6(0xb6)])+_0x52c9b6(0xc9),_0x1a68aa+=_0x52c9b6(0xb8)+_0x234d24['id']+'\x22>'+adjustDecimals(_0x234d24[_0x52c9b6(0x1a2)])+'</td>',_0x1a68aa+=_0x52c9b6(0x188)+_0x234d24['id']+'\x22\x20data-bs-sell=\x22'+_0x234d24['sell']+_0x52c9b6(0xaa),_0x1a68aa+=_0x52c9b6(0x16a),_0x1a68aa;}function sellOfferToHTML(_0x179a98){const _0x3e1de5=a0_0x37f0c0;let _0x3b4b44=_0x3e1de5(0x89)+_0x179a98['id']+'\x22>';return _0x3b4b44+=_0x3e1de5(0x190)+_0x179a98['id']+'\x22>'+adjustDecimals(_0x179a98[_0x3e1de5(0xee)])+_0x3e1de5(0xc9),_0x3b4b44+=_0x3e1de5(0x16e)+adjustDecimals(_0x179a98[_0x3e1de5(0xb6)])+_0x3e1de5(0xc9),_0x3b4b44+='<td\x20class=\x22volume_'+_0x179a98['id']+'\x22>'+adjustDecimals(_0x179a98[_0x3e1de5(0x1a2)])+'</td>',_0x3b4b44+=_0x3e1de5(0xdf)+_0x179a98['id']+_0x3e1de5(0x18b)+(yourOffersSet?'':_0x3e1de5(0x15c))+_0x3e1de5(0x1a3)+_0x179a98['id']+_0x3e1de5(0x11a),_0x3b4b44+=_0x3e1de5(0x95)+_0x179a98['id']+_0x3e1de5(0x15a)+(yourOffersSet?_0x3e1de5(0x15c):'')+_0x3e1de5(0x134),_0x3b4b44+=_0x3e1de5(0x16a),_0x3b4b44;}function buyOfferToHTML(_0x53899b){const _0x3ca821=a0_0x37f0c0;let _0x1858f2='<tr\x20id=\x22sell_'+_0x53899b['id']+'\x22>';return _0x1858f2+=_0x3ca821(0x190)+_0x53899b['id']+'\x22>'+adjustDecimals(_0x53899b[_0x3ca821(0xee)])+_0x3ca821(0xc9),_0x1858f2+=_0x3ca821(0x16e)+adjustDecimals(_0x53899b[_0x3ca821(0xb6)])+_0x3ca821(0xc9),_0x1858f2+=_0x3ca821(0xb8)+_0x53899b['id']+'\x22>'+adjustDecimals(_0x53899b['valSTABLE'])+_0x3ca821(0xc9),_0x1858f2+=_0x3ca821(0xa5)+_0x53899b['id']+_0x3ca821(0x82)+(yourOffersSet?'':_0x3ca821(0x15c))+_0x3ca821(0x135)+_0x53899b['id']+_0x3ca821(0xaf),_0x1858f2+=_0x3ca821(0xa9)+_0x53899b['id']+'\x22\x20class=\x22sell_btn_inactive\x22\x20style=\x22text-align:right\x22\x20'+(yourOffersSet?_0x3ca821(0x15c):'')+'><span\x20class=\x22badge\x20rounded-pill\x20bg-secondary\x20text-dark\x22>Sell</span></td>',_0x1858f2+=_0x3ca821(0x16a),_0x1858f2;}function setInputFilter(_0x7ab631,_0x33c2bf){const _0x2022d7=a0_0x37f0c0;['input',_0x2022d7(0x92),_0x2022d7(0x101),'mousedown',_0x2022d7(0x11d),_0x2022d7(0xfe),_0x2022d7(0x14d),'drop',_0x2022d7(0x114),_0x2022d7(0x123)][_0x2022d7(0x18f)](function(_0x19aeca){const _0x219368=_0x2022d7;_0x7ab631[_0x219368(0x12b)](_0x19aeca,function(){const _0x61bb65=_0x219368;if(_0x33c2bf(this[_0x61bb65(0x10a)]))this[_0x61bb65(0x11f)]=this[_0x61bb65(0x10a)],this[_0x61bb65(0xbe)]=this[_0x61bb65(0x146)],this[_0x61bb65(0xe2)]=this[_0x61bb65(0xa0)];else this['hasOwnProperty']('oldValue')?(this[_0x61bb65(0x10a)]=this[_0x61bb65(0x11f)],this[_0x61bb65(0x18e)](this[_0x61bb65(0xbe)],this[_0x61bb65(0xe2)])):this[_0x61bb65(0x10a)]='';_0x19aeca==_0x61bb65(0x114)&&(this['value']==''||this[_0x61bb65(0x10a)]<=0x0?($('#'+_0x7ab631['id'])[_0x61bb65(0x12f)](BigNumber(0x0)[_0x61bb65(0x184)](DECIMALS_8)),this['value']=BigNumber(0x0)[_0x61bb65(0x184)](DECIMALS_8)):$('#'+_0x7ab631['id'])['val'](BigNumber($('#'+_0x7ab631['id'])['val']())[_0x61bb65(0x184)](DECIMALS_8)));if(_0x7ab631['id']=='amount'||_0x7ab631['id']==_0x61bb65(0x107)){const _0x51b3ea=$(_0x61bb65(0xfd))[_0x61bb65(0x12f)]();_0x51b3ea==''||_0x51b3ea<=0x0||this[_0x61bb65(0x10a)]==''||this[_0x61bb65(0x10a)]<=0x0?$(_0x61bb65(0x142))['val'](BigNumber(0x0)['toFixed'](DECIMALS_8)):($('.volume')[_0x61bb65(0x12f)](BigNumber(BigNumber(_0x51b3ea)[_0x61bb65(0xde)](this['value'])[_0x61bb65(0x184)](DECIMALS_STABLE))['toFixed'](DECIMALS_8)),_0x19aeca==_0x61bb65(0x114)&&$('.amount')['val'](BigNumber(BigNumber($(_0x61bb65(0x142))[_0x61bb65(0x12f)]())[_0x61bb65(0x86)](_0x51b3ea)[_0x61bb65(0x184)](DECIMALS_TOKEN))[_0x61bb65(0x184)](DECIMALS_8)));}else{if(_0x7ab631['id']==_0x61bb65(0x189)||_0x7ab631['id']==_0x61bb65(0x167)){const _0x31fc2c=$(_0x61bb65(0xfd))['val']();console['log']('textbox.id\x20==\x20\x22volume\x22\x20val='+this[_0x61bb65(0x12f)]),_0x31fc2c==''||_0x31fc2c<=0x0||this[_0x61bb65(0x10a)]==''||this[_0x61bb65(0x10a)]<=0x0?$(_0x61bb65(0xd9))[_0x61bb65(0x12f)](''):($(_0x61bb65(0xd9))['val'](BigNumber(BigNumber(this[_0x61bb65(0x10a)])['div'](_0x31fc2c)[_0x61bb65(0x184)](DECIMALS_TOKEN))['toFixed'](DECIMALS_8)),_0x19aeca==_0x61bb65(0x114)&&$(_0x61bb65(0x142))[_0x61bb65(0x12f)](BigNumber(BigNumber(_0x31fc2c)[_0x61bb65(0xde)]($(_0x61bb65(0xd9))['val']())['toFixed'](DECIMALS_STABLE))['toFixed'](DECIMALS_8)));}else{if(_0x7ab631['id']==_0x61bb65(0xb6)){const _0x52559f=$(_0x61bb65(0xd9))[_0x61bb65(0x12f)]();console[_0x61bb65(0xd4)](_0x61bb65(0x187)+this[_0x61bb65(0x12f)]),this[_0x61bb65(0x10a)]==''||this['value']<=0x0||_0x52559f==''||_0x52559f<=0x0?($(_0x61bb65(0xd9))[_0x61bb65(0x12f)](''),$('.volume')[_0x61bb65(0x12f)]('')):$(_0x61bb65(0x142))[_0x61bb65(0x12f)](BigNumber(BigNumber(this[_0x61bb65(0x10a)])[_0x61bb65(0xde)](_0x52559f)['toFixed'](DECIMALS_STABLE))[_0x61bb65(0x184)](DECIMALS_8));}}}});});}setInputFilter(document[a0_0x37f0c0(0x169)](a0_0x37f0c0(0xdd)),function(_0x50e31f){return/^-?\d*[.]?\d{0,8}$/['test'](_0x50e31f);}),setInputFilter(document['getElementById'](a0_0x37f0c0(0xb6)),function(_0x272ab8){return/^-?\d*[.]?\d{0,8}$/['test'](_0x272ab8);}),setInputFilter(document['getElementById'](a0_0x37f0c0(0x189)),function(_0x274e1f){return/^-?\d*[.]?\d{0,8}$/['test'](_0x274e1f);}),setInputFilter(document[a0_0x37f0c0(0x169)]('amountAccept'),function(_0x191427){return/^-?\d*[.]?\d{0,8}$/['test'](_0x191427);}),setInputFilter(document['getElementById'](a0_0x37f0c0(0x167)),function(_0x248186){const _0x1a9036=a0_0x37f0c0;return/^-?\d*[.]?\d{0,8}$/[_0x1a9036(0x87)](_0x248186);}),$(function(){const _0x4f00e7=a0_0x37f0c0;$(_0x4f00e7(0xad))[_0x4f00e7(0x19c)](function(_0x3bfce3){const _0x28eb04=_0x4f00e7;_0x3bfce3[_0x28eb04(0x10c)](),$(_0x28eb04(0xd9))[_0x28eb04(0x8f)](_0x28eb04(0x1a5))!=!![]&&($(_0x28eb04(0xd9))[_0x28eb04(0x12f)](valueMoveCommaLeft(balanceToken,DECIMALS_TOKEN)[_0x28eb04(0x184)](DECIMALS_8)),document[_0x28eb04(0x169)](_0x28eb04(0xdd))[_0x28eb04(0x123)]());}),$('#setMaxVolumeStableCreateOffer')[_0x4f00e7(0x19c)](function(_0x127865){const _0x4cde3d=_0x4f00e7;_0x127865[_0x4cde3d(0x10c)](),$(_0x4cde3d(0x142))[_0x4cde3d(0x8f)](_0x4cde3d(0x1a5))!=!![]&&($(_0x4cde3d(0x142))['val'](valueMoveCommaLeft(balanceStable,DECIMALS_STABLE)['toFixed'](DECIMALS_8)),document['getElementById']('volume')['focus']());}),$(_0x4f00e7(0x1aa))[_0x4f00e7(0x19c)](function(_0x1c607d){const _0x5eeee2=_0x4f00e7;_0x1c607d[_0x5eeee2(0x10c)](),$(_0x5eeee2(0xfd))[_0x5eeee2(0x8f)](_0x5eeee2(0x1a5))!=!![]&&($(_0x5eeee2(0xfd))[_0x5eeee2(0x12f)](priceToken),document[_0x5eeee2(0x169)](_0x5eeee2(0xb6))[_0x5eeee2(0x123)]());}),$(_0x4f00e7(0x121))[_0x4f00e7(0x19c)](function(_0x5160c1){const _0x230e99=_0x4f00e7;_0x5160c1['preventDefault'](),$(_0x230e99(0xd9))[_0x230e99(0x8f)](_0x230e99(0x1a5))!=!![]&&($('.amount')['val']($(_0x230e99(0x120))[_0x230e99(0x126)]()),document['getElementById'](_0x230e99(0x107))[_0x230e99(0x123)]());}),$(_0x4f00e7(0xf9))[_0x4f00e7(0x19c)](function(_0x9421a9){const _0x2b7848=_0x4f00e7;_0x9421a9[_0x2b7848(0x10c)](),$(_0x2b7848(0x142))[_0x2b7848(0x8f)](_0x2b7848(0x1a5))!=!![]&&($(_0x2b7848(0x142))[_0x2b7848(0x12f)]($(_0x2b7848(0xd8))[_0x2b7848(0x126)]()),document['getElementById'](_0x2b7848(0x167))[_0x2b7848(0x123)]());});});var createOfferModal=document[a0_0x37f0c0(0x169)](a0_0x37f0c0(0x132));createOfferModal[a0_0x37f0c0(0x12b)](a0_0x37f0c0(0x122),function(_0x3705d5){const _0x4d9cf6=a0_0x37f0c0;priceToken!=null&&$('.price')[_0x4d9cf6(0x12f)](BigNumber(priceToken)['toFixed'](DECIMALS_8)),$(_0x4d9cf6(0xc6))[_0x4d9cf6(0x8f)](_0x4d9cf6(0x13a),![]),$(_0x4d9cf6(0xe6))['prop']('checked',![]),$(_0x4d9cf6(0xd9))[_0x4d9cf6(0x12f)](''),$(_0x4d9cf6(0x142))['val'](''),$(_0x4d9cf6(0x119))[_0x4d9cf6(0x126)](''),$(_0x4d9cf6(0xfc))[_0x4d9cf6(0x8f)]('hidden',![]),$(_0x4d9cf6(0xfc))['prop']('disabled',![]),$(_0x4d9cf6(0xc6))[_0x4d9cf6(0x8f)]('disabled',![]),$(_0x4d9cf6(0xe6))[_0x4d9cf6(0x8f)]('disabled',![]),$('.amount')['prop']('disabled',![]),$(_0x4d9cf6(0xfd))[_0x4d9cf6(0x8f)](_0x4d9cf6(0x1a5),![]),$('.volume')[_0x4d9cf6(0x8f)]('disabled',![]);});var createOfferModal=document[a0_0x37f0c0(0x169)]('AcceptOfferModal');createOfferModal[a0_0x37f0c0(0x12b)](a0_0x37f0c0(0x122),function(_0x1ed98e){const _0x541024=a0_0x37f0c0;let _0x216ff2=String(_0x1ed98e[_0x541024(0xea)][_0x541024(0x177)]('data-bs-id')),_0x4b6849=_0x1ed98e['relatedTarget'][_0x541024(0x177)](_0x541024(0x16c))==_0x541024(0x173)?!![]:![],_0x4d6fb2=null;if(_0x4b6849){let _0x1bdd1d=0x0,_0x1bc954=![];while(_0x1bc954==![]&&_0x1bdd1d<buyOffers[_0x541024(0x1ab)]){buyOffers[_0x1bdd1d]['id']==_0x216ff2&&(_0x4d6fb2=buyOffers[_0x1bdd1d],_0x1bc954=!![]),_0x1bdd1d++;}$(_0x541024(0xdc))[_0x541024(0x126)](_0x541024(0xec)+NAME_TOKEN);}else{let _0x54ea88=0x0,_0x148cdb=![];while(_0x148cdb==![]&&_0x54ea88<sellOffers[_0x541024(0x1ab)]){sellOffers[_0x54ea88]['id']==_0x216ff2&&(_0x4d6fb2=sellOffers[_0x54ea88],_0x148cdb=!![]),_0x54ea88++;}$(_0x541024(0xdc))[_0x541024(0x126)](_0x541024(0x15f)+NAME_TOKEN);}$('#AcceptOfferModal')[_0x541024(0x168)]('data-offer-id',_0x216ff2),$(_0x541024(0x137))['attr'](_0x541024(0xf1),_0x4b6849),$(_0x541024(0xfd))[_0x541024(0x12f)](_0x4d6fb2['price']),$('.amount')[_0x541024(0x12f)](_0x4d6fb2[_0x541024(0xee)]),$(_0x541024(0x120))[_0x541024(0x126)](_0x4d6fb2[_0x541024(0xee)][_0x541024(0xeb)](cropZerosRegEx,'$1')),$(_0x541024(0x120))[_0x541024(0x168)](_0x541024(0x180),_0x216ff2),$(_0x541024(0x142))[_0x541024(0x12f)](_0x4d6fb2[_0x541024(0x1a2)]),$(_0x541024(0xd8))[_0x541024(0x126)](_0x4d6fb2[_0x541024(0x1a2)][_0x541024(0xeb)](cropZerosRegEx,'$1')),$('.accept-offer-max-volume')[_0x541024(0x168)](_0x541024(0x180),_0x216ff2),$('.accept-offer-max-volume')[_0x541024(0x168)](_0x541024(0xbb),_0x4d6fb2[_0x541024(0x10d)]),$(_0x541024(0x119))[_0x541024(0x126)](''),$(_0x541024(0xfc))[_0x541024(0x8f)](_0x541024(0x15c),![]),$(_0x541024(0xfc))[_0x541024(0x8f)]('disabled',![]),$(_0x541024(0xd9))[_0x541024(0x8f)](_0x541024(0x1a5),![]),$(_0x541024(0xfd))['prop']('disabled',!![]),$(_0x541024(0x142))[_0x541024(0x8f)](_0x541024(0x1a5),![]);});var createOfferModal=document[a0_0x37f0c0(0x169)](a0_0x37f0c0(0x151));createOfferModal['addEventListener'](a0_0x37f0c0(0x122),function(_0x479ec1){const _0x7dc7f7=a0_0x37f0c0;let _0x3805f8=_0x479ec1[_0x7dc7f7(0xea)][_0x7dc7f7(0x177)](_0x7dc7f7(0xcf));$(_0x7dc7f7(0x14f))[_0x7dc7f7(0x8f)](_0x7dc7f7(0x13a),![]),$('#cancel')['prop'](_0x7dc7f7(0x10a),_0x3805f8),$(_0x7dc7f7(0x14f))[_0x7dc7f7(0x8f)]('disabled',![]),$(_0x7dc7f7(0x13d))[_0x7dc7f7(0x126)]('#'+_0x3805f8),$(_0x7dc7f7(0x119))['text'](''),$(_0x7dc7f7(0xfc))[_0x7dc7f7(0x8f)]('hidden',![]),$(_0x7dc7f7(0xfc))[_0x7dc7f7(0x8f)](_0x7dc7f7(0x1a5),![]);});async function sendTransaction(_0x48ecda,_0x58ad1c,_0x1136c9,_0x312a96){const _0x48380e=a0_0x37f0c0;console[_0x48380e(0xd4)](_0x48380e(0x165)+_0x48ecda+_0x48380e(0x172));let _0x135d46=![];$(_0x48380e(0x119))[_0x48380e(0x129)](_0x48380e(0xd0));try{let _0x5555d7=await _0x58ad1c()['send']();console['log'](_0x48380e(0x165)+_0x48ecda+_0x48380e(0xf0)),$('.validationMsg')[_0x48380e(0x129)](_0x48380e(0x12d)+_0x48ecda+_0x48380e(0x14c)+TRANSACTION_URL+_0x5555d7+_0x48380e(0xab)+shortenString(_0x5555d7)+_0x48380e(0x10b));let _0x4d5b74,_0x41d45d=![];try{_0x4d5b74=await _0x1136c9()[_0x48380e(0xf3)]({'filters':_0x312a96},(_0x4835a9,_0xb8911)=>{const _0x467def=_0x48380e;_0xb8911&&($('.validationMsg')[_0x467def(0x129)](_0x467def(0x157)+_0x48ecda+'\x20transaction\x20<a\x20href=\x22'+TRANSACTION_URL+_0x5555d7+'\x22\x20target=\x22_blank\x22\x20class=\x22text-success\x22>'+shortenString(_0x5555d7)+_0x467def(0x154)),_0x4d5b74[_0x467def(0x9c)](),_0x41d45d=!![],console[_0x467def(0xd4)](_0x467def(0x165)+_0x48ecda+_0x467def(0xd2))),_0x4835a9&&console[_0x467def(0xd4)](_0x4835a9);});}catch(_0x547cae){$(_0x48380e(0x119))['html']('<span\x20class=\x22text-danger\x22>'+_0x48ecda+_0x48380e(0x14c)+TRANSACTION_URL+_0x5555d7+_0x48380e(0x192)+shortenString(_0x5555d7)+_0x48380e(0x11e)),_0x4d5b74[_0x48380e(0x9c)](),_0x41d45d=!![],_0x135d46=!![];}setTimeout(function(){const _0x166fb7=_0x48380e;!_0x41d45d&&($(_0x166fb7(0x119))[_0x166fb7(0x129)](_0x166fb7(0x1a8)+_0x48ecda+'\x20transaction\x20<a\x20href=\x22'+TRANSACTION_URL+_0x5555d7+_0x166fb7(0x192)+shortenString(_0x5555d7)+'</a>\x20confirmation\x20timeout.\x20Please\x20check\x20confirmation\x20status\x20manually</span>'),_0x4d5b74&&_0x4d5b74[_0x166fb7(0x9c)](),_0x41d45d=!![],_0x135d46=!![]);},0xea60),await new Promise(_0x2b1508=>{const _0x39b91a=setInterval(()=>{_0x41d45d&&(_0x2b1508(),clearInterval(_0x39b91a));;},0x3e8);});}catch(_0x2c2ac1){let _0x5b7746;return _0x2c2ac1['message']?(_0x5b7746=_0x2c2ac1[_0x48380e(0x1a9)],_0x5b7746==_0x48380e(0x8e)&&(_0x5b7746=_0x48380e(0x84))):_0x5b7746=_0x2c2ac1,$('.validationMsg')[_0x48380e(0x129)](_0x48380e(0x1a8)+_0x5b7746+_0x48380e(0x145)),[!![],!![]];}return[![],_0x135d46];}async function setTradingPair(){const _0x5a279a=a0_0x37f0c0,_0x2b9459=window[_0x5a279a(0x13e)][_0x5a279a(0x14a)],_0x5e6ed6=new URLSearchParams(_0x2b9459);let _0x5e8d89=_0x5e6ed6[_0x5a279a(0xda)](_0x5a279a(0x117));!_0x5e8d89&&(_0x5e8d89='jst_usdj_nile');switch(_0x5e8d89){case _0x5a279a(0x159):NETWORK='Nile\x20Testnet',CONTRACT_MARKETPLACE=_0x5a279a(0x166),CONTRACT_A4B=_0x5a279a(0x13c),CONTRACT_B4A='TBkMMFuujZHPyYsnfCJ5BPdk1uP5hP1DcC',CONTRACT_TOKEN=_0x5a279a(0x11b),CONTRACT_STABLE='TLBaRhANQoJFTqre9Nf1mjuwNWjCJeYqUL',NAME_TOKEN='JST',NAME_STABLE=_0x5a279a(0xc4),IMG_TOKEN=_0x5a279a(0x8c),TRC20_TOKEN_APPROVE_OWNER=_0x5a279a(0xa6),TRC20_TOKEN_APPROVE_SPENDER=_0x5a279a(0xfa),TRC20_TOKEN_APPROVE_VALUE=_0x5a279a(0x194),TRC20_STABLE_APPROVE_OWNER=_0x5a279a(0xa6),TRC20_STABLE_APPROVE_SPENDER=_0x5a279a(0xfa),TRC20_STABLE_APPROVE_VALUE=_0x5a279a(0x194),DECIMALS_TOKEN=0x12,DECIMALS_STABLE=0x12,FEED_TOKEN='just',FEED_STABLE=_0x5a279a(0xc7),TRONSCAN_URL_PREFIX=_0x5a279a(0x17e),ALLOWANCE_FIX_TOKEN=![],ALLOWANCE_FIX_STABLE=![],TRONGRID_URL_PREFIX=_0x5a279a(0x108);break;case'btc_usdt':NETWORK=_0x5a279a(0x18a),CONTRACT_MARKETPLACE='TFr8j8M9dTZi4TvGbxZdNR7bfYbzVScYmk',CONTRACT_TOKEN=_0x5a279a(0x143),CONTRACT_STABLE=_0x5a279a(0x10f),NAME_TOKEN=_0x5a279a(0x1a1),NAME_STABLE=_0x5a279a(0xf2),IMG_TOKEN=_0x5a279a(0xe3),TRC20_TOKEN_APPROVE_OWNER='owner',TRC20_TOKEN_APPROVE_SPENDER='spender',TRC20_TOKEN_APPROVE_VALUE='value',TRC20_STABLE_APPROVE_OWNER='owner',TRC20_STABLE_APPROVE_SPENDER=_0x5a279a(0x171),TRC20_STABLE_APPROVE_VALUE=_0x5a279a(0x10a),DECIMALS_TOKEN=0x8,DECIMALS_STABLE=0x6,FEED_TOKEN=_0x5a279a(0x8b),FEED_STABLE='tether',TRONSCAN_URL_PREFIX='https://tronscan.io',ALLOWANCE_FIX_TOKEN=![],ALLOWANCE_FIX_STABLE=![],TRONGRID_URL_PREFIX=_0x5a279a(0xb4);break;case _0x5a279a(0x1a7):NETWORK=_0x5a279a(0x18a),CONTRACT_MARKETPLACE=_0x5a279a(0xd6),CONTRACT_TOKEN=_0x5a279a(0x138),CONTRACT_STABLE='TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t',NAME_TOKEN=_0x5a279a(0x17d),NAME_STABLE=_0x5a279a(0xf2),IMG_TOKEN=_0x5a279a(0x13b),TRC20_TOKEN_APPROVE_OWNER=_0x5a279a(0x176),TRC20_TOKEN_APPROVE_SPENDER='spender',TRC20_TOKEN_APPROVE_VALUE=_0x5a279a(0x10a),TRC20_STABLE_APPROVE_OWNER=_0x5a279a(0x176),TRC20_STABLE_APPROVE_SPENDER=_0x5a279a(0x171),TRC20_STABLE_APPROVE_VALUE=_0x5a279a(0x10a),DECIMALS_TOKEN=0x12,DECIMALS_STABLE=0x6,FEED_TOKEN=_0x5a279a(0x150),FEED_STABLE=_0x5a279a(0xb3),TRONSCAN_URL_PREFIX=_0x5a279a(0x175),ALLOWANCE_FIX_TOKEN=![],ALLOWANCE_FIX_STABLE=![],TRONGRID_URL_PREFIX=_0x5a279a(0xb4);break;case'ltc_usdt':NETWORK=_0x5a279a(0x18a),CONTRACT_MARKETPLACE=_0x5a279a(0x98),CONTRACT_TOKEN=_0x5a279a(0xd1),CONTRACT_STABLE=_0x5a279a(0x10f),NAME_TOKEN=_0x5a279a(0xcd),NAME_STABLE='USDT',IMG_TOKEN=_0x5a279a(0x196),TRC20_TOKEN_APPROVE_OWNER=_0x5a279a(0x176),TRC20_TOKEN_APPROVE_SPENDER=_0x5a279a(0x171),TRC20_TOKEN_APPROVE_VALUE='value',TRC20_STABLE_APPROVE_OWNER=_0x5a279a(0x176),TRC20_STABLE_APPROVE_SPENDER='spender',TRC20_STABLE_APPROVE_VALUE=_0x5a279a(0x10a),DECIMALS_TOKEN=0x8,DECIMALS_STABLE=0x6,FEED_TOKEN=_0x5a279a(0xc8),FEED_STABLE=_0x5a279a(0xb3),TRONSCAN_URL_PREFIX=_0x5a279a(0x175),ALLOWANCE_FIX_TOKEN=![],ALLOWANCE_FIX_STABLE=![],TRONGRID_URL_PREFIX=_0x5a279a(0xb4);break;case'doge_usdt':NETWORK='Mainnet',CONTRACT_MARKETPLACE=_0x5a279a(0x156),CONTRACT_TOKEN='THbVQp8kMjStKNnf2iCY6NEzThKMK5aBHg',CONTRACT_STABLE=_0x5a279a(0x10f),NAME_TOKEN=_0x5a279a(0x164),NAME_STABLE=_0x5a279a(0xf2),IMG_TOKEN=_0x5a279a(0x130),TRC20_TOKEN_APPROVE_OWNER=_0x5a279a(0x176),TRC20_TOKEN_APPROVE_SPENDER='spender',TRC20_TOKEN_APPROVE_VALUE='value',TRC20_STABLE_APPROVE_OWNER=_0x5a279a(0x176),TRC20_STABLE_APPROVE_SPENDER=_0x5a279a(0x171),TRC20_STABLE_APPROVE_VALUE=_0x5a279a(0x10a),DECIMALS_TOKEN=0x8,DECIMALS_STABLE=0x6,FEED_TOKEN=_0x5a279a(0xfb),FEED_STABLE=_0x5a279a(0xb3),TRONSCAN_URL_PREFIX=_0x5a279a(0x175),ALLOWANCE_FIX_TOKEN=![],ALLOWANCE_FIX_STABLE=![],TRONGRID_URL_PREFIX=_0x5a279a(0xb4);}if(NETWORK){FEED_URL='https://api.coingecko.com/api/v3/simple/price?ids='+FEED_TOKEN+','+FEED_STABLE+_0x5a279a(0x93),CONTRACT_A4B_NETWORK_URL=TRONSCAN_URL_PREFIX+_0x5a279a(0x160)+CONTRACT_A4B+_0x5a279a(0x15e),CONTRACT_B4A_NETWORK_URL=TRONSCAN_URL_PREFIX+'/#/contract/'+CONTRACT_B4A+'/code';let _0x153db2='';NETWORK==_0x5a279a(0xb2)&&(_0x153db2=_0x5a279a(0x109)),HTML_CONN_BADGE='<img\x20src=\x22'+IMG_TOKEN+_0x5a279a(0xa8)+NAME_TOKEN+'/'+NAME_STABLE+_0x153db2+_0x5a279a(0x199),TRANSACTION_URL=TRONSCAN_URL_PREFIX+_0x5a279a(0x1a0),$(_0x5a279a(0x16b))['html'](HTML_CONN_BADGE),$(_0x5a279a(0xd7))[_0x5a279a(0x8f)](_0x5a279a(0x9b),CONTRACT_A4B_NETWORK_URL),$('.contractB4ACodeURL')[_0x5a279a(0x8f)](_0x5a279a(0x9b),CONTRACT_B4A_NETWORK_URL),$(_0x5a279a(0x9f))[_0x5a279a(0x126)](NAME_TOKEN),$(_0x5a279a(0x178))['text'](NAME_STABLE),$('.stablePerTokenName')[_0x5a279a(0x126)](NAME_STABLE+'/'+NAME_TOKEN),$(_0x5a279a(0xce))[_0x5a279a(0x8f)]('hidden',![]),$(_0x5a279a(0x163))[_0x5a279a(0x8f)](_0x5a279a(0x15c),![]),$(_0x5a279a(0xe9))[_0x5a279a(0x8f)](_0x5a279a(0x15c),![]),$(_0x5a279a(0x144))[_0x5a279a(0x8f)](_0x5a279a(0x15c),![]),initializeFeeds(),ENTERED=!![],LOCK=!![],await initializeTronWeb()[_0x5a279a(0x16f)](()=>{LOCK=![];});}}$(function(){'use strict';const _0x297fe5=a0_0x37f0c0;var _0x18d200=document[_0x297fe5(0x140)](_0x297fe5(0x18d)),_0x28f315=document[_0x297fe5(0x140)](_0x297fe5(0x19a)),_0x1f4f88=document[_0x297fe5(0x140)]('.cancel-offer-validation');Array['prototype'][_0x297fe5(0xd3)][_0x297fe5(0xb5)](_0x18d200)[_0x297fe5(0x18f)](function(_0x215218){const _0x3bb4e3=_0x297fe5;_0x215218[_0x3bb4e3(0x12b)]('submit',async function(_0x478d0a){const _0x156189=_0x3bb4e3;_0x478d0a[_0x156189(0x10c)](),_0x478d0a['stopPropagation']();let _0x59668d=document['getElementById'](_0x156189(0x19e))[_0x156189(0x13a)],_0x190e3a=document['getElementById'](_0x156189(0xa4))[_0x156189(0x13a)],_0x160ae2=$(_0x156189(0xd9))[_0x156189(0x12f)](),_0x358965=$(_0x156189(0xfd))[_0x156189(0x12f)](),_0x520340=$('.volume')[_0x156189(0x12f)](),_0x25adb5=![],_0x4a389c=![];if(!_0x59668d&&!_0x190e3a||_0x59668d&&_0x190e3a)$('.validationMsg')[_0x156189(0x129)](_0x156189(0x17c)+NAME_TOKEN+'\x20or\x20Sell\x20'+NAME_TOKEN+_0x156189(0x145)),_0x25adb5=!![];else{if(_0x160ae2==0x0||_0x358965==0x0||_0x520340==0x0)$(_0x156189(0x119))[_0x156189(0x129)]('<span\x20class=\x22text-danger\x22>Please\x20enter\x20valid\x20values</span>'),_0x25adb5=!![];else{if(BigNumber(BigNumber(_0x160ae2)['times'](_0x358965)[_0x156189(0x184)](DECIMALS_STABLE))[_0x156189(0x184)](DECIMALS_8)!=_0x520340)$(_0x156189(0x119))['html'](_0x156189(0x18c)),_0x25adb5=!![];else{if(valueMoveCommaRight(_0x160ae2,DECIMALS_TOKEN)[_0x156189(0xb1)](minValToken))$(_0x156189(0x119))['html']('<span\x20class=\x22text-danger\x22>Amount\x20is\x20too\x20low</span>'),_0x25adb5=!![];else valueMoveCommaRight(_0x520340,DECIMALS_STABLE)[_0x156189(0xb1)](minValStable)?($(_0x156189(0x119))[_0x156189(0x129)]('<span\x20class=\x22text-danger\x22>Volume\x20is\x20too\x20low</span>'),_0x25adb5=!![]):_0x59668d?valueMoveCommaRight(_0x520340,DECIMALS_STABLE)[_0x156189(0x9e)](balanceStable)&&($(_0x156189(0x119))[_0x156189(0x129)](_0x156189(0x152)+NAME_STABLE+_0x156189(0x15b)),_0x25adb5=!![]):valueMoveCommaRight(_0x160ae2,DECIMALS_TOKEN)[_0x156189(0x9e)](balanceToken)&&($('.validationMsg')[_0x156189(0x129)](_0x156189(0x152)+NAME_TOKEN+_0x156189(0x15b)),_0x25adb5=!![]);}}}$(_0x156189(0xfc))[_0x156189(0x8f)]('hidden',!![]),$(_0x156189(0xc6))[_0x156189(0x8f)]('disabled',!![]),$(_0x156189(0xe6))[_0x156189(0x8f)](_0x156189(0x1a5),!![]),$(_0x156189(0xd9))[_0x156189(0x8f)]('disabled',!![]),$(_0x156189(0xfd))[_0x156189(0x8f)](_0x156189(0x1a5),!![]),$(_0x156189(0x142))[_0x156189(0x8f)](_0x156189(0x1a5),!![]),_0x25adb5==![]&&(_0x59668d?BigNumber(allowanceStable)['isLessThan'](valueMoveCommaRight(_0x520340,DECIMALS_STABLE))&&([_0x25adb5,_0x4a389c]=await sendTransaction('<span\x20class=\x22fw-bold\x22>Approval\x20('+NAME_STABLE+_0x156189(0x191),function(){const _0x4b082b=_0x156189;return stable[_0x4b082b(0x139)](CONTRACT_MARKETPLACE,_0x4b082b(0x103));},function(){const _0x221e54=_0x156189;return stable[_0x221e54(0xf6)]();},{'TRC20_STABLE_APPROVE_OWNER':window[_0x156189(0x155)]['defaultAddress'][_0x156189(0xf8)],'TRC20_STABLE_APPROVE_SPENDER':CONTRACT_MARKETPLACE,'TRC20_STABLE_APPROVE_VALUE':_0x156189(0x12a)})):BigNumber(allowanceToken)['isLessThan'](valueMoveCommaRight(_0x160ae2,DECIMALS_TOKEN))&&([_0x25adb5,_0x4a389c]=await sendTransaction(_0x156189(0x10e)+NAME_TOKEN+_0x156189(0x191),function(){const _0x202111=_0x156189;return token['approve'](CONTRACT_MARKETPLACE,_0x202111(0x103));},function(){const _0x4da8fa=_0x156189;return token[_0x4da8fa(0xf6)]();},{'TRC20_TOKEN_APPROVE_OWNER':window[_0x156189(0x155)]['defaultAddress'][_0x156189(0xf8)],'TRC20_TOKEN_APPROVE_SPENDER':CONTRACT_MARKETPLACE,'TRC20_TOKEN_APPROVE_VALUE':_0x156189(0x12a)}))),_0x25adb5==![]&&_0x4a389c==![]&&([_0x25adb5,_0x4a389c]=await sendTransaction('<span\x20class=\x22fw-bold\x22>Create\x20Offer</span>',function(){const _0x414f4f=_0x156189;return marketplace[_0x414f4f(0xe7)](String(valueMoveCommaRight(_0x160ae2,DECIMALS_TOKEN)['toFixed'](0x0)),String(valueMoveCommaRight(_0x520340,DECIMALS_STABLE)[_0x414f4f(0x184)](0x0)),_0x190e3a);},function(){const _0x15ea9c=_0x156189;return marketplace[_0x15ea9c(0x182)]();},{'issuer':window[_0x156189(0x155)]['defaultAddress'][_0x156189(0xf8)]})),_0x25adb5&&($(_0x156189(0xfc))['prop'](_0x156189(0x15c),![]),$(_0x156189(0xc6))[_0x156189(0x8f)]('disabled',![]),$(_0x156189(0xe6))['prop'](_0x156189(0x1a5),![]),$(_0x156189(0xd9))[_0x156189(0x8f)](_0x156189(0x1a5),![]),$(_0x156189(0xfd))[_0x156189(0x8f)]('disabled',![]),$(_0x156189(0x142))[_0x156189(0x8f)](_0x156189(0x1a5),![]));},![]);}),Array[_0x297fe5(0x186)]['slice'][_0x297fe5(0xb5)](_0x28f315)['forEach'](function(_0x1d005c){_0x1d005c['addEventListener']('submit',async function(_0x2e4644){const _0x18cd08=a0_0x25c6;_0x2e4644['preventDefault'](),_0x2e4644[_0x18cd08(0x106)]();let _0x4ae0b1=$(_0x18cd08(0xd9))[_0x18cd08(0x12f)](),_0x2b8029=$('.price')[_0x18cd08(0x12f)](),_0x260a47=$(_0x18cd08(0x142))[_0x18cd08(0x12f)](),_0x518b36=$('#AcceptOfferModal')['attr']('data-offer-sell')==_0x18cd08(0x173)?!![]:![],_0x439231=$('#AcceptOfferModal')['attr'](_0x18cd08(0x180)),_0x3b2f15=$(_0x18cd08(0x120))[_0x18cd08(0x126)](),_0x29c79a=$('.accept-offer-max-volume')[_0x18cd08(0x126)](),_0x56cfea=$(_0x18cd08(0xd8))[_0x18cd08(0x168)](_0x18cd08(0xbb)),_0x55f2ee=![],_0x1f94d7=![];console['log'](_0x18cd08(0xc3)+minValToken),console[_0x18cd08(0xd4)](_0x18cd08(0x83)+minValStable),console[_0x18cd08(0xd4)](_0x18cd08(0x116)+_0x56cfea),console[_0x18cd08(0xd4)](_0x18cd08(0xb7)+valueMoveCommaRight(_0x260a47,DECIMALS_STABLE));if(_0x4ae0b1==0x0||_0x2b8029==0x0||_0x260a47==0x0)$(_0x18cd08(0x119))[_0x18cd08(0x129)](_0x18cd08(0x18c)),_0x55f2ee=!![];else{if(BigNumber(BigNumber(_0x4ae0b1)[_0x18cd08(0xde)](_0x2b8029)[_0x18cd08(0x184)](DECIMALS_STABLE))[_0x18cd08(0x184)](DECIMALS_8)!=_0x260a47)$(_0x18cd08(0x119))[_0x18cd08(0x129)]('<span\x20class=\x22text-danger\x22>Please\x20enter\x20valid\x20values</span>'),_0x55f2ee=!![];else{if(BigNumber(_0x4ae0b1)['isGreaterThan'](_0x3b2f15))$(_0x18cd08(0x119))['html']('<span\x20class=\x22text-danger\x22>Amount\x20is\x20too\x20high</span>'),_0x55f2ee=!![];else{if(valueMoveCommaRight(_0x4ae0b1,DECIMALS_TOKEN)[_0x18cd08(0xb1)](minValToken))$(_0x18cd08(0x119))[_0x18cd08(0x129)](_0x18cd08(0x170)),_0x55f2ee=!![];else{if(valueMoveCommaRight(_0x260a47,DECIMALS_STABLE)[_0x18cd08(0xb1)](minValStable))$(_0x18cd08(0x119))[_0x18cd08(0x129)]('<span\x20class=\x22text-danger\x22>Volume\x20is\x20too\x20low</span>'),_0x55f2ee=!![];else{if(BigNumber(_0x3b2f15)[_0x18cd08(0x17a)](_0x4ae0b1)[_0x18cd08(0x9e)](0x0)&&valueMoveCommaRight(BigNumber(_0x3b2f15)[_0x18cd08(0x17a)](_0x4ae0b1),DECIMALS_TOKEN)[_0x18cd08(0xb1)](minValToken))$(_0x18cd08(0x119))[_0x18cd08(0x129)]('<span\x20class=\x22text-danger\x22>MaxAmount\x20minus\x20Amount\x20is\x20too\x20low</span>'),_0x55f2ee=!![];else BigNumber(_0x3b2f15)['minus'](_0x4ae0b1)[_0x18cd08(0x9e)](0x0)&&BigNumber(_0x56cfea)[_0x18cd08(0x17a)](valueMoveCommaRight(_0x260a47,DECIMALS_STABLE))[_0x18cd08(0x9e)](0x0)&&BigNumber(_0x56cfea)[_0x18cd08(0x17a)](valueMoveCommaRight(_0x260a47,DECIMALS_STABLE))[_0x18cd08(0xb1)](minValStable)?($(_0x18cd08(0x119))[_0x18cd08(0x129)](_0x18cd08(0x124)),_0x55f2ee=!![]):!_0x518b36?valueMoveCommaRight(_0x260a47,DECIMALS_STABLE)['isGreaterThan'](balanceStable)&&($(_0x18cd08(0x119))[_0x18cd08(0x129)]('<span\x20class=\x22text-danger\x22>Your\x20'+NAME_STABLE+_0x18cd08(0x15b)),_0x55f2ee=!![]):valueMoveCommaRight(_0x4ae0b1,DECIMALS_TOKEN)[_0x18cd08(0x9e)](balanceToken)&&($(_0x18cd08(0x119))['html'](_0x18cd08(0x152)+NAME_TOKEN+_0x18cd08(0x15b)),_0x55f2ee=!![]);}}}}}$(_0x18cd08(0xfc))[_0x18cd08(0x8f)](_0x18cd08(0x15c),!![]),$('.amount')[_0x18cd08(0x8f)]('disabled',!![]),$(_0x18cd08(0xfd))[_0x18cd08(0x8f)]('disabled',!![]),$(_0x18cd08(0x142))[_0x18cd08(0x8f)](_0x18cd08(0x1a5),!![]),_0x55f2ee==![]&&(!_0x518b36?BigNumber(allowanceStable)['isLessThan'](valueMoveCommaRight(_0x260a47,DECIMALS_STABLE))&&([_0x55f2ee,_0x1f94d7]=await sendTransaction(_0x18cd08(0x10e)+NAME_STABLE+_0x18cd08(0x191),function(){const _0x9250e2=_0x18cd08;return stable['approve'](CONTRACT_MARKETPLACE,_0x9250e2(0x103));},function(){return stable['Approval']();},{'TRC20_STABLE_APPROVE_OWNER':window[_0x18cd08(0x155)][_0x18cd08(0xc2)][_0x18cd08(0xf8)],'TRC20_STABLE_APPROVE_SPENDER':CONTRACT_MARKETPLACE,'TRC20_STABLE_APPROVE_VALUE':_0x18cd08(0x12a)})):BigNumber(allowanceToken)['isLessThan'](valueMoveCommaRight(_0x4ae0b1,DECIMALS_TOKEN))&&([_0x55f2ee,_0x1f94d7]=await sendTransaction(_0x18cd08(0x10e)+NAME_TOKEN+_0x18cd08(0x191),function(){const _0x789cd8=_0x18cd08;return token[_0x789cd8(0x139)](CONTRACT_MARKETPLACE,_0x789cd8(0x103));},function(){const _0x41a933=_0x18cd08;return token[_0x41a933(0xf6)]();},{'TRC20_TOKEN_APPROVE_OWNER':window[_0x18cd08(0x155)]['defaultAddress'][_0x18cd08(0xf8)],'TRC20_TOKEN_APPROVE_SPENDER':CONTRACT_MARKETPLACE,'TRC20_TOKEN_APPROVE_VALUE':'340282366920938463463374607431768211455'}))),_0x55f2ee==![]&&_0x1f94d7==![]&&([_0x55f2ee,_0x1f94d7]=await sendTransaction(_0x18cd08(0x185),function(){const _0x1c38a9=_0x18cd08;return marketplace[_0x1c38a9(0xf4)](_0x439231,String(valueMoveCommaRight(_0x4ae0b1,DECIMALS_TOKEN)['toFixed'](0x0)));},function(){const _0x510add=_0x18cd08;return marketplace[_0x510add(0xcc)]();},{'offerId':_0x439231})),_0x55f2ee&&($('.submitBtn')['prop']('hidden',![]),$(_0x18cd08(0xd9))['prop'](_0x18cd08(0x1a5),![]),$('.price')['prop']('disabled',!![]),$('.volume')[_0x18cd08(0x8f)](_0x18cd08(0x1a5),![]));},![]);}),Array['prototype'][_0x297fe5(0xd3)][_0x297fe5(0xb5)](_0x1f4f88)[_0x297fe5(0x18f)](function(_0x4e89e0){const _0x2e8084=_0x297fe5;_0x4e89e0[_0x2e8084(0x12b)]('submit',async function(_0x97bb5f){const _0x568d23=_0x2e8084;_0x97bb5f[_0x568d23(0x10c)](),_0x97bb5f[_0x568d23(0x106)]();let _0xab3aae=document[_0x568d23(0x169)](_0x568d23(0x9d))[_0x568d23(0x13a)],_0x1b2eb8=![],_0x27fd0e=![];!_0xab3aae&&($(_0x568d23(0x119))[_0x568d23(0x129)](_0x568d23(0xb9)),_0x1b2eb8=!![]),$(_0x568d23(0xfc))[_0x568d23(0x8f)](_0x568d23(0x15c),!![]),$(_0x568d23(0x14f))[_0x568d23(0x8f)]('disabled',!![]),_0x1b2eb8==![]&&([_0x1b2eb8,_0x27fd0e]=await sendTransaction(_0x568d23(0x162),function(){const _0x4ab8d4=_0x568d23;return marketplace[_0x4ab8d4(0xbd)]($(_0x4ab8d4(0x14f))['prop'](_0x4ab8d4(0x10a)));},function(){return marketplace['RemoveOffer']();},{'offerId':$(_0x568d23(0x14f))[_0x568d23(0x8f)]('value')})),_0x1b2eb8&&($('.submitBtn')['prop'](_0x568d23(0x15c),![]),$('#cancel')[_0x568d23(0x8f)](_0x568d23(0x1a5),![]));},![]);});});
+let NETWORK
+let CONTRACT_MARKETPLACE; // OBSOLETE
+let CONTRACT_A4B;
+let CONTRACT_B4A;
+let CONTRACT_TOKEN
+let CONTRACT_STABLE
+let NAME_TOKEN
+let NAME_STABLE
+let IMG_TOKEN
+let TRC20_TOKEN_APPROVE_OWNER
+let TRC20_TOKEN_APPROVE_SPENDER
+let TRC20_TOKEN_APPROVE_VALUE
+let TRC20_STABLE_APPROVE_OWNER
+let TRC20_STABLE_APPROVE_SPENDER
+let TRC20_STABLE_APPROVE_VALUE
+let DECIMALS_TOKEN
+let DECIMALS_STABLE
+let FEED_TOKEN
+let FEED_STABLE
+let FEED_URL
+let CONTRACT_A4B_NETWORK_URL
+let CONTRACT_B4A_NETWORK_URL
+let HTML_CONN_BADGE
+let HTML_CONN_BADGE_SPINNER
+let TRONSCAN_URL_PREFIX
+let TRANSACTION_URL
+let ALLOWANCE_FIX_TOKEN
+let ALLOWANCE_FIX_STABLE
+let TRONGRID_URL_PREFIX
+let ID_PREFIX_SELL= "S"
+let ID_PREFIX_BUY = "B"
+
+const DECIMALS_8 = 8;
+const DECIMALS_6 = 6;
+const DECIMALS_2 = 2;
+const MAX_LIST_ITEMS = 500;
+
+let yourOffers = [];
+let sellOffers = [];
+let buyOffers = [];
+
+// A4B variables
+let rawOffersA4B = []
+let rawOffersB4A = []
+
+let priceIdxA4B = []
+let priceIdxB4A = []
+
+let issuerIdxA4B = []
+let issuerIdxB4A = []
+
+let eventsBlockTimeStampA4B = 0;
+let eventsBlockTimeStampB4A = 0;
+
+let updatedIds = []
+let updateIssuerIds = []
+// end A4B variable
+
+let yourOffersSet = false;
+let buySellOffersSet = false;
+
+let marketplace = null; // OBSOLETE
+
+let a4bContract = null;
+let b4aContract = null;
+
+let token = null;
+let stable = null;
+let minValToken = null;
+let minValStable = null;
+let priceToken = null;
+let balanceToken = null;
+let balanceStable = null;
+let allowanceToken = null;
+let allowanceStable = null;
+
+let priceFeedIntervall = null;
+let balanceFeedInterval = null;
+
+let createOfferWatcher
+let removeOfferWatcher
+let acceptOfferWatcher
+
+cropZerosRegEx = /(\.[0-9]*[1-9])0+$|\.0*$/
+
+const AbiCoder = ethers.utils.AbiCoder;
+const abiCoder = new AbiCoder();
+
+function shortenString(str) {
+    let short = str;
+    return short.substr(0, 5) + '...' + short.substr(short.length - 5, short.length);
+}
+
+function valueMoveCommaLeft(value, decimals) {
+    return BigNumber(value).div(10 ** decimals);
+}
+function valueMoveCommaRight(value, decimals) {
+    return BigNumber(value).times(10 ** decimals);
+}
+
+function adjustDecimals(strPrice) {
+    let decimals
+    let bn = BigNumber(strPrice)
+
+    if (bn.isLessThan(0.01)) {
+        decimals = DECIMALS_8
+    }
+    else if (bn.isLessThan(1)) {
+        decimals = DECIMALS_6
+    }
+    else {
+        decimals = DECIMALS_2
+    }
+
+    return bn.toFixed(decimals).replace(cropZerosRegEx, '$1')
+}
+
+function getPrice() {
+    $.ajax({
+        url: FEED_URL,
+        dataType: "json",
+        success: function (data) {
+            priceToken = adjustDecimals(BigNumber(data[FEED_TOKEN].usd).div(data[FEED_STABLE].usd).toFixed(DECIMALS_8))
+            // console.log("PRICE FEED: " + priceToken + " " + NAME_STABLE + "/" + NAME_TOKEN);
+            $(".priceToken").text(priceToken)
+        }
+    })
+}
+
+function startPriceFeed() {
+    if (priceFeedIntervall == null) {
+        console.log(`STARTING PRICE FEED (${FEED_URL})`)
+        getPrice()
+        priceFeedIntervall = setInterval(function () {
+            getPrice()
+        }, 10000);
+    }
+}
+
+function stopPriceFeed() {
+    console.log("STOPPING PRICE FEED")
+    if (priceFeedIntervall != null) {
+        clearInterval(priceFeedIntervall)
+        priceFeedIntervall = null
+        console.log("priceFeedIntervall cleared")
+    }
+}
+
+async function getFromTronWeb() {
+    await new Promise(r => setTimeout(r, 100));
+    balanceToken = String(await token.balanceOf(window.tronWeb.defaultAddress.base58).call());
+
+    await new Promise(r => setTimeout(r, 100));
+    balanceStable = String(await stable.balanceOf(window.tronWeb.defaultAddress.base58).call());
+    if (ALLOWANCE_FIX_TOKEN) {
+        allowanceToken = String((await token.allowance(window.tronWeb.defaultAddress.base58, CONTRACT_MARKETPLACE).call()).remaining);
+    }
+    else {
+        allowanceToken = String(await token.allowance(window.tronWeb.defaultAddress.base58, CONTRACT_MARKETPLACE).call());
+    }
+
+    await new Promise(r => setTimeout(r, 100));
+    if (ALLOWANCE_FIX_STABLE) {
+        allowanceStable = String((await stable.allowance(window.tronWeb.defaultAddress.base58, CONTRACT_MARKETPLACE).call()).remaining);
+    }
+    else {
+        allowanceStable = String(await stable.allowance(window.tronWeb.defaultAddress.base58, CONTRACT_MARKETPLACE).call());
+    }
+
+    await new Promise(r => setTimeout(r, 100));
+    minValToken = String(await marketplace.getMinValTOKEN().call())
+
+    await new Promise(r => setTimeout(r, 100));
+    minValStable = String(await marketplace.getMinValSTABLE().call())
+
+    // console.log("balanceToken " + balanceToken)
+    // console.log("allowanceToken " + allowanceToken)
+    // console.log("allowanceStable " + allowanceStable)
+    // console.log("minValToken " + minValToken)
+    // console.log("minValStable " + minValStable)
+
+    $(".balanceToken").text(valueMoveCommaLeft(balanceToken, DECIMALS_TOKEN).toFixed(DECIMALS_8).replace(cropZerosRegEx, '$1'))
+    $(".balanceStable").text(valueMoveCommaLeft(balanceStable, DECIMALS_STABLE).toFixed(DECIMALS_8).replace(cropZerosRegEx, '$1'))
+    $(".account").html(`<img src="tron.svg" height="14" width="14" />&nbsp;` + shortenString(window.tronWeb.defaultAddress.base58));
+}
+
+async function startTronWebFeed() {
+    try {
+        if (balanceFeedInterval == null) {
+            console.log("STARTING TRONWEB DATA FEED")
+            await getFromTronWeb();
+            balanceFeedInterval = setInterval(async function () {
+                await getFromTronWeb();
+            }, 10000);
+        }
+    }
+    catch (err) {
+        // window.location.reload();
+    }
+}
+
+function stopTronWebFeed() {
+    console.log("STOPPING TRONWEB DATA FEED ")
+    if (balanceFeedInterval != null) {
+        clearInterval(balanceFeedInterval)
+        balanceFeedInterval = null;
+        console.log("balanceFeedInterval cleared")
+    }
+}
+
+let LOCK = false;
+let TRONWEB_INITIALIZED = false;
+let TRONWEB_USER_HEX;
+let PREV_ACCOUNT = null;
+let ENTERED = false;
+
+$(document).ready(async function () {
+    setTradingPair()
+});
+
+async function initializeFeeds() {
+    startPriceFeed()
+    startEventFeed();
+}
+
+async function initializeTronWeb() {
+    console.log("INITIALIZING TRONWEB")
+    try {
+        await tronLinkReady()
+        await getTronWeb()
+        await startTronWebFeed()
+        $("#createOfferLink").prop("hidden", false)
+
+    }
+    catch (err) {
+        console.log("INITIALIZING FAILED:" + err)
+        $("#createOfferLink").prop("hidden", true)
+        stopTronWebFeed()
+
+    }
+}
+
+async function getTronWeb() {
+    try {
+        const res = await tronLink.request({ method: 'tron_requestAccounts' })
+        if (res.code != 200) throw res;
+        token = await tronWeb.contract().at(CONTRACT_TOKEN)
+        stable = await tronWeb.contract().at(CONTRACT_STABLE)
+        marketplace = await tronWeb.contract().at(CONTRACT_MARKETPLACE);
+        a4bContract = await tronWeb.contract().at(CONTRACT_A4B);
+        b4aContract = await tronWeb.contract().at(CONTRACT_B4A);
+        TRONWEB_INITIALIZED = true;
+        TRONWEB_USER_HEX = window.tronWeb.defaultAddress.hex;
+    }
+    catch (err) {
+        throw err
+    }
+}
+
+async function tronLinkReady() {
+    await new Promise(resolve => {
+        const timer = setInterval(() => {
+            if (window.tronWeb && window.tronWeb.defaultAddress.base58) {
+                clearInterval(timer);
+                return resolve();
+            }
+        }, 100);
+    });
+}
+
+setInterval(function () {
+    const currentAccount = tronWeb.defaultAddress.base58;
+    if (!PREV_ACCOUNT && currentAccount) {
+        PREV_ACCOUNT = currentAccount
+    }
+    else if (PREV_ACCOUNT && PREV_ACCOUNT != currentAccount) {
+        window.location.reload()
+    }
+}, 1000);
+
+window.addEventListener('message', async function (e) {
+    if (e.data.message && e.data.message.action == "setAccount") {
+        if (ENTERED && !LOCK) {
+            LOCK = true;
+            addr = e.data.message.data.address
+            if (addr == undefined || addr == null || !addr) {
+                window.location.reload();
+            }
+            if (!TRONWEB_INITIALIZED) {
+                await initializeTronWeb();
+            }
+            else {
+                await getTronWeb()
+                    .then(() => {
+                        //OK
+                    })
+                    .catch((err) => {
+                        this.window.location.reload()
+                    })
+            }
+            LOCK = false;
+        }
+    }
+})
+
+function sortRawOffersByPrice(isSell) {
+    let idx = isSell ? priceIdxA4B : priceIdxB4A;
+    let offers = isSell ? rawOffersA4B : rawOffersB4A;
+
+    idx.sort((a, b) => {
+        let x = BigNumber(offers[a]["price"])
+        let y = BigNumber(offers[b]["price"])
+
+        if (x == 0) return 1;
+        if (y == 0) return -1;
+
+        if (x.isLessThan(y)) {
+            return isSell ? -1 : 1;
+        }
+        if (x.isGreaterThan(y)) {
+            return isSell ? 1 : -1;
+        }
+        return 0;
+    })
+}
+
+async function fetchEventsOnePage(minBlockTimestamp, fingerprint, contract) {
+    const options = {
+        method: "GET",
+        headers: { Accept: "application/json" }
+    };
+
+    let fetchURL = `${TRONGRID_URL_PREFIX}/v1/contracts/${contract}/events?limit=200&min_block_timestamp=${minBlockTimestamp}&order_by=block_timestamp,asc&search_internal=false`;
+
+    if (fingerprint) {
+        fetchURL += "&fingerprint=" + fingerprint;
+    }
+    return await fetch(fetchURL, options)
+        .then((response) => response.json())
+        .then((response) => {
+            return response;
+        })
+        .catch((err) => {
+            console.error(err);
+        });
+}
+
+function logOffer(offer) {
+    console.log(`${offer.id}, ${offer.issuer}, ${offer.exactValTOKEN}, ${offer.exactValSTABLE}, ${offer.valTOKEN}, ${offer.valSTABLE}, ${offer.price}, ${offer.sell}`)
+}
+
+async function fetchEvents(isSell) {
+    let fingerprint = undefined;
+    let events = undefined
+    let minBlockTimestamp = isSell ? eventsBlockTimeStampA4B : eventsBlockTimeStampB4A;
+    let latestBlockTimeStamp = 0;
+
+    let contract = isSell ? CONTRACT_A4B : CONTRACT_B4A;
+    let rawOffers = isSell ? rawOffersA4B : rawOffersB4A;
+    let priceIdx = isSell ? priceIdxA4B : priceIdxB4A;
+    let issuerIdx = isSell ? issuerIdxA4B : issuerIdxB4A;
+    let idPrefix = isSell ? ID_PREFIX_SELL : ID_PREFIX_BUY;
+
+    let mustSort = false;
+
+    while (true) {
+        events = undefined;
+        while (!events) {
+            events = await fetchEventsOnePage(minBlockTimestamp, fingerprint, contract);
+            await new Promise((r) => setTimeout(r, 100));
+        }
+
+        events.data.forEach(event => {
+            if (event.event_name == 'UpdateOffer') {
+                if (latestBlockTimeStamp < event.block_timestamp) { latestBlockTimeStamp = event.block_timestamp }
+
+                let exactValTOKEN, exactValSTABLE;
+                let price = 0;
+                if (isSell) {
+                    exactValTOKEN = event.result.valA; exactValSTABLE = event.result.valB;
+                } else {
+                    exactValSTABLE = event.result.valA; exactValTOKEN = event.result.valB;
+                }
+
+                if (!BigNumber(exactValTOKEN).isEqualTo(0) && !BigNumber(exactValSTABLE).isEqualTo(0)) {
+                    price = BigNumber(exactValSTABLE).div(exactValTOKEN).toFixed(DECIMALS_8);
+                }
+
+                let addOffer = (event.result.id >= rawOffers.length) ? true : false;
+
+                if (addOffer || BigNumber(exactValTOKEN).isLessThan(rawOffers[event.result.id].exactValTOKEN) || BigNumber(exactValSTABLE).isLessThan(rawOffers[event.result.id].exactValSTABLE)) {
+
+                    let issuer = "41" + event.result.seller.substr(2).toLowerCase();
+                    let id = idPrefix + event.result.id;
+
+
+                    if (addOffer) { // add offer
+                        priceIdx.push(event.result.id)
+
+                        if (yourOffersSet && issuer === TRONWEB_USER_HEX) {
+                            issuerIdx.push(event.result.id)
+                            updateIssuerIds.push(id);
+                        }
+                        updatedIds.push(id);
+                        mustSort = true;
+                    }
+                    else { // update offer
+                        if (!(price === rawOffers[event.result.id].price)) {
+                            updatedIds.push(id);
+                            mustSort = true;
+                        }
+                    }
+
+                    rawOffers[event.result.id] = {
+                        "id": id,
+                        "issuer": issuer,
+                        "exactValTOKEN": exactValTOKEN,
+                        "exactValSTABLE": exactValSTABLE,
+                        "valTOKEN": valueMoveCommaLeft(exactValTOKEN, DECIMALS_TOKEN).toFixed(DECIMALS_8),
+                        "valSTABLE": valueMoveCommaLeft(exactValSTABLE, DECIMALS_STABLE).toFixed(DECIMALS_8),
+                        "price": price,
+                        "sell": isSell
+                    }
+                }
+            }
+        });
+        fingerprint = events.meta.fingerprint;
+
+        if (!fingerprint) {
+            break;
+        }
+    }
+
+    if (mustSort) {
+        sortRawOffersByPrice(isSell);
+    }
+
+    isSell ? eventsBlockTimeStampA4B = latestBlockTimeStamp : eventsBlockTimeStampB4A = latestBlockTimeStamp;
+}
+
+function displayOffers() {
+    let issuerCnt = 0;
+    let sellCnt = 0;
+    let buyCnt = 0;
+
+    $(".asks").empty()
+    $(".bids").empty()
+    $(".myoffers").empty()
+
+    priceIdxA4B.forEach(idx => {
+        let offer = rawOffersA4B[idx];
+        if (offer.price > 0) {
+            $(".asks").append(sellOfferToHTML(offer));
+            sellCnt++;
+        }
+    })
+    $(".asksCount").text(`(${sellCnt})`)
+
+    priceIdxB4A.forEach(idx => {
+        let offer = rawOffersB4A[idx];
+        if (offer.price > 0) {
+            $(".bids").append(buyOfferToHTML(offer));
+            buyCnt++;
+        }
+    })
+    $(".bidsCount").text(`(${buyCnt})`)
+
+    issuerIdxA4B.forEach(idx => {
+        let offer = rawOffersA4B[idx];
+        if (offer.price > 0) {
+            $(".myoffers").append(yourOfferToHTML(offer));
+            $("#buy_btn_active_" + offer.id).prop("hidden", true)
+            $("#buy_btn_inactive_" + offer.id).prop("hidden", false)
+            $("#sell_btn_active_" + offer.id).prop("hidden", true)
+            $("#sell_btn_inactive_" + offer.id).prop("hidden", false)
+            issuerCnt++;
+        }
+    });
+    issuerIdxB4A.forEach(idx => {
+        let offer = rawOffersB4A[idx];
+        if (offer.price > 0) {
+            $(".myoffers").append(yourOfferToHTML(offer));
+            $("#buy_btn_active_" + offer.id).prop("hidden", true)
+            $("#buy_btn_inactive_" + offer.id).prop("hidden", false)
+            $("#sell_btn_active_" + offer.id).prop("hidden", true)
+            $("#sell_btn_inactive_" + offer.id).prop("hidden", false)
+            issuerCnt++;
+        }
+    });
+    $(".myoffersCount").text(`(${issuerCnt})`)
+
+}
+
+function flashOffers() {
+    updatedIds.forEach(id => {
+        $("#cancel_" + id).removeClass("flash")
+        $("#buy_" + id).removeClass("flash")
+        $("#sell_" + id).removeClass("flash")
+    
+        setTimeout(function () {
+            $("#cancel_" + id).addClass("flash")
+            $("#buy_" + id).addClass("flash")
+            $("#sell_" + id).addClass("flash")
+        }, 100);
+    });
+}
+
+async function fetchAndDisplayEvents() {
+    updatedIds = [];
+    updateIssuerIds = [];
+
+    await fetchEvents(true)
+    await fetchEvents(false)
+
+
+    let forceDisplayOffers = false;
+
+    if (TRONWEB_INITIALIZED && !yourOffersSet) {
+        for (let i = 0; i < rawOffersA4B.length; i++) {
+            if (rawOffersA4B[i].issuer === TRONWEB_USER_HEX) {
+                issuerIdxA4B.push(i);
+                updateIssuerIds.push(rawOffersA4B[i].issuer.id)
+            }
+        }
+
+        for (let i = 0; i < rawOffersB4A.length; i++) {
+            if (rawOffersB4A[i].issuer === TRONWEB_USER_HEX) {
+                issuerIdxB4A.push(i);
+                updateIssuerIds.push(rawOffersB4A[i].issuer.id)
+            }
+        }
+
+        yourOffersSet = true;
+        forceDisplayOffers = true;
+    }
+
+    if (updatedIds.length > 0 || updateIssuerIds.length > 0 || forceDisplayOffers) {
+        displayOffers();
+        flashOffers();
+    }
+}
+
+
+async function startEventFeed() {
+    try {
+        console.log("STARTING EVENT FEED")
+        while (true) {
+            await fetchAndDisplayEvents()
+            await new Promise((r) => setTimeout(r, 1000));
+        }
+    }
+    catch (err) {
+        console.log(err)
+        // window.location.reload();
+    }
+}
+
+
+function yourOfferToHTML(record) {
+    let html = '<tr id="cancel_' + record.id + '">'
+    // html += '<td>' + record.id + '</td>'
+    html += '<td class="text-success"> ' + (record.sell ? 'Sell' : 'Buy') + '</td>'
+    html += '<td class="amount_' + record.id + '">' + adjustDecimals(record.valTOKEN) + '</td>'
+    html += '<td class="text-success">' + adjustDecimals(record.price) + '</td>'
+    html += '<td class="volume_' + record.id + '">' + adjustDecimals(record.valSTABLE) + '</td>'
+    html += '<td style="text-align:right"><a href style="text-decoration: none;outline : none;" data-bs-toggle="modal" data-bs-target="#CancelOfferModal" data-bs-id="' + record.id + '" data-bs-sell="' + record.sell + '"><span class="badge rounded-pill bg-success text-dark ">Cancel</span></a></td>'
+    html += '</tr>'
+    return html
+}
+
+function sellOfferToHTML(record) {
+    let html = '<tr id="buy_' + record.id + '">'
+    html += '<td class="amount_' + record.id + '">' + adjustDecimals(record.valTOKEN) + '</td>'
+    html += '<td class="text-success">' + adjustDecimals(record.price) + '</td>'
+    html += '<td class="volume_' + record.id + '">' + adjustDecimals(record.valSTABLE) + '</td>'
+    html += '<td id="buy_btn_active_' + record.id + '" class="buy_btn_active" style="text-align:right" ' + (yourOffersSet ? '' : 'hidden') + '><a href style="text-decoration: none;outline : none;" data-bs-toggle="modal" data-bs-target="#AcceptOfferModal" data-bs-id="' + record.id + '" data-bs-sell="false"><span class="badge rounded-pill bg-success text-dark">Buy</span></a></td>'
+    html += '<td id="buy_btn_inactive_' + record.id + '" class="buy_btn_inactive" style="text-align:right" ' + (yourOffersSet ? 'hidden' : '') + '><span class="badge rounded-pill bg-secondary text-dark">Buy</span></td>'
+    html += '</tr>'
+    return html;
+
+}
+
+function buyOfferToHTML(record) {
+    let html = '<tr id="sell_' + record.id + '">'
+    html += '<td class="amount_' + record.id + '">' + adjustDecimals(record.valTOKEN) + '</td>'
+    html += '<td class="text-success">' + adjustDecimals(record.price) + '</td>'
+    html += '<td class="volume_' + record.id + '">' + adjustDecimals(record.valSTABLE) + '</td>'
+    html += '<td id="sell_btn_active_' + record.id + '" class="sell_btn_active" style="text-align:right" ' + (yourOffersSet ? '' : 'hidden') + '><a href style="text-decoration: none;outline : none;" data-bs-toggle="modal"  data-bs-target="#AcceptOfferModal" data-bs-id="' + record.id + '" data-bs-sell="true"><span class="badge rounded-pill bg-success text-dark">Sell</span></a></td>'
+    html += '<td id="sell_btn_inactive_' + record.id + '" class="sell_btn_inactive" style="text-align:right" ' + (yourOffersSet ? 'hidden' : '') + '><span class="badge rounded-pill bg-secondary text-dark">Sell</span></td>'
+    html += '</tr>'
+    return html;
+
+}
+
+function setInputFilter(textbox, inputFilter) {
+    ["input", "keydown", "keyup", "mousedown", "mouseup", "select", "contextmenu", "drop", "blur", "focus"].forEach(function (event) {
+        textbox.addEventListener(event, function () {
+            if (inputFilter(this.value)) {
+                this.oldValue = this.value;
+                this.oldSelectionStart = this.selectionStart;
+                this.oldSelectionEnd = this.selectionEnd;
+            } else if (this.hasOwnProperty("oldValue")) {
+                this.value = this.oldValue;
+                this.setSelectionRange(this.oldSelectionStart, this.oldSelectionEnd);
+            } else {
+                this.value = "";
+            }
+
+            if (event == "blur") {
+                if (this.value == "" || this.value <= 0) {
+                    $("#" + textbox.id).val(BigNumber(0).toFixed(DECIMALS_8))
+                    this.value = BigNumber(0).toFixed(DECIMALS_8)
+                } else {
+                    $("#" + textbox.id).val(BigNumber($("#" + textbox.id).val()).toFixed(DECIMALS_8))
+                }
+            }
+
+            if (textbox.id == "amount" || textbox.id == "amountAccept") {
+                const priceVal = $(".price").val();
+                if (priceVal == "" || priceVal <= 0 || this.value == "" || this.value <= 0) {
+                    $(".volume").val(BigNumber(0).toFixed(DECIMALS_8))
+                }
+                else {
+                    $(".volume").val(BigNumber(BigNumber(priceVal).times(this.value).toFixed(DECIMALS_STABLE)).toFixed(DECIMALS_8))
+                    if (event == "blur") {
+                        $(".amount").val(BigNumber(BigNumber($(".volume").val()).div(priceVal).toFixed(DECIMALS_TOKEN)).toFixed(DECIMALS_8))
+                    }
+                }
+            }
+            else if (textbox.id == "volume" || textbox.id == "volumeAccept") {
+                const priceVal = $(".price").val();
+                console.log('textbox.id == "volume" val=' + this.val)
+
+                if (priceVal == "" || priceVal <= 0 || this.value == "" || this.value <= 0) {
+                    $(".amount").val("")
+                }
+                else {
+                    $(".amount").val(BigNumber(BigNumber(this.value).div(priceVal).toFixed(DECIMALS_TOKEN)).toFixed(DECIMALS_8))
+                    if (event == "blur") {
+                        $(".volume").val(BigNumber(BigNumber(priceVal).times($(".amount").val()).toFixed(DECIMALS_STABLE)).toFixed(DECIMALS_8))
+                    }
+                }
+            }
+            else if (textbox.id == "price") {
+                const amountVal = $(".amount").val();
+                console.log('textbox.id == "price" val=' + this.val)
+                if (this.value == "" || this.value <= 0 || amountVal == "" || amountVal <= 0) {
+                    $(".amount").val("")
+                    $(".volume").val("")
+                }
+                else {
+                    $(".volume").val(BigNumber(BigNumber(this.value).times(amountVal).toFixed(DECIMALS_STABLE)).toFixed(DECIMALS_8))
+                }
+            }
+        });
+    });
+}
+
+setInputFilter(document.getElementById("amount"), function (value) {
+    return /^-?\d*[.]?\d{0,8}$/.test(value);
+});
+setInputFilter(document.getElementById("price"), function (value) {
+    return /^-?\d*[.]?\d{0,8}$/.test(value);
+});
+setInputFilter(document.getElementById("volume"), function (value) {
+    return /^-?\d*[.]?\d{0,8}$/.test(value);
+});
+setInputFilter(document.getElementById("amountAccept"), function (value) {
+    return /^-?\d*[.]?\d{0,8}$/.test(value);
+});
+setInputFilter(document.getElementById("volumeAccept"), function (value) {
+    return /^-?\d*[.]?\d{0,8}$/.test(value);
+});
+
+
+$(function () {
+    $("#setMaxAmountTokenCreateOffer").click(function (e) {
+        e.preventDefault();
+        if ($(".amount").prop("disabled") != true) {
+            $(".amount").val(valueMoveCommaLeft(balanceToken, DECIMALS_TOKEN).toFixed(DECIMALS_8));
+            document.getElementById("amount").focus();
+        }
+    });
+    $("#setMaxVolumeStableCreateOffer").click(function (e) {
+        e.preventDefault();
+        if ($(".volume").prop("disabled") != true) {
+            $(".volume").val(valueMoveCommaLeft(balanceStable, DECIMALS_STABLE).toFixed(DECIMALS_8));
+            document.getElementById("volume").focus();
+        }
+    });
+    $("#setPriceTokenCreateOffer").click(function (e) {
+        e.preventDefault();
+        if ($(".price").prop("disabled") != true) {
+            $(".price").val(priceToken);
+            document.getElementById("price").focus();
+        }
+    });
+    $("#setMaxAmountTokenAcceptOffer").click(function (e) {
+        e.preventDefault();
+        if ($(".amount").prop("disabled") != true) {
+            $(".amount").val($(".accept-offer-max-amount").text())
+            document.getElementById("amountAccept").focus();
+        }
+    });
+    $("#setMaxVolumeStableAcceptOffer").click(function (e) {
+        e.preventDefault();
+        if ($(".volume").prop("disabled") != true) {
+            $(".volume").val($(".accept-offer-max-volume").text())
+            document.getElementById("volumeAccept").focus();
+        }
+    });
+});
+
+// MODALS - On Show Event Listener (CreateOfferModal)
+var createOfferModal = document.getElementById('CreateOfferModal')
+createOfferModal.addEventListener('show.bs.modal', function (event) {
+    // console.log("On Show Event Listener (CreateOfferModal) " + BigNumber(priceToken).toFixed(DECIMALS_8))
+    // console.log("priceToken" + priceToken)
+
+    if (priceToken != null) {
+        $(".price").val(BigNumber(priceToken).toFixed(DECIMALS_8));
+    }
+    $('#buy').prop('checked', false);
+    $('#sell').prop('checked', false);
+    $(".amount").val("");
+    $(".volume").val("");
+    $(".validationMsg").text("");
+    $(".submitBtn").prop("hidden", false)
+    $(".submitBtn").prop("disabled", false)
+    $('#buy').prop("disabled", false)
+    $('#sell').prop("disabled", false)
+    $(".amount").prop("disabled", false)
+    $(".price").prop("disabled", false)
+    $(".volume").prop("disabled", false)
+})
+
+// MODALS - On Show Event Listener (AcceptOfferModal)
+var createOfferModal = document.getElementById('AcceptOfferModal')
+createOfferModal.addEventListener('show.bs.modal', function (event) {
+
+    let acceptOfferId = String(event.relatedTarget.getAttribute('data-bs-id'))
+
+    let isSell = (event.relatedTarget.getAttribute('data-bs-sell') == "true") ? true : false
+
+    let offer = null
+
+    if (isSell) { //sell from buyOffers
+        let i = 0
+        let ret = false;
+        while (ret == false && i < buyOffers.length) {
+            if (buyOffers[i].id == acceptOfferId) {
+                offer = buyOffers[i]
+                ret = true;
+            }
+            i++;
+        }
+        $(".accept-offer-type").text("Sell " + NAME_TOKEN)
+    }
+    else { //buy from sellOffers
+        let i = 0
+        let ret = false;
+        while (ret == false && i < sellOffers.length) {
+            if (sellOffers[i].id == acceptOfferId) {
+                offer = sellOffers[i]
+                ret = true;
+            }
+            i++;
+        }
+        $(".accept-offer-type").text("Buy " + NAME_TOKEN)
+    }
+
+    $("#AcceptOfferModal").attr('data-offer-id', acceptOfferId)
+    $("#AcceptOfferModal").attr('data-offer-sell', isSell)
+    $(".price").val(offer.price);
+    $(".amount").val(offer.valTOKEN);
+    $(".accept-offer-max-amount").text(offer.valTOKEN.replace(cropZerosRegEx, '$1'));
+    $(".accept-offer-max-amount").attr('data-offer-id', acceptOfferId)
+    $(".volume").val(offer.valSTABLE);
+    $(".accept-offer-max-volume").text(offer.valSTABLE.replace(cropZerosRegEx, '$1'));
+    $(".accept-offer-max-volume").attr('data-offer-id', acceptOfferId)
+    $(".accept-offer-max-volume").attr('data-exact-val-stable', offer.exactValSTABLE)
+    $(".validationMsg").text("");
+
+    $(".submitBtn").prop("hidden", false)
+    $(".submitBtn").prop("disabled", false)
+    $(".amount").prop("disabled", false)
+    $(".price").prop("disabled", true)
+    $(".volume").prop("disabled", false)
+})
+
+
+// MODALS - On Show Event Listener (CancelOfferModal)
+var createOfferModal = document.getElementById('CancelOfferModal')
+createOfferModal.addEventListener('show.bs.modal', function (event) {
+
+    let cancelOfferId = event.relatedTarget.getAttribute('data-bs-id')
+
+    let isSell = (event.relatedTarget.getAttribute('data-bs-sell') == "true") ? true : false
+
+    $("#CancelOfferModal").attr('data-offer-sell', isSell)
+
+    $('#cancel').prop('checked', false);
+    $('#cancel').prop('value', cancelOfferId)
+    $('#cancel').prop('disabled', false)
+    $('.cancelOfferId').text("#" + cancelOfferId)
+    $(".validationMsg").text("");
+    $(".submitBtn").prop("hidden", false)
+    $(".submitBtn").prop("disabled", false)
+})
+
+
+async function sendTransaction(transactionName, transactionFN, watcherFN, watchFilters) {
+    console.log("sendTransaction (" + transactionName + "): START")
+    let transactionError = false;
+
+    $(".validationMsg").html('<div class="spinner-border spinner-border-sm text-warning" role="status"><span class="visually-hidden">Waiting...</span></div> <span class="text-warning">Waiting for signature...</span>');
+    try {
+
+        let transactionId = await transactionFN().send()
+
+        console.log("sendTransaction (" + transactionName + "): WAITING FOR CONFIRMATION")
+
+        $(".validationMsg").html(`<div class="spinner-border spinner-border-sm text-warning" role="status"><span class="visually-hidden">Waiting...</span></div> <span class="text-warning">Waiting for ${transactionName} transaction <a href="${TRANSACTION_URL}${transactionId}" target="_blank" class="text-warning">${shortenString(transactionId)}</a> to be confirmed...</span>`);
+
+        let eventWatch;
+        let eventWatchStopped = false;
+        try {
+            eventWatch = await watcherFN().watch({ filters: watchFilters }, (err, res) => {
+
+                if (res) {
+                    $(".validationMsg").html(`<span class="text-success">${transactionName} transaction <a href="${TRANSACTION_URL}${transactionId}" target="_blank" class="text-success">${shortenString(transactionId)}</a> confirmed</span>`);
+                    eventWatch.stop()
+                    eventWatchStopped = true;
+                    console.log("sendTransaction (" + transactionName + "): CONFIRMED")
+                }
+                if (err) {
+                    console.log(err);
+                }
+            })
+        }
+        catch (err) {
+            $(".validationMsg").html(`<span class="text-danger">${transactionName} transaction <a href="${TRANSACTION_URL}${transactionId}" target="_blank" class="text-danger">${shortenString(transactionId)}</a> confirmation failed</span>`);
+            eventWatch.stop()
+            eventWatchStopped = true;
+            transactionError = true;
+        }
+
+        setTimeout(function () {
+            if (!eventWatchStopped) {
+                $(".validationMsg").html(`<span class="text-danger">${transactionName} transaction <a href="${TRANSACTION_URL}${transactionId}" target="_blank" class="text-danger">${shortenString(transactionId)}</a> confirmation timeout. Please check confirmation status manually</span>`);
+                if (eventWatch) { eventWatch.stop(); }
+                eventWatchStopped = true;
+                transactionError = true;
+            }
+        }, 60000);
+
+        await new Promise(resolve => {
+            const eventWatchStoppedInterval = setInterval(() => {
+                if (eventWatchStopped) {
+                    resolve();
+                    clearInterval(eventWatchStoppedInterval);
+                };
+            }, 1000);
+        });
+
+    } catch (err) {
+        let msg;
+        if (err.message) {
+            msg = err.message
+            if (msg == "AccountResourceInsufficient error") {
+                msg = "Unable to confirm transaction due to insufficient funds"
+            }
+        }
+        else {
+            msg = err
+        }
+        $(".validationMsg").html('<span class="text-danger">' + msg + '</span>');
+        return [true, true];
+    }
+    return [false, transactionError];
+}
+
+async function setTradingPair() {
+
+    const queryString = window.location.search;
+
+    const urlParams = new URLSearchParams(queryString);
+    let pair = urlParams.get('pair')
+
+    if (!pair) {
+        pair = "jst_usdj_nile"
+    }
+
+    switch (pair) {
+        case "jst_usdj_nile":
+            NETWORK = "Nile Testnet";
+
+            CONTRACT_MARKETPLACE = "TQAymA8RuqWRpYrrKsYfh45H71h7WiY5G8";
+
+            CONTRACT_A4B = "TEZRaiqKSsNcLNTxQjLvKLejpRy6g64p9Q"
+            CONTRACT_B4A = "TBkMMFuujZHPyYsnfCJ5BPdk1uP5hP1DcC"
+
+            CONTRACT_TOKEN = "TF17BgPaZYbz8oxbjhriubPDsA7ArKoLX3";
+            CONTRACT_STABLE = "TLBaRhANQoJFTqre9Nf1mjuwNWjCJeYqUL";
+            NAME_TOKEN = "JST"
+            NAME_STABLE = "USDJ"
+            IMG_TOKEN = "jst.svg"
+            TRC20_TOKEN_APPROVE_OWNER = "src"
+            TRC20_TOKEN_APPROVE_SPENDER = "guy"
+            TRC20_TOKEN_APPROVE_VALUE = "wad"
+            TRC20_STABLE_APPROVE_OWNER = "src"
+            TRC20_STABLE_APPROVE_SPENDER = "guy"
+            TRC20_STABLE_APPROVE_VALUE = "wad"
+            DECIMALS_TOKEN = 18;
+            DECIMALS_STABLE = 18;
+            FEED_TOKEN = "just";
+            FEED_STABLE = "just-stablecoin";
+            TRONSCAN_URL_PREFIX = "https://nile.tronscan.org";
+            ALLOWANCE_FIX_TOKEN = false;
+            ALLOWANCE_FIX_STABLE = false;
+            TRONGRID_URL_PREFIX = "https://nile.trongrid.io"
+            break;
+        case "btc_usdt":
+            NETWORK = "Mainnet"
+            CONTRACT_MARKETPLACE = "TFr8j8M9dTZi4TvGbxZdNR7bfYbzVScYmk";
+            CONTRACT_TOKEN = "TN3W4H6rK2ce4vX9YnFQHwKENnHjoxb3m9";
+            CONTRACT_STABLE = "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t";
+            NAME_TOKEN = "BTC"
+            NAME_STABLE = "USDT"
+            IMG_TOKEN = "btc.svg"
+            TRC20_TOKEN_APPROVE_OWNER = "owner"
+            TRC20_TOKEN_APPROVE_SPENDER = "spender"
+            TRC20_TOKEN_APPROVE_VALUE = "value"
+            TRC20_STABLE_APPROVE_OWNER = "owner"
+            TRC20_STABLE_APPROVE_SPENDER = "spender"
+            TRC20_STABLE_APPROVE_VALUE = "value"
+            DECIMALS_TOKEN = 8;
+            DECIMALS_STABLE = 6;
+            FEED_TOKEN = "bitcoin";
+            FEED_STABLE = "tether";
+            TRONSCAN_URL_PREFIX = "https://tronscan.io";
+            ALLOWANCE_FIX_TOKEN = false;
+            ALLOWANCE_FIX_STABLE = false;
+            TRONGRID_URL_PREFIX = "https://api.trongrid.io"
+            break;
+        case "eth_usdt":
+            NETWORK = "Mainnet";
+            CONTRACT_MARKETPLACE = "TUhtf9TRBN26KWN5K9fXVc2HywZbL91J2X";
+            CONTRACT_TOKEN = "THb4CqiFdwNHsWsQCs4JhzwjMWys4aqCbF";
+            CONTRACT_STABLE = "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t";
+            NAME_TOKEN = "ETH"
+            NAME_STABLE = "USDT"
+            IMG_TOKEN = "eth.png"
+            TRC20_TOKEN_APPROVE_OWNER = "owner"
+            TRC20_TOKEN_APPROVE_SPENDER = "spender"
+            TRC20_TOKEN_APPROVE_VALUE = "value"
+            TRC20_STABLE_APPROVE_OWNER = "owner"
+            TRC20_STABLE_APPROVE_SPENDER = "spender"
+            TRC20_STABLE_APPROVE_VALUE = "value"
+            DECIMALS_TOKEN = 18;
+            DECIMALS_STABLE = 6;
+            FEED_TOKEN = "ethereum";
+            FEED_STABLE = "tether";
+            TRONSCAN_URL_PREFIX = "https://tronscan.io";
+            ALLOWANCE_FIX_TOKEN = false;
+            ALLOWANCE_FIX_STABLE = false;
+            TRONGRID_URL_PREFIX = "https://api.trongrid.io"
+            break;
+        case "ltc_usdt":
+            NETWORK = "Mainnet";
+            CONTRACT_MARKETPLACE = "TXQzQaA9ooyWqFbYdti77puGejBV8kzpx8";
+            CONTRACT_TOKEN = "TR3DLthpnDdCGabhVDbD3VMsiJoCXY3bZd";
+            CONTRACT_STABLE = "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t";
+            NAME_TOKEN = "LTC"
+            NAME_STABLE = "USDT"
+            IMG_TOKEN = "ltc.svg"
+            TRC20_TOKEN_APPROVE_OWNER = "owner"
+            TRC20_TOKEN_APPROVE_SPENDER = "spender"
+            TRC20_TOKEN_APPROVE_VALUE = "value"
+            TRC20_STABLE_APPROVE_OWNER = "owner"
+            TRC20_STABLE_APPROVE_SPENDER = "spender"
+            TRC20_STABLE_APPROVE_VALUE = "value"
+            DECIMALS_TOKEN = 8;
+            DECIMALS_STABLE = 6;
+            FEED_TOKEN = "litecoin";
+            FEED_STABLE = "tether";
+            TRONSCAN_URL_PREFIX = "https://tronscan.io";
+            ALLOWANCE_FIX_TOKEN = false;
+            ALLOWANCE_FIX_STABLE = false;
+            TRONGRID_URL_PREFIX = "https://api.trongrid.io"
+            break;
+        case "doge_usdt":
+            NETWORK = "Mainnet";
+            CONTRACT_MARKETPLACE = "TV2hkq3aRKgRWadPXPVmGqHGzHew58nSUs";
+            CONTRACT_TOKEN = "THbVQp8kMjStKNnf2iCY6NEzThKMK5aBHg";
+            CONTRACT_STABLE = "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t";
+            NAME_TOKEN = "DOGE"
+            NAME_STABLE = "USDT"
+            IMG_TOKEN = "doge.svg"
+            TRC20_TOKEN_APPROVE_OWNER = "owner"
+            TRC20_TOKEN_APPROVE_SPENDER = "spender"
+            TRC20_TOKEN_APPROVE_VALUE = "value"
+            TRC20_STABLE_APPROVE_OWNER = "owner"
+            TRC20_STABLE_APPROVE_SPENDER = "spender"
+            TRC20_STABLE_APPROVE_VALUE = "value"
+            DECIMALS_TOKEN = 8;
+            DECIMALS_STABLE = 6;
+            FEED_TOKEN = "dogecoin";
+            FEED_STABLE = "tether";
+            TRONSCAN_URL_PREFIX = "https://tronscan.io";
+            ALLOWANCE_FIX_TOKEN = false;
+            ALLOWANCE_FIX_STABLE = false;
+            TRONGRID_URL_PREFIX = "https://api.trongrid.io"
+    }
+
+    if (NETWORK) {
+        FEED_URL = "https://api.coingecko.com/api/v3/simple/price?ids=" + FEED_TOKEN + "," + FEED_STABLE + "&vs_currencies=usd";
+        CONTRACT_A4B_NETWORK_URL = TRONSCAN_URL_PREFIX + "/#/contract/" + CONTRACT_A4B + "/code"
+        CONTRACT_B4A_NETWORK_URL = TRONSCAN_URL_PREFIX + "/#/contract/" + CONTRACT_B4A + "/code"
+
+        let networkSuffix = "";
+        if (NETWORK == "Nile Testnet") {
+            networkSuffix = `<span style="font-size:x-small">&nbsp;(Test)</span>`;
+        }
+        HTML_CONN_BADGE = `<img src="${IMG_TOKEN}" height="24px" width="24px" />&nbsp;&nbsp;${NAME_TOKEN}/${NAME_STABLE}${networkSuffix}</div>`;
+
+        TRANSACTION_URL = TRONSCAN_URL_PREFIX + "/#/transaction/";
+
+        $("#conn_badge").html(HTML_CONN_BADGE);
+        $(".contractA4BCodeURL").prop("href", CONTRACT_A4B_NETWORK_URL)
+        $(".contractB4ACodeURL").prop("href", CONTRACT_B4A_NETWORK_URL)
+        $(".tokenName").text(NAME_TOKEN)
+        $(".stableName").text(NAME_STABLE)
+        $(".stablePerTokenName").text(NAME_STABLE + "/" + NAME_TOKEN)
+        $("#FooterContractA4B").prop("hidden", false)
+        $("#FooterContractB4A").prop("hidden", false)
+        $("#accountDiv").prop("hidden", false)
+        $("#CurrentPrice").prop("hidden", false)
+
+        initializeFeeds();
+
+        ENTERED = true;
+        LOCK = true
+        await initializeTronWeb().finally(() => {
+            LOCK = false
+        })
+    }
+}
+
+$(function () {
+    'use strict'
+    var formsCreateOffer = document.querySelectorAll('.create-offer-validation')
+    var formsAcceptOffer = document.querySelectorAll('.accept-offer-validation')
+    var formsCancelOffer = document.querySelectorAll('.cancel-offer-validation')
+
+    // MODALS - On Submit Event Listeners (CreateOfferModal)
+    Array.prototype.slice.call(formsCreateOffer)
+        .forEach(function (form) {
+            form.addEventListener('submit', async function (event) {
+                event.preventDefault()
+                event.stopPropagation()
+
+                let isBuy = document.getElementById("buy").checked;
+                let isSell = document.getElementById("sell").checked;
+                let amountVal = $(".amount").val();
+                let priceVal = $(".price").val();
+                let volumeVal = $(".volume").val();
+
+                let contract = isSell ? a4bContract : b4aContract;
+                let CONTRACT_ADDRESS= isSell ? CONTRACT_A4B : CONTRACT_B4A;
+
+                let validationError = false;
+                let transactionError = false;
+
+                if ((!isBuy && !isSell) || (isBuy && isSell)) {
+                    $(".validationMsg").html('<span class="text-danger">Please choose either Buy ' + NAME_TOKEN + ' or Sell ' + NAME_TOKEN + '</span>');
+                    validationError = true;
+                }
+                else if (amountVal == 0 || priceVal == 0 || volumeVal == 0) {
+                    $(".validationMsg").html('<span class="text-danger">Please enter valid values</span>');
+                    validationError = true;
+
+                }
+                else if (BigNumber(BigNumber(amountVal).times(priceVal).toFixed(DECIMALS_STABLE)).toFixed(DECIMALS_8) != volumeVal) {
+                    $(".validationMsg").html('<span class="text-danger">Please enter valid values</span>');
+                    validationError = true;
+
+                }
+                //Check MIN Values
+                else if (valueMoveCommaRight(amountVal, DECIMALS_TOKEN).isLessThan(minValToken)) {
+                    $(".validationMsg").html('<span class="text-danger">Amount is too low</span>');
+                    validationError = true;
+                }
+                else if (valueMoveCommaRight(volumeVal, DECIMALS_STABLE).isLessThan(minValStable)) {
+                    $(".validationMsg").html('<span class="text-danger">Volume is too low</span>');
+                    validationError = true;
+                }
+                else {
+                    if (isBuy) {
+                        if (valueMoveCommaRight(volumeVal, DECIMALS_STABLE).isGreaterThan(balanceStable)) {
+                            $(".validationMsg").html('<span class="text-danger">Your ' + NAME_STABLE + ' balance is too low</span>');
+                            validationError = true;
+                        }
+                    }
+                    else {
+                        if (valueMoveCommaRight(amountVal, DECIMALS_TOKEN).isGreaterThan(balanceToken)) {
+                            $(".validationMsg").html('<span class="text-danger">Your ' + NAME_TOKEN + ' balance is too low</span>');
+                            validationError = true;
+                        }
+                    }
+                }
+
+                $(".submitBtn").prop("hidden", true)
+                $('#buy').prop("disabled", true)
+                $('#sell').prop("disabled", true)
+                $(".amount").prop("disabled", true)
+                $(".price").prop("disabled", true)
+                $(".volume").prop("disabled", true)
+
+
+                if (validationError == false) {//approval
+
+                    if (isBuy) {
+                        if (BigNumber(allowanceStable).isLessThan(valueMoveCommaRight(volumeVal, DECIMALS_STABLE))) {
+                            [validationError, transactionError] = await sendTransaction(
+                                '<span class="fw-bold">Approval (' + NAME_STABLE + ')</span>',
+                                function () { return stable.approve(CONTRACT_MARKETPLACE, "0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF") },
+                                function () { return stable.Approval() },
+                                { TRC20_STABLE_APPROVE_OWNER: window.tronWeb.defaultAddress.base58, TRC20_STABLE_APPROVE_SPENDER: CONTRACT_MARKETPLACE, TRC20_STABLE_APPROVE_VALUE: "340282366920938463463374607431768211455" }
+                            )
+                        }
+                    }
+                    else { //isSell
+                        if (BigNumber(allowanceToken).isLessThan(valueMoveCommaRight(amountVal, DECIMALS_TOKEN))) {
+                            [validationError, transactionError] = await sendTransaction(
+                                '<span class="fw-bold">Approval (' + NAME_TOKEN + ')</span>',
+                                function () { return token.approve(CONTRACT_MARKETPLACE, "0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF") },
+                                function () { return token.Approval() },
+                                { TRC20_TOKEN_APPROVE_OWNER: window.tronWeb.defaultAddress.base58, TRC20_TOKEN_APPROVE_SPENDER: CONTRACT_MARKETPLACE, TRC20_TOKEN_APPROVE_VALUE: "340282366920938463463374607431768211455" }
+                            )
+                        }
+                    }
+                }
+
+
+                if (validationError == false && transactionError == false) {//create offer
+                    [validationError, transactionError] = await sendTransaction(
+                        '<span class="fw-bold">Create Offer</span>',
+                        function () { return marketplace.createOffer(String(valueMoveCommaRight(amountVal, DECIMALS_TOKEN).toFixed(0)), String(valueMoveCommaRight(volumeVal, DECIMALS_STABLE).toFixed(0)), isSell) },
+                        function () { return marketplace.CreateOffer() },
+                        { "issuer": window.tronWeb.defaultAddress.base58 }
+                    )
+
+                }
+
+                if (validationError) {
+                    $(".submitBtn").prop("hidden", false)
+                    $('#buy').prop("disabled", false)
+                    $('#sell').prop("disabled", false)
+                    $(".amount").prop("disabled", false)
+                    $(".price").prop("disabled", false)
+                    $(".volume").prop("disabled", false)
+                }
+            }, false)
+        })
+
+
+    // MODALS - On Submit Event Listeners (AcceptOfferModal)
+    Array.prototype.slice.call(formsAcceptOffer)
+        .forEach(function (form) {
+            form.addEventListener('submit', async function (event) {
+                event.preventDefault()
+                event.stopPropagation()
+
+                let amountVal = $(".amount").val();
+                let priceVal = $(".price").val();
+                let volumeVal = $(".volume").val();
+                let isSell = ($("#AcceptOfferModal").attr('data-offer-sell') == "true") ? true : false
+                let acceptOfferId = $("#AcceptOfferModal").attr('data-offer-id')
+                let acceptOfferMaxAmount = $(".accept-offer-max-amount").text()
+                let acceptOfferMaxVolume = $(".accept-offer-max-volume").text()
+                let acceptOfferMaxExactVolume = $(".accept-offer-max-volume").attr('data-exact-val-stable')
+
+                let validationError = false;
+                let transactionError = false;
+
+                console.log("minValToken = " + minValToken)
+                console.log("minValStable = " + minValStable)
+                console.log("acceptOfferMaxExactVolume = " + acceptOfferMaxExactVolume)
+                console.log("volumeVal = " + valueMoveCommaRight(volumeVal, DECIMALS_STABLE))
+
+
+                if (amountVal == 0 || priceVal == 0 || volumeVal == 0) {
+                    $(".validationMsg").html('<span class="text-danger">Please enter valid values</span>');
+                    validationError = true;
+
+                }
+                else if (BigNumber(BigNumber(amountVal).times(priceVal).toFixed(DECIMALS_STABLE)).toFixed(DECIMALS_8) != volumeVal) {
+                    $(".validationMsg").html('<span class="text-danger">Please enter valid values</span>');
+                    validationError = true;
+
+                }
+                else if (BigNumber(amountVal).isGreaterThan(acceptOfferMaxAmount)) {
+                    $(".validationMsg").html('<span class="text-danger">Amount is too high</span>');
+                    validationError = true;
+                }
+                //Check MIN Values
+                else if (valueMoveCommaRight(amountVal, DECIMALS_TOKEN).isLessThan(minValToken)) {
+                    $(".validationMsg").html('<span class="text-danger">Amount is too low</span>');
+                    validationError = true;
+                }
+                else if (valueMoveCommaRight(volumeVal, DECIMALS_STABLE).isLessThan(minValStable)) {
+                    $(".validationMsg").html('<span class="text-danger">Volume is too low</span>');
+                    validationError = true;
+                }
+                //Check subtracted MIN Values
+                else if (BigNumber(acceptOfferMaxAmount).minus(amountVal).isGreaterThan(0)
+                    && valueMoveCommaRight(BigNumber(acceptOfferMaxAmount).minus(amountVal), DECIMALS_TOKEN).isLessThan(minValToken)) {
+                    $(".validationMsg").html('<span class="text-danger">MaxAmount minus Amount is too low</span>');
+                    validationError = true;
+                }
+                else if (BigNumber(acceptOfferMaxAmount).minus(amountVal).isGreaterThan(0)
+                    && BigNumber(acceptOfferMaxExactVolume).minus(valueMoveCommaRight(volumeVal, DECIMALS_STABLE)).isGreaterThan(0)
+                    && BigNumber(acceptOfferMaxExactVolume).minus(valueMoveCommaRight(volumeVal, DECIMALS_STABLE)).isLessThan(minValStable)) {
+                    $(".validationMsg").html('<span class="text-danger">MaxVolume minus Volume is too low</span>');
+                    validationError = true;
+                }
+                else {
+                    if (!isSell) {
+                        // TBD check also against min val
+                        if (valueMoveCommaRight(volumeVal, DECIMALS_STABLE).isGreaterThan(balanceStable)) {
+                            $(".validationMsg").html('<span class="text-danger">Your ' + NAME_STABLE + ' balance is too low</span>');
+                            validationError = true;
+                        }
+                    }
+                    else {
+                        // TBD check also against min val
+                        if (valueMoveCommaRight(amountVal, DECIMALS_TOKEN).isGreaterThan(balanceToken)) {
+                            $(".validationMsg").html('<span class="text-danger">Your ' + NAME_TOKEN + ' balance is too low</span>');
+                            validationError = true;
+                        }
+                    }
+                }
+
+                $(".submitBtn").prop("hidden", true)
+                $(".amount").prop("disabled", true)
+                $(".price").prop("disabled", true)
+                $(".volume").prop("disabled", true)
+
+
+                if (validationError == false) {//approval
+                    if (!isSell) {
+                        if (BigNumber(allowanceStable).isLessThan(valueMoveCommaRight(volumeVal, DECIMALS_STABLE))) {
+                            [validationError, transactionError] = await sendTransaction(
+                                '<span class="fw-bold">Approval (' + NAME_STABLE + ')</span>',
+                                function () { return stable.approve(CONTRACT_MARKETPLACE, "0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF") },
+                                function () { return stable.Approval() },
+                                { TRC20_STABLE_APPROVE_OWNER: window.tronWeb.defaultAddress.base58, TRC20_STABLE_APPROVE_SPENDER: CONTRACT_MARKETPLACE, TRC20_STABLE_APPROVE_VALUE: "340282366920938463463374607431768211455" }
+                            )
+                        }
+                    }
+                    else { //isSell
+                        if (BigNumber(allowanceToken).isLessThan(valueMoveCommaRight(amountVal, DECIMALS_TOKEN))) {
+                            [validationError, transactionError] = await sendTransaction(
+                                '<span class="fw-bold">Approval (' + NAME_TOKEN + ')</span>',
+                                function () { return token.approve(CONTRACT_MARKETPLACE, "0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF") },
+                                function () { return token.Approval() },
+                                { TRC20_TOKEN_APPROVE_OWNER: window.tronWeb.defaultAddress.base58, TRC20_TOKEN_APPROVE_SPENDER: CONTRACT_MARKETPLACE, TRC20_TOKEN_APPROVE_VALUE: "340282366920938463463374607431768211455" }
+                            )
+                        }
+                    }
+                }
+
+                if (validationError == false && transactionError == false) {//accept offer
+                    [validationError, transactionError] = await sendTransaction(
+                        '<span class="fw-bold">Accept Offer</span>',
+                        function () { return marketplace.acceptOffer(acceptOfferId, String(valueMoveCommaRight(amountVal, DECIMALS_TOKEN).toFixed(0))) },
+                        function () { return marketplace.AcceptOffer() },
+                        { "offerId": acceptOfferId }
+                    )
+                }
+
+                if (validationError) {
+                    $(".submitBtn").prop("hidden", false)
+                    $(".amount").prop("disabled", false)
+                    $(".price").prop("disabled", true)
+                    $(".volume").prop("disabled", false)
+                }
+            }, false)
+        })
+
+    // MODALS - On Submit Event Listeners (CancelOfferModal)
+    Array.prototype.slice.call(formsCancelOffer)
+        .forEach(function (form) {
+            form.addEventListener('submit', async function (event) {
+                event.preventDefault()
+                event.stopPropagation()
+
+                let isCancel = document.getElementById("cancel").checked;
+
+                let contract = ($("#CancelOfferModal").attr('data-offer-sell') == "true") ? a4bContract : b4aContract;
+
+                let validationError = false;
+                let transactionError = false;
+
+                if (!isCancel) {
+                    $(".validationMsg").html('<span class="text-danger">Please select Cancel Offer</span>');
+                    validationError = true;
+                }
+
+                $(".submitBtn").prop("hidden", true)
+                $('#cancel').prop("disabled", true)
+
+                if (validationError == false) {
+                    [validationError, transactionError] = await sendTransaction(
+                        '<span class="fw-bold">Cancel Offer</span>',
+                        function () { return contract.cancelOffer($('#cancel').prop('value').substr(1)) },
+                        function () { return contract.UpdateOffer() },
+                        { "id": $('#cancel').prop('value').substr(1) } //// TBD TBD TBD!!!
+
+                        UpdateOffer(id,seller,valA,valB)
+
+                    )
+                }
+
+                if (validationError) {
+                    $(".submitBtn").prop("hidden", false)
+                    $('#cancel').prop("disabled", false)
+                }
+            }, false)
+        })
+})
