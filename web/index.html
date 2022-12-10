@@ -74,7 +74,7 @@
         color: #222;
         font-weight: bold;
     }
-    
+
     @-webkit-keyframes flash {
         from {
             color: #ffc107;
@@ -139,9 +139,9 @@
                 <div id="accountDiv" hidden>
                     <div class="d-flex align-items-center text-light account" style="font-size: small;">
                         <div class="spinner-border spinner-border-xs" role="status">
-                            <span class="visually-hidden">Connect Web3 Wallet</span>
+                            <span class="visually-hidden">Connecting TronLink</span>
                         </div>
-                        <span>&nbsp;Connect&nbsp;Web3&nbsp;Wallet</span>
+                        <span>&nbsp;Connecting&nbsp;<a href="https://www.tronlink.org" target="_blank" class="text-light">TronLink</a></span>
                     </div>
                 </div>
             </div>
@@ -190,7 +190,7 @@
 
                         </div>
                         <div class="px-3 text-light d-flex align-items-center">
-                            <div id="CurrentPrice" class = "small" hidden>
+                            <div id="CurrentPrice" class="small" hidden>
                                 <span class="priceToken"></span>&nbsp;<span class="stableName"></span>/<span class="tokenName me-3"></span>
                             </div>
                             <a href="#" class="text-success" data-bs-toggle="modal" data-bs-target="#AboutModal"><i class="bi bi-question-circle-fill"></i></a>
@@ -212,8 +212,8 @@
                     <div class="rounded text-light overflow-auto px-2 bg-dark rounded15" style="min-height: 10vh;max-height: 25vh;font-size: small;">
                         <table class="table table-hover table-sm align-middle">
                             <thead class="text-light fw-bold">
-                                <td>#</td>
-                                <td></td>
+                                <td>Offer #</td>
+                                <td>Type</td>
                                 <td>Amount (<span class="tokenName"></span>)</td>
                                 <td>Price (<span class="stablePerTokenName"></span>)</td>
                                 <td>Volume (<span class="stableName"></span>)</td>
@@ -264,7 +264,7 @@
                 <div class="col-12 text-center text-light" style="font-size: small;position: relative;">
                     <span class="fw-bold">RAIDSHIFT marketplace</span>
                     <div style="position:absolute;right:0%;top:0px;font-size: x-small;" class="me-2">
-                        (build <build>125</build>)
+                        (build <build>143</build>)
                     </div>
                 </div>
 
@@ -273,7 +273,10 @@
                     &nbsp;&nbsp;|&nbsp;&nbsp; -->
                     <a class="text-light" href="https://github.com/raidshift/marketplace-contract" target="_blank" class="link-light"><i class="bi bi-github"></i> GitHub</a>
                     &nbsp;&nbsp;|&nbsp;&nbsp;
-                    <span id="FooterContract" hidden><a class="contractMarketplaceCodeURL text-light" href="" target="_blank" class="link-light"><i class="bi bi-box"></i> Contract</a>
+                    <span id="FooterContractA4B" hidden><a class="contractA4BCodeURL text-light" href="" target="_blank" class="link-light"><i class="bi bi-box"></i> <span class="tokenName"></span>4<span class="stableName"></span></a>
+                        &nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <span id="FooterContractB4A" hidden><a class="contractB4ACodeURL text-light" href="" target="_blank" class="link-light"><i class="bi bi-box"></i> <span class="stableName"></span>4<span class="tokenName"></a>
                         &nbsp;&nbsp;|&nbsp;&nbsp;</span>
                     <a class="text-light" href="https://twitter.com/raidshift" target="_blank" class="link-light"><i class="bi bi-twitter"></i> Twitter</a>
                     &nbsp;&nbsp;|&nbsp;&nbsp;
@@ -396,12 +399,6 @@
 
                         <div class="mb-4 small text-light">
                             <ul>
-                                <li class="mb-2">
-                                    A <span class="text-success">0.1% trading fee</span> will be deducted from the received token.
-                                </li>
-                                <li class="mb-2">
-                                    You can also accept a fraction of the amount of <span class="tokenName"></span> from the offer.
-                                </li>
                                 <li>
                                     Accepting the offer requires you to once-only authorize (approve) the Smart
                                     Contract to transfer your <span class="stableName fw-bold"></span> when buying
@@ -470,13 +467,17 @@
                     <div class="text-light">
                         <ul>
                             <li>
-                                RAIDSHIFT marketplace is a decentralized Peer-to-Peer crypto token exchange on <a href="https://bt.io/" target="_blank" class="text-success">Bittorrent Chain</a>
+                                RAIDSHIFT marketplace is a decentralized Peer-to-Peer crypto token exchange on TRON Blockchain.
                             </li>
                         </ul>
-
                         <ul>
                             <li>
-                                 With <span class="text-success">no trading fees !</span>
+                                Its Smart Contracts have a very small footprint with no owner or governance to prevent frauds and keep transaction fees as low as possible.
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                Exchanging tokens with peers is free of charge.</span>
                             </li>
                         </ul>
                     </div>
@@ -494,11 +495,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bignumber.js/9.0.1/bignumber.min.js" integrity="sha512-3dEpIO2t/6beQ77U/aYgVqJpmSkcvWuTFO4WhCQrSi2tSQV3U+k4plwSKlVOxKibsnd6Z/0evmClsMl4LVZ7Ig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.0/ethers.umd.min.js" integrity="sha512-+Ftowzj6zmwHlez4gpQxd7QQUzK/ocgu10pukN3Pyqblni7yJ9r/WTpNHoYKL4DGOp5givxSUZjJcVY7Az9OAQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.1/web3.min.js" integrity="sha512-GKw4QT/RccGJIwQxY3MhyiQ5pHrhQ8SuKFEafV+WcpOvtz7iYFQuQGFCvmGlHLctJTe8KrWU1FqvF7VOkEAJtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.0/ethers.umd.min.js" integrity="sha512-+Ftowzj6zmwHlez4gpQxd7QQUzK/ocgu10pukN3Pyqblni7yJ9r/WTpNHoYKL4DGOp5givxSUZjJcVY7Az9OAQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="utils.js"></script>
-    <script src="abis.js"></script>
     <script src="index.js"></script>
 </body>
 
