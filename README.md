@@ -1,12 +1,12 @@
-# RAIDSHIFT marketplace - Smart Contract
-
-visit [raidshift.com](http://raidshift.com)
+# RAIDSHIFT marketplace
 
 * RAIDSHIFT marketplace is an order book based decentralized Peer-to-Peer token exchange on TRON Blockchain.
 * Its ungoverned and immutable Smart Contracts have a small footprint to keep transaction fees as low as possible.
 * Exchanging tokens with peers is free of charge.
 
-Deployed Smart Contracts:
+Visit [raidshift.com](http://raidshift.com)
+
+Smart Contracts:
 * BTC4USDT: [TVMuhpXdRvNjjFAWqZ5urvhrQQyFvc19SN](https://tronscan.io/#/contract/TVMuhpXdRvNjjFAWqZ5urvhrQQyFvc19SN/code)
 * USDT4BTC: [TJmx4Zg4xMjCZR5Q3aoCyDmYY3r42xU2GZ](https://tronscan.io/#/contract/TJmx4Zg4xMjCZR5Q3aoCyDmYY3r42xU2GZ/code)
 
@@ -18,3 +18,8 @@ Deployed Smart Contracts:
 
 * DOGE4USDT: [TPxT4UrAkbp4fK4CtjuMmvS9u85HjU7EYq](https://tronscan.io/#/contract/TPxT4UrAkbp4fK4CtjuMmvS9u85HjU7EYq/code)
 * USDT4DOGE: [TEEQvDKY9sFQ65xxwhSH4QBkLD2NtwoN4a](https://tronscan.io/#/contract/TEEQvDKY9sFQ65xxwhSH4QBkLD2NtwoN4a/code)
+
+* RSF4USDT: [TUHHCVD4MR7LXthbS2fBBw5bXARhBg4k5G](https://tronscan.io/#/contract/TUHHCVD4MR7LXthbS2fBBw5bXARhBg4k5G/code)
+* USDT4RSF: [TPfAqGJ83NbVcRcsMFx7GJ749t9VV6cZvp](https://tronscan.io/#/contract/TPfAqGJ83NbVcRcsMFx7GJ749t9VV6cZvp/code)
+
+* Raidshift (RSF) Token: [TNEjtKFHWpz8bN2ZruLVY2NW2AD39uSUAs](https://tronscan.io/#/contract/TNEjtKFHWpz8bN2ZruLVY2NW2AD39uSUAs/code)
