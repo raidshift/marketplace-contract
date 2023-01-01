@@ -7,6 +7,9 @@
 Visit [raidshift.com](http://raidshift.com)
 
 Smart Contracts:
+* TRX4USDT: [TC3TuowSyMxJSLaqiWJuCkZ2i3q7JCFR4x](https://tronscan.io/#/contract/TC3TuowSyMxJSLaqiWJuCkZ2i3q7JCFR4x/code)
+* USDT4TRX: [TGxDz3kgbxwEAESNtfWk4JFXXEgZAoWqeG](https://tronscan.io/#/contract/TGxDz3kgbxwEAESNtfWk4JFXXEgZAoWqeG/code)
+
 * BTC4USDT: [TVMuhpXdRvNjjFAWqZ5urvhrQQyFvc19SN](https://tronscan.io/#/contract/TVMuhpXdRvNjjFAWqZ5urvhrQQyFvc19SN/code)
 * USDT4BTC: [TJmx4Zg4xMjCZR5Q3aoCyDmYY3r42xU2GZ](https://tronscan.io/#/contract/TJmx4Zg4xMjCZR5Q3aoCyDmYY3r42xU2GZ/code)
 
