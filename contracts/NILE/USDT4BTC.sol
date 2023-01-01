@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.6;
 
-interface IERC20_SLIM {
+interface IERC20 {
     function transfer(address recipient, uint256 amount) external returns (bool);
     function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
 }
@@ -28,7 +28,7 @@ contract USDT4BTC {
         id = offers.length;
         offers.push(offer);
         emit UpdateOffer(id, offer.seller, offer.valA, offer.valB);
-        IERC20_SLIM(tokenA).transferFrom(msg.sender, address(this), valA);
+        IERC20(tokenA).transferFrom(msg.sender, address(this), valA);
     }
 
     function acceptOffer(uint256 id, uint256 valB) external {
@@ -46,11 +46,11 @@ contract USDT4BTC {
         offer.valB -= valB;
         offers[id] = offer;
         emit UpdateOffer(id, offer.seller, offer.valA, offer.valB);
-        IERC20_SLIM(tokenB).transferFrom(msg.sender, offer.seller, valB);
-        IERC20_SLIM(tokenA).transfer(msg.sender, valA);
+        IERC20(tokenB).transferFrom(msg.sender, offer.seller, valB);
+        IERC20(tokenA).transfer(msg.sender, valA);
     }
 
-     function cancelOffer(uint256 id) external {
+    function cancelOffer(uint256 id) external {
         Offer memory offer = offers[id];
         require(msg.sender == offer.seller);
         uint256 valA = offer.valA;
@@ -58,6 +58,6 @@ contract USDT4BTC {
         offer.valB = 0;
         offers[id] = offer;
         emit UpdateOffer(id, offer.seller, offer.valA, offer.valB);
-        IERC20_SLIM(tokenA).transfer(offer.seller, valA);
+        IERC20(tokenA).transfer(offer.seller, valA);
     }
 }

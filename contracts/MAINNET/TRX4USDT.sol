@@ -2,13 +2,11 @@
 pragma solidity ^0.8.6;
 
 interface IERC20 {
-    function transfer(address recipient, uint256 amount) external returns (bool);
     function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
 }
 
-contract USDT4RSF {
-    address public tokenA = 0xEa51342dAbbb928aE1e576bd39eFf8aaf070A8c6;
-    address public tokenB = 0xBbd11A20a4fAD0926467cbB469584EfD53F09FBA;
+contract TRX4USDT {
+    address public tokenB = 0xa614f803B6FD780986A42c78Ec9c7f77e6DeD13C;
 
     struct Offer {
         address seller;
@@ -19,16 +17,15 @@ contract USDT4RSF {
 
     event UpdateOffer(uint256 id, address seller, uint256 valA, uint256 valB);
 
-    function createOffer(uint256 valA, uint256 valB) external returns (uint256 id) {
-        require(valA > 0 && valB > 0);
+    function createOffer(uint256 valB) external payable returns (uint256 id) {
+        require(msg.value > 0 && valB > 0);
         Offer memory offer;
         offer.seller = msg.sender;
-        offer.valA = valA;
+        offer.valA = msg.value;
         offer.valB = valB;
         id = offers.length;
         offers.push(offer);
         emit UpdateOffer(id, offer.seller, offer.valA, offer.valB);
-        IERC20(tokenA).transferFrom(msg.sender, address(this), valA);
     }
 
     function acceptOffer(uint256 id, uint256 valB) external {
@@ -47,7 +44,8 @@ contract USDT4RSF {
         offers[id] = offer;
         emit UpdateOffer(id, offer.seller, offer.valA, offer.valB);
         IERC20(tokenB).transferFrom(msg.sender, offer.seller, valB);
-        IERC20(tokenA).transfer(msg.sender, valA);
+        (bool sent, ) = msg.sender.call{value: valA}("");
+        require(sent);
     }
 
     function cancelOffer(uint256 id) external {
@@ -58,6 +56,7 @@ contract USDT4RSF {
         offer.valB = 0;
         offers[id] = offer;
         emit UpdateOffer(id, offer.seller, offer.valA, offer.valB);
-        IERC20(tokenA).transfer(offer.seller, valA);
+        (bool sent, ) = msg.sender.call{value: valA}("");
+        require(sent);
     }
 }

@@ -6,9 +6,9 @@ interface IERC20 {
     function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
 }
 
-contract USDT4RSF {
-    address public tokenA = 0xEa51342dAbbb928aE1e576bd39eFf8aaf070A8c6;
-    address public tokenB = 0xBbd11A20a4fAD0926467cbB469584EfD53F09FBA;
+contract RSF4USDT {
+    address public tokenA = 0x8691877E69D5BdB733128ad0bd02233Ca6f9cdED;
+    address public tokenB = 0xa614f803B6FD780986A42c78Ec9c7f77e6DeD13C;
 
     struct Offer {
         address seller;

@@ -6,9 +6,8 @@ interface IERC20 {
     function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
 }
 
-contract USDT4RSF {
+contract USDT4TRX {
     address public tokenA = 0xEa51342dAbbb928aE1e576bd39eFf8aaf070A8c6;
-    address public tokenB = 0xBbd11A20a4fAD0926467cbB469584EfD53F09FBA;
 
     struct Offer {
         address seller;
@@ -31,11 +30,12 @@ contract USDT4RSF {
         IERC20(tokenA).transferFrom(msg.sender, address(this), valA);
     }
 
-    function acceptOffer(uint256 id, uint256 valB) external {
+    function acceptOffer(uint256 id) external payable {
         Offer memory offer = offers[id];
         uint256 valA;
-        if (valB < offer.valB) {
-            valA = (offer.valA * valB) / offer.valB;
+        uint256 valB;
+        if (msg.value < offer.valB) {
+            valA = (offer.valA * msg.value) / offer.valB;
             valB = (((offer.valB * valA) - 1) / offer.valA) + 1;
         } else {
             valA = offer.valA;
@@ -46,7 +46,10 @@ contract USDT4RSF {
         offer.valB -= valB;
         offers[id] = offer;
         emit UpdateOffer(id, offer.seller, offer.valA, offer.valB);
-        IERC20(tokenB).transferFrom(msg.sender, offer.seller, valB);
+        (bool sent, ) = address(offer.seller).call{value: valB}("");
+        require(sent);
+        (bool sentChange, ) = msg.sender.call{value: msg.value - valB}("");
+        require(sentChange);
         IERC20(tokenA).transfer(msg.sender, valA);
     }
 
