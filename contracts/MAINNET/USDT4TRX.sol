@@ -46,7 +46,7 @@ contract USDT4TRX {
         offer.valB -= valB;
         offers[id] = offer;
         emit UpdateOffer(id, offer.seller, offer.valA, offer.valB);
-        (bool sent, ) = address(offer.seller).call{value: valB}("");
+        (bool sent, ) = offer.seller.call{value: valB}("");
         require(sent);
         (bool sentChange, ) = msg.sender.call{value: msg.value - valB}("");
         require(sentChange);
