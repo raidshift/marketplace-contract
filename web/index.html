@@ -183,8 +183,8 @@
                                     <hr class="dropdown-divider">
                                 </li>
                                 <li><a class="dropdown-item" href="?pair=trx_usdt_nile">
-                                    <div class="d-flex align-items-center"><img src="trx.png" height="24px" width="24px" />&nbsp;&nbsp;TRX/USDT (Nile Testnet)</div>
-                                </a></li>
+                                        <div class="d-flex align-items-center"><img src="trx.png" height="24px" width="24px" />&nbsp;&nbsp;TRX/USDT (Nile Testnet)</div>
+                                    </a></li>
                                 <li><a class="dropdown-item" href="?pair=jst_usdj_nile">
                                         <div class="d-flex align-items-center"><img src="jst.svg" height="24px" width="24px" />&nbsp;&nbsp;JST/USDJ (Nile Testnet)</div>
                                     </a></li>
@@ -207,10 +207,10 @@
                             <div id="CurrentPrice" class="small" hidden>
                                 <span class="priceToken"></span>&nbsp;<span class="stableName"></span>/<span class="tokenName me-3"></span>
                             </div>
-                            <!-- <a href="#" class="text-success fs-4" data-bs-toggle="modal" data-bs-target="#AboutModal"><i class="bi bi-gear-fill"></i></a> -->
-                            <button type="button" class="btn btn-success btn-sm bg-success text-dark rounded border-0 rounded15 fs-6 me-2 my-1 fw-bold" data-bs-toggle="modal" data-bs-target="#AboutModal">
+                            <a href="#" class="text-success fs-4" data-bs-toggle="modal" data-bs-target="#AboutModal"><i class="bi bi-database-fill-gear"></i></a>
+                            <!-- <button type="button" class="btn btn-success btn-sm bg-success text-dark rounded border-0 rounded15 fs-6 my-1 fw-bold" data-bs-toggle="modal" data-bs-target="#AboutModal">
                                 &nbsp;<i class="bi bi-database-fill-gear"></i>&nbsp;
-                            </button>
+                            </button> -->
                         </div>
                     </div>
                 </div>
@@ -276,18 +276,15 @@
                 </div>
 
                 <div class="col-12 text-center text-light" style="font-size: small;position: relative;">
-                    <span id="FooterContractA4B" hidden><a class="contractA4BCodeURL text-light" href="" target="_blank" class="link-light"><span class="tokenName"></span>4<span class="stableName"></span></a>
-                        &nbsp;&nbsp;<i class="bi bi-box text-success"></i></i>&nbsp;&nbsp;
-                        <span id="FooterContractB4A" hidden><a class="contractB4ACodeURL text-light" href="" target="_blank" class="link-light"><span class="stableName"></span>4<span class="tokenName"></a>
-                            <div style="position:absolute;right:0%;top:0px;font-size: x-small;" class="me-2">
-                                (build <build>183</build>)
-                            </div>
+                    <span id="FooterContractA4B" hidden></span><a class="contractA4BCodeURL text-light" href="" target="_blank" class="link-light"><span class="tokenName"></span>4<span class="stableName"></span></a>
+                    &nbsp;<i class="bi bi-box text-secondary"></i>&nbsp;
+                    <span id="FooterContractB4A" hidden></span><a class="contractB4ACodeURL text-light" href="" target="_blank" class="link-light"><span class="stableName"></span>4<span class="tokenName"></span></a>
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a class="text-light" href="#" data-bs-toggle="modal" data-bs-target="#AboutModal" class="link-light"><i class="bi bi-database-fill-gear"></i> Governance</a>
+                    <div style="position:absolute;right:0%;top:0px;font-size: x-small;" class="me-2">
+                        (build <build>184</build>)
+                    </div>
                 </div>
-                <!-- <div class="col-12 text-center text-light mt-1" style="font-size: small;">
-                    <span id="FooterContractA4B" hidden><a class="contractA4BCodeURL text-light" href="" target="_blank" class="link-light"><span class="tokenName"></span>4<span class="stableName"></span></a>
-                    <i class="bi bi-boxes"></i>
-                    <span id="FooterContractB4A" hidden><a class="contractB4ACodeURL text-light" href="" target="_blank" class="link-light"><span class="stableName"></span>4<span class="tokenName"></a>                        
-                </div> -->
 
                 <div class="col-12 text-center text-light mt-1" style="font-size: small;">
                     <a class="text-light" href="https://github.com/raidshift/marketplace-contract" target="_blank" class="link-light"><i class="bi bi-github"></i> GitHub</a>
@@ -296,6 +293,8 @@
                     &nbsp;&nbsp;|&nbsp;&nbsp;
                     <a class="text-light" href="mailto:raidshift.marketplace@gmail.com" class="link-light"><i class="bi bi-envelope-fill"></i> Mail</a>
                 </div>
+
+
 
             </div>
         </div>
@@ -473,30 +472,74 @@
 
     <!-- Modal About -->
     <div class="modal fade" id="AboutModal" tabindex="-1">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog">
             <div class="modal-content rounded15">
                 <div class="modal-header">
-                    <h5 class="modal-title">Voting</h5>
+                    <h5 class="modal-title">Governance</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="text-light">
+                    <div class="text-light small">
                         <ul>
                             <li>
-                                <span class="fw-bold">RAIDSHIFT marketplace</span> is an order book based decentralized Peer-to-Peer token exchange on TRON Blockchain.
+                                RAIDSHIFT marketplace is an <span class="fw-bold text-success">order book based decentralized Peer-to-Peer token exchange on TRON Blockchain</span>.
                             </li>
                         </ul>
                         <ul>
                             <li>
-                                Its ungoverned and immutable Smart Contracts have a small footprint to keep transaction fees as low as possible.
+                                Its ownerless immutable Smart Contracts have a small footprint to keep transaction fees low.
                             </li>
                         </ul>
                         <ul>
                             <li>
-                                Exchanging tokens with peers is <span class="fw-bold">free of charge</span>.
+                                Exchanging tokens with peers is <span class="fw-bold text-success">free of charge</span>.
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                You can <span class="fw-bold text-success">vote</span> with your RFS tokens for future <span class="fw-bold text-success">token/USDT</span> trading pairs to be added to the platform.
+                                Voting requires you to provide a TRC20-token address and the amount of RFS tokens (= votes) you want to spend.
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <span class="fw-bold text-success">RFS tokens spent for voting will be burned</span> by the voting contract.
                             </li>
                         </ul>
                     </div>
+                    <form class="vote-validation" autocomplete="off">
+                        <table class="table table-hover table-sm align-middle" style="font-size: small;">
+                            <thead class="text-light fw-bold">
+                                <td>Rank #</td>
+                                <td>Token</td>
+                                <td>Address</td>
+                                <td>Votes (RFS)</td>
+                                <td></td>
+                            </thead>
+                            <tbody class="votes text-light">
+                            </tbody>
+                        </table>
+
+                        <div class="mb-3">
+                            <label for="amount" class="form-label small text-success mb-0 fw-bold">Token address</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control bg-secondary text-light amount rounded15" id="trc20Address">
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="amount" class="form-label small text-success mb-0 fw-bold">Votes</label>
+                            <a class="float-end text-success small" id="setMaxAmountTokenCreateOffer" href="#">balance: <span class="balanceRFS"></span></a>
+                            <div class="input-group">
+                                <input type="text" class="form-control bg-secondary text-light amount rounded15-l" id="amount">
+                                <span class="input-group-text bg-secondary border-0 rounded15-r">RSF</span>
+                            </div>
+                        </div>
+                        <div class="validationMsg small">&nbsp;
+                        </div>
+
+                        <button type="submit" class="btn btn-success text-dark float-end submitBtn rounded-pill btn-sm fw-bold bg-success border-0 fs-6 px-2 py-1">Submit Transaction</button>
+                    </form>
                 </div>
             </div>
         </div>
