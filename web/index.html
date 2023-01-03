@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.2.0/darkly/bootstrap.min.css" integrity="sha512-gUckM9ucxSOwqWuP2kRpTZjtzXfgyKGUlMbXcOq9SAXY+qubqqJTht1XHZvK8rUjFKylKb+gtTK2IiOK3jk4TA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css" integrity="sha512-5PV92qsds/16vyYIJo3T/As4m2d8b6oWYfoqV+vtizRB6KhF1F9kYzWzQmsO6T3z3QG2Xdhrx7FQ+5R1LiQdUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css" integrity="sha512-YFENbnqHbCRmJt5d+9lHimyEMt8LKSNTMLSaHjvsclnZGICeY/0KYEeiHwD1Ux4Tcao0h60tdcMv+0GljvWyHg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <title>RAIDSHIFT marketplace</title>
 </head>
@@ -157,8 +157,8 @@
                             </button>
                             <ul class="dropdown-menu rounded15">
                                 <li><a class="dropdown-item" href="?pair=trx_usdt">
-                                    <div class="d-flex align-items-center"><img src="trx.png" height="24px" width="24px" />&nbsp;&nbsp;TRX/USDT</div>
-                                </a></li>
+                                        <div class="d-flex align-items-center"><img src="trx.png" height="24px" width="24px" />&nbsp;&nbsp;TRX/USDT</div>
+                                    </a></li>
                                 <li><a class="dropdown-item" href="?pair=btc_usdt">
                                         <div class="d-flex align-items-center"><img src="btc.svg" height="24px" width="24px" />&nbsp;&nbsp;BTC/USDT</div>
                                     </a></li>
@@ -179,7 +179,7 @@
                                         <div class="d-flex align-items-center"><img src="rsf.png" height="24px" width="24px" />&nbsp;&nbsp;RSF/USDT</div>
                                     </a></li>
 
-                                <!-- <li>
+                                <li>
                                     <hr class="dropdown-divider">
                                 </li>
                                 <li><a class="dropdown-item" href="?pair=trx_usdt_nile">
@@ -196,7 +196,7 @@
                                     </a></li>
                                 <li><a class="dropdown-item" href="?pair=rsf_usdt_nile">
                                         <div class="d-flex align-items-center"><img src="rsf.png" height="24px" width="24px" />&nbsp;&nbsp;RSF/USDT</div>
-                                    </a></li> -->
+                                    </a></li>
                             </ul>
                             <button id="createOfferLink" type="button" class="btn btn-success btn-sm bg-success text-dark rounded border-0 rounded15 fs-6 my-1 fw-bold" data-bs-toggle="modal" data-bs-target="#CreateOfferModal" style="width:140px" hidden>
                                 <i class="bi bi-plus-circle-fill"></i>&nbsp;&nbsp;Create Offer
@@ -207,10 +207,10 @@
                             <div id="CurrentPrice" class="small" hidden>
                                 <span class="priceToken"></span>&nbsp;<span class="stableName"></span>/<span class="tokenName me-3"></span>
                             </div>
-                            <a href="#" class="text-success" data-bs-toggle="modal" data-bs-target="#AboutModal"><i class="bi bi-question-circle-fill"></i></a>
-                            <!-- <button type="button" class="btn btn-success btn-sm bg-secondary text-light rounded border-0 rounded15 fs-6 me-2 my-1 fw-bold" data-bs-toggle="modal" data-bs-target="#AboutModal">
-                                <i class="bi bi-question-circle-fill"></i>
-                            </button> -->
+                            <!-- <a href="#" class="text-success fs-4" data-bs-toggle="modal" data-bs-target="#AboutModal"><i class="bi bi-gear-fill"></i></a> -->
+                            <button type="button" class="btn btn-success btn-sm bg-success text-dark rounded border-0 rounded15 fs-6 me-2 my-1 fw-bold" data-bs-toggle="modal" data-bs-target="#AboutModal">
+                                &nbsp;<i class="bi bi-database-fill-gear"></i>&nbsp;
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -280,7 +280,7 @@
                         &nbsp;&nbsp;<i class="bi bi-box text-success"></i></i>&nbsp;&nbsp;
                         <span id="FooterContractB4A" hidden><a class="contractB4ACodeURL text-light" href="" target="_blank" class="link-light"><span class="stableName"></span>4<span class="tokenName"></a>
                             <div style="position:absolute;right:0%;top:0px;font-size: x-small;" class="me-2">
-                                (build <build>180</build>)
+                                (build <build>181</build>)
                             </div>
                 </div>
                 <!-- <div class="col-12 text-center text-light mt-1" style="font-size: small;">
@@ -476,7 +476,7 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content rounded15">
                 <div class="modal-header">
-                    <h5 class="modal-title">About RAIDSHIFT marketplace</h5>
+                    <h5 class="modal-title">Voting</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
