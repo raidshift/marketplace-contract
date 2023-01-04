@@ -287,7 +287,7 @@
                     &nbsp;&nbsp;|&nbsp;&nbsp;
                     <a class="text-light" href="#" data-bs-toggle="modal" data-bs-target="#AboutModal" class="link-light"><i class="bi bi-database-fill-gear"></i> Governance</a>
                     <div style="position:absolute;right:0%;top:0px;font-size: x-small;" class="me-2 text-secondary">
-                        (build <build>187</build>)
+                        (build <build>188</build>)
                     </div>
                 </div>
 
@@ -485,36 +485,26 @@
                 </div>
                 <div class="modal-body">
                     <div class="text-light small mb-5">
-                        <!-- <p>
-                            RAIDSHIFT marketplace is an <span class="fw-bold text-success">order book based decentralized Peer-to-Peer token exchange on TRON Blockchain</span>.
-                        </p>
-                        <p>
-                            Its ownerless immutable Smart Contracts have a small footprint to keep transaction fees low.
-                        </p>
-                        <p>
-                            Exchanging tokens with peers is <span class="fw-bold text-success">free of charge</span>.
-                        </p> -->
-                        <!-- <p> -->
                         You can <span class="fw-bold text-success">vote</span> with your RFS for future <span class="fw-bold text-success">token/USDT</span> trading pairs to be added to the platform.
                         <br>Enter a TRC20-token address and the amount of RFS you want to spend for voting.
-                        <!-- </p> -->
-
                     </div>
                     <div class="text-light small">
                         <span class="fw-bold text-success">Voting round #1 (ends at 2023-02-01 00:00 UTC)</span>
                     </div>
                     <form class="vote-validation" autocomplete="off">
-                        <table class="table table-hover table-sm align-middle mb-5" style="font-size: small;">
-                            <thead class="text-light fw-bold">
-                                <!-- <td>Rank</td> -->
-                                <td>Token</td>
-                                <td>Address</td>
-                                <td>Votes</td>
-                                <td></td>
-                            </thead>
-                            <tbody class="votes text-light">
-                            </tbody>
-                        </table>
+                        <div class="rounded text-light overflow-auto px-2 bg-dark rounded15 mb-5" style="min-height: 10vh;max-height: 15vh;font-size: small;">
+                            <table class="table table-hover table-sm align-middle" style="font-size: small;">
+                                <thead class="text-light fw-bold">
+                                    <!-- <td>Rank</td> -->
+                                    <td>Token</td>
+                                    <td>Address</td>
+                                    <td>Votes</td>
+                                    <td></td>
+                                </thead>
+                                <tbody class="votes text-light">
+                                </tbody>
+                            </table>
+                        </div>
 
                         <div class="mb-3">
                             <label for="amount" class="form-label small text-success mb-0 fw-bold">Token address</label>
@@ -541,7 +531,7 @@
                                     Your <span class="fw-bold">RFS</span> spent for voting will be <span class="fw-bold">burned</span>.
                                 </li>
                                 <li>
-                                    Voting requires you to once-only authorize the <span class="fw-bold">Voting Contract</span> to lock-in your <span class="fw-bold">RSF</span>.
+                                    Voting requires you to once-only authorize the <span class="fw-bold">Voting Contract</span> to burn your entered amount of <span class="fw-bold">RSF</span>.
                                 </li>
                             </ul>
                         </div>
