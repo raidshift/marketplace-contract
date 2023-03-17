@@ -22,6 +22,9 @@ Smart Contracts:
 * DOGE4USDT: [TPxT4UrAkbp4fK4CtjuMmvS9u85HjU7EYq](https://tronscan.io/#/contract/TPxT4UrAkbp4fK4CtjuMmvS9u85HjU7EYq/code)
 * USDT4DOGE: [TEEQvDKY9sFQ65xxwhSH4QBkLD2NtwoN4a](https://tronscan.io/#/contract/TEEQvDKY9sFQ65xxwhSH4QBkLD2NtwoN4a/code)
 
+* NFT4USDT: [TETb3zV6WRYCHAZRAbbL4Pb6mNx8jHg2i9](https://tronscan.io/#/contract/TETb3zV6WRYCHAZRAbbL4Pb6mNx8jHg2i9/code)
+* USDT4NFT: [TWTWRJrRADaeduWnTRAHw8ssmkz4qjcbuZ](https://tronscan.io/#/contract/TWTWRJrRADaeduWnTRAHw8ssmkz4qjcbuZ/code)
+
 * RSF4USDT: [TUHHCVD4MR7LXthbS2fBBw5bXARhBg4k5G](https://tronscan.io/#/contract/TUHHCVD4MR7LXthbS2fBBw5bXARhBg4k5G/code)
 * USDT4RSF: [TPfAqGJ83NbVcRcsMFx7GJ749t9VV6cZvp](https://tronscan.io/#/contract/TPfAqGJ83NbVcRcsMFx7GJ749t9VV6cZvp/code)
 
